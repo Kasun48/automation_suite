@@ -1,5 +1,6 @@
 # openfin/login.py
 import time
+import pygetwindow as gw
 from pywinauto import Application
 from utils.config import USERNAME, PASSWORD, WINDOW_TITLE
 from utils.logger import logger
@@ -29,7 +30,12 @@ def automate_login():
     time.sleep(5)  # Wait for login to process
 
     # Check for successful login (you may need to adjust this)
-    if "Dashboard" in [w.title for w in gw.getAllWindows()]:  # Adjust based on actual post-login title
+    # if "Dock" in [w.title for w in gw.getAllWindows()]:  # Adjust based on actual post-login title
+    # Check for the window
+    dock_window_title = "Dock"
+    dock_window = wait_for_window(dock_window_title, timeout=30)
+
+    if dock_window is not None:
         logger.info("Login successful.")
         return True
     else:

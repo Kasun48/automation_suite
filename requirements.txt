@@ -4,3 +4,7 @@
 # cd E:\Acuity\automation_suite
 # 3. Activate the Virtual Environment:
 # venv\Scripts\activate
+
+# pip install selenium
+# pip install pytest
+# pip install selenium pygetwindow pywinauto requests
