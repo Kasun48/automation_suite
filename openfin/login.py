@@ -39,5 +39,5 @@ def automate_login():
         logger.info("Login successful.")
         return True
     else:
-        logger.error("Login failed.")
+        logger.error("Login failed. Current windows: %s", [w.title for w in gw.getAllWindows()])
         return False

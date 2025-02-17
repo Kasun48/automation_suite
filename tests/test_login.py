@@ -1,20 +1,19 @@
 # tests/test_login.py
-import sys
-import os
-
-# Add the parent directory to the Python path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 from openfin.launcher import launch_openfin
 from openfin.login import automate_login
+from openfin.logout import logout
 from utils.logger import logger
 
-def test_login():
+def test_login_logout():
     launch_openfin()
     if automate_login():
         logger.info("Login test completed successfully.")
+        if logout():
+            logger.info("Logout test completed successfully.")
+        else:
+            logger.error("Logout test failed.")
     else:
         logger.error("Login test failed.")
 
 if __name__ == "__main__":
-    test_login()
+    test_login_logout()
