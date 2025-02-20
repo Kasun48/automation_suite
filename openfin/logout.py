@@ -1,32 +1,31 @@
 # openfin/logout.py
 import time
-import pygetwindow as gw
 from pywinauto import Application
-from utils.logger import logger
-from utils.window_utils import wait_for_window
+from utils.logger import setup_logger
+from utils.window_utils import wait_for_window, list_open_windows
+
+logger = setup_logger()
 
 def logout():
     logger.info("Logging out of the application...")
 
-    # Wait for the dock window to appear
-    dock_window_title = "Dock"  # Adjust this title
-    dock_window = wait_for_window(dock_window_title)
+    dock_window = wait_for_window("Dock", timeout=60)
 
     if dock_window is None:
         logger.error("Dock window not found!")
         return False
 
     app = Application(backend='uia').connect(handle=dock_window._hWnd)
-    dock_window = app.window(title=dock_window_title)
+    dock_window = app.window(title="Dock")
 
-    # Click on the menu button to open the logout options
-    menu_button = dock_window.child_window(control_type="Button", found_index=1)  # Adjust based on the actual control
-    menu_button.click()
+    # Click on the Layout Settings button
+    layout_settings_button = dock_window.child_window(title="Layout Settings", control_type="Button")
+    layout_settings_button.click()
 
-    # Wait for the menu to expand and show items
+    # Wait for the menu items to appear
     time.sleep(2)
 
-    # Click on the "Quit" option
+    # Click on the "Quit" menu item
     quit_option = dock_window.child_window(title="Quit[DEV] Front Office Apps - v19.2.12", control_type="MenuItem")
     quit_option.click()
 

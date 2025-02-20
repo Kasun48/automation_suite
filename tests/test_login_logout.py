@@ -1,11 +1,13 @@
-# tests/test_login.py
-from openfin.launcher import launch_openfin
+# tests/test_login_logout.py
 from openfin.login import automate_login
 from openfin.logout import logout
-from utils.logger import logger
+from utils.logger import setup_logger
+
+logger = setup_logger()
 
 def test_login_logout():
-    launch_openfin()
+    logger.info("Starting the login/logout test...")
+    
     if automate_login():
         logger.info("Login test completed successfully.")
         if logout():
