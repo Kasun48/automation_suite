@@ -31,3 +31,50 @@
 2025-02-18 00:13:24,526 - INFO - Waiting for the OpenFin login window to appear...
 2025-02-18 00:13:54,526 - ERROR - Login window not found!
 2025-02-18 00:13:54,526 - ERROR - Login test failed.
+
+PS C:\Automation\automation_suite> python -m venv venv
+PS C:\Automation\automation_suite> venv\Scripts\activate
+(venv) PS C:\Automation\automation_suite> python -m tests.test_login_logout
+2025-02-21 21:13:40,496 - INFO - Starting the login/logout test...
+2025-02-21 21:13:40,496 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-02-21 21:13:55,545 - INFO - Waiting for the Mizuho login window to appear...
+2025-02-21 21:14:04,163 - INFO - Filling in login credentials...
+Traceback (most recent call last):
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\application.py", line 250, in __resolve_control
+    ctrl = wait_until_passes(
+        timeout,
+    ...<5 lines>...
+         controls.InvalidElement),
+        criteria)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\timings.py", line 458, in wait_until_passes
+    raise err
+pywinauto.timings.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 21, in <module>
+    test_login_logout()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 11, in test_login_logout
+    if automate_login():
+       ~~~~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\openfin\login.py", line 34, in automate_login
+    username_field.set_text(USERNAME)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\application.py", line 379, in __getattribute__
+    ctrls = self.__resolve_control(self.criteria)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\application.py", line 261, in __resolve_control
+    raise e.original_exception
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\timings.py", line 436, in wait_until_passes
+    func_val = func(*args, **kwargs)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\application.py", line 222, in __get_ctrl
+    ctrl = self.backend.generic_wrapper_class(findwindows.find_element(**ctrl_criteria))
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\findwindows.py", line 87, in find_element
+    raise ElementNotFoundError(kwargs)
+pywinauto.findwindows.ElementNotFoundError: {'control_type': 'Edit', 'title': 'username', 'top_level_only': False, 'parent': <uia_element_info.UIAElementInfo - 'Mizuho Front Office', Chrome_WidgetWin_1, 330640>, 'backend': 'uia'}
+(venv) PS C:\Automation\automation_suite> 
