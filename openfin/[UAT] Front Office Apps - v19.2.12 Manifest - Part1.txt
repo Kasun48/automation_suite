@@ -1,0 +1,1886 @@
+{
+  "devtools_port": 9090,
+  "licenseKey": "WSae786662-ea14-41dc-96c2-791728f0ea1c",
+  "runtime": {
+    "arguments": "--enable-mesh --security-realm=workspace-platform-front-office-apps-uat-19.2.12",
+    "version": "38.126.83.80"
+  },
+  "startup_app": {
+    "name": "[UAT] Front Office Apps - v19.2.12",
+    "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+    "permissions": {
+      "System": {
+        "launchExternalProcess": true,
+        "terminateExternalProcess": true,
+        "openUrlWithBrowser": {
+          "enabled": true,
+          "protocols": [
+            "merlin",
+            "bbg"
+          ]
+        },
+        "registerCustomProtocol": true,
+        "checkCustomProtocolState": true,
+        "readRegistryValue": true,
+        "downloadAsset": true,
+        "openExternal": true
+      }
+    }
+  },
+  "dialogSettings": {
+    "logo": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.full.png",
+    "permissions": {
+      "System": {
+        "launchExternalProcess": true,
+        "terminateExternalProcess": true,
+        "openUrlWithBrowser": {
+          "enabled": true,
+          "protocols": [
+            "merlin",
+            "bbg"
+          ]
+        },
+        "registerCustomProtocol": true,
+        "checkCustomProtocolState": true,
+        "readRegistryValue": true,
+        "downloadAsset": true,
+        "openExternal": true
+      }
+    }
+  },
+  "platform": {
+    "uuid": "workspace-platform-front-office-apps-uat-19.2.12",
+    "name": "[UAT] Front Office Apps - v19.2.12",
+    "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/favicon-32x32.png",
+    "autoShow": false,
+    "providerUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/platform/provider.html",
+    "preventQuitOnLastWindowClosed": true,
+    "appLogsTimezone": "utc",
+    "enableAppLogging": false,
+    "logManagement": {
+      "enabled": false
+    },
+    "permissions": {
+      "System": {
+        "launchExternalProcess": true,
+        "terminateExternalProcess": true,
+        "openUrlWithBrowser": {
+          "enabled": true,
+          "protocols": [
+            "merlin",
+            "bbg"
+          ]
+        },
+        "registerCustomProtocol": true,
+        "checkCustomProtocolState": true,
+        "readRegistryValue": true,
+        "downloadAsset": true,
+        "openExternal": true
+      }
+    },
+    "defaultWindowOptions": {
+      "permissions": {
+        "System": {
+          "launchExternalProcess": true,
+          "terminateExternalProcess": true,
+          "openUrlWithBrowser": {
+            "enabled": true,
+            "protocols": [
+              "merlin",
+              "bbg"
+            ]
+          },
+          "registerCustomProtocol": true,
+          "checkCustomProtocolState": true,
+          "readRegistryValue": true,
+          "downloadAsset": true,
+          "openExternal": true
+        }
+      },
+      "viewVisibility": {
+        "showViewsOnTabDrag": {
+          "enabled": true
+        },
+        "showViewsOnSplitterDrag": {
+          "enabled": true
+        },
+        "showViewsOnWindowResize": {
+          "enabled": true
+        }
+      }
+    },
+    "defaultViewOptions": {
+      "permissions": {
+        "System": {
+          "launchExternalProcess": true,
+          "terminateExternalProcess": true,
+          "openUrlWithBrowser": {
+            "enabled": true,
+            "protocols": [
+              "merlin",
+              "bbg"
+            ]
+          },
+          "registerCustomProtocol": true,
+          "checkCustomProtocolState": true,
+          "readRegistryValue": true,
+          "downloadAsset": true,
+          "openExternal": true
+        }
+      }
+    },
+    "interopBrokerConfiguration": {
+      "logging": {
+        "beforeAction": {
+          "enabled": true
+        },
+        "afterAction": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "shortcut": {
+    "company": "Mizuho",
+    "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+    "name": "[UAT] Front Office Apps - v19.2.12",
+    "target": [],
+    "force": true
+  },
+  "supportInformation": {
+    "company": "Mizuho",
+    "name": "[UAT] Front Office Apps - v19.2.12",
+    "email": "fosupport@uk.mizuho-sc.com",
+    "forwardErrorReports": true
+  },
+  "snapshot": {
+    "windows": []
+  },
+  "customSettings": {
+    "customData": {
+      "env": {
+        "NODE_ENV": "UAT",
+        "PLATFORM_VERSION": "19.2.12",
+        "PLATFORM_UUID": "workspace-platform-front-office-apps-uat-19.2.12",
+        "SERVER_BASE_URL": "https://fo-openfin.uat.apps.uk.mizuho-sc.com",
+        "MERLIN_USER_SETTINGS_BASE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/api/settings/usersettings",
+        "MERLIN_USER_PROFILE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/api/userprofile",
+        "MERLIN_DASH_BASE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/dash",
+        "MERLIN_WIDGETS_BASE_URL": "https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/widgets",
+        "MERLIN_GRAPHQL_BASE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/graphql",
+        "BOND_INFO_URL": "{BOND_INFO_URL}",
+        "MERLIN_HISTORICAL_BLOTTER_BASE_URL": "https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/historical-blotter",
+        "MERLIN_SALES_BLOTTER_BASE_URL": "https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/sales-blotter",
+        "MERLIN_TRADER_BLOTTER_BASE_URL": "https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/trader-blotter",
+        "GRAFANA_ALLOY_METRICS_URL": "https://grafana-alloy.uat.apps.uk.mizuho-sc.com/v1/metrics"
+      }
+    },
+    "bootstrap": {
+      "home": true,
+      "store": true,
+      "dock": true,
+      "notifications": true,
+      "autoShow": [
+        "dock"
+      ]
+    },
+    "authProvider": {
+      "modules": [
+        {
+          "id": "example",
+          "title": "Example Auth",
+          "enabled": false,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/auth/example.bundle.js",
+          "data": {
+            "autoLogin": false,
+            "loginUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/windows/modules/auth/examples/example-login.html",
+            "logoutUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/windows/modules/auth/example/example-logged-out.html",
+            "authenticatedUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/windows/modules/auth/example/example-logged-in.html",
+            "checkLoginStatusInSeconds": 1,
+            "checkSessionValidityInSeconds": -1,
+            "customData": {
+              "users": [
+                {
+                  "name": "Josh Smith (Developer)",
+                  "email": "josh@smith.com",
+                  "role": "developer"
+                },
+                {
+                  "name": "Sam Barns (Sales)",
+                  "email": "sam@barns.com",
+                  "role": "sales"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "auth-foapps",
+          "title": "FO Apps Auth",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/auth/foapps.bundle.js",
+          "data": {
+            "providerUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/platform/provider.html",
+            "clientId": "",
+            "loginUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/windows/modules/auth/foapps/mizuho-login.html",
+            "authenticatedUrl": "https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/app-settings/user-profile",
+            "checkLoginStatusInSeconds": 1,
+            "checkSessionValidityInSeconds": 30,
+            "autoLogoutOnlyOnIntradayTokenExpiry": true,
+            "autoLogoutIntradayTime": "19:30",
+            "autoLogoutTime": "01:30",
+            "tokenRefreshCycleInSeconds": 3600,
+            "autoLogin": false,
+            "customData": {
+              "userSessionId": "foapps-auth-data",
+              "jumpThroughLoggedIn": true,
+              "users": [],
+              "env": {
+                "SERVER_BASE_URL": "https://fo-openfin.uat.apps.uk.mizuho-sc.com"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "platformProvider": {
+      "rootUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com",
+      "modules": [
+        {
+          "id": "default-wps-platform",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "Workspace Platform Starter Platform Override",
+          "description": "This is the implementation included in workspace platform starter but it is now exposed as a module to allow for easy replacement.",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/platform-override/wps-platform-override.bundle.js",
+          "data": {
+            "loggerName": "WpsPlatformOverride"
+          }
+        }
+      ],
+      "interop": {
+        "intentResolver": {
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/windows/intents/instance-picker.html",
+          "height": 715,
+          "width": 665,
+          "fdc3InteropApi": "2.0"
+        },
+        "intentOptions": {},
+        "openOptions": {},
+        "unregisteredApp": {
+          "appId": "unregistered",
+          "title": "Other",
+          "description": "If you can not find an application to support your action please check the instances associated with this entry to see if it satisfies your need.",
+          "icons": [
+            {
+              "src": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico"
+            }
+          ],
+          "publisher": "Multiple",
+          "intents": [
+            {
+              "name": "StartCall",
+              "displayName": "Start a Call",
+              "contexts": [
+                "fdc3.contact",
+                "fdc3.contactList"
+              ]
+            },
+            {
+              "name": "StartChat",
+              "displayName": "Start a Chat",
+              "contexts": [
+                "fdc3.contact",
+                "fdc3.contactList"
+              ]
+            },
+            {
+              "name": "ViewChart",
+              "displayName": "View Chart",
+              "contexts": [
+                "fdc3.instrument",
+                "fdc3.instrumentList",
+                "fdc3.portfolio",
+                "fdc3.position"
+              ]
+            },
+            {
+              "name": "ViewContact",
+              "displayName": "View Contact Details",
+              "contexts": [
+                "fdc3.contact"
+              ]
+            },
+            {
+              "name": "ViewProfile",
+              "displayName": "View Profile",
+              "contexts": [
+                "fdc3.contact"
+              ]
+            },
+            {
+              "name": "ViewQuote",
+              "displayName": "View Quote",
+              "contexts": [
+                "fdc3.instrument"
+              ]
+            },
+            {
+              "name": "ViewNews",
+              "displayName": "View News",
+              "contexts": [
+                "fdc3.country",
+                "fdc3.instrument",
+                "fdc3.instrumentList",
+                "fdc3.organization",
+                "fdc3.portfolio"
+              ]
+            },
+            {
+              "name": "ViewAnalysis",
+              "displayName": "View Analysis",
+              "contexts": [
+                "fdc3.instrument",
+                "fdc3.organization",
+                "fdc3.portfolio"
+              ]
+            },
+            {
+              "name": "ViewInstrument",
+              "displayName": "View Instrument Details",
+              "contexts": [
+                "fdc3.instrument"
+              ]
+            }
+          ]
+        },
+        "modules": [
+          {
+            "id": "default-wps-interop",
+            "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+            "title": "Workspace Platform Starter Interop Broker",
+            "description": "This is the implementation included in workspace platform starter but it is now exposed as a module to allow for easy replacement.",
+            "enabled": true,
+            "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/interop-override/wps-interop-override.bundle.js",
+            "data": {
+              "loggerName": "WpsInteropOverride"
+            }
+          },
+          {
+            "id": "openfin-cloud-interop",
+            "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+            "title": "OpenFin Cloud Interop",
+            "description": "OpenFin Cloud Interop",
+            "enabled": false,
+            "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/interop-override/openfin-cloud-interop.bundle.js",
+            "data": {
+              "userId": "",
+              "password": "",
+              "platformId": "",
+              "url": "",
+              "sourceDisplayName": "",
+              "sourceId": ""
+            }
+          }
+        ]
+      }
+    },
+    "appProvider": {
+      "endpointIds": [
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/apps.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/apps-fdc3-1-2.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/apps-fdc3-2-0.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/openfin/dos.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/dos.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/apps.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/apps-native.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/apps-dev-extensions.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/apps-openfin-tools.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/apps-fdc3-1-2.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/apps-fdc3-2-0.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/comments-apps.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/dashboard-apps.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/position-manager-apps.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/sales-blotter-apps.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/settings-apps.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/trader-blotter-apps.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/user-apps.json",
+        "https://fo-openfin.uat.apps.uk.mizuho-sc.com/maverick/apps.json"
+      ],
+      "cacheDurationInSeconds": 10,
+      "cacheDurationInMinutes": 0,
+      "manifestTypes": [
+        "view",
+        "inline-view",
+        "window",
+        "inline-window",
+        "snapshot",
+        "inline-snapshot",
+        "external",
+        "inline-external",
+        "appasset",
+        "inline-appasset",
+        "manifest",
+        "desktop-browser",
+        "connection"
+      ]
+    },
+    "endpointProvider": {
+      "modules": [
+        {
+          "id": "auth-example-endpoint",
+          "enabled": false,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/auth/example.bundle.js",
+          "title": "Example Auth Endpoint",
+          "data": {
+            "roleMapping": {
+              "developer": {
+                "excludeAppsWithTag": [
+                  "contact",
+                  "manager",
+                  "irs"
+                ],
+                "preferredScheme": "dark"
+              },
+              "sales": {
+                "excludeAppsWithTag": [
+                  "tools",
+                  "developer",
+                  "versions"
+                ],
+                "preferredScheme": "light",
+                "excludeMenuModule": [
+                  "developer-menus"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "enabled": true,
+          "id": "auth-foapps-endpoint",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/auth/foapps.bundle.js",
+          "data": {
+            "env": {
+              "NODE_ENV": "UAT"
+            },
+            "userSessionId": "foapps-auth-data"
+          }
+        },
+        {
+          "enabled": true,
+          "title": "Local Storage",
+          "id": "local-storage",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/endpoint/local-storage.bundle.js"
+        },
+        {
+          "enabled": true,
+          "id": "example-connection-validation",
+          "title": "Example Connection Validation",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/endpoint/example.connection.validation.bundle.js"
+        },
+        {
+          "enabled": true,
+          "id": "context-processor",
+          "title": "Example Context Processor",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/endpoint/example.context.processor.bundle.js"
+        }
+      ],
+      "endpoints": [
+        {
+          "id": "share-get",
+          "type": "fetch",
+          "options": {
+            "method": "GET",
+            "url": "https://workspace.openfin.co/api/share/[id]"
+          }
+        },
+        {
+          "id": "share-set",
+          "type": "fetch",
+          "options": {
+            "method": "POST",
+            "url": "https://workspace.openfin.co/api/share"
+          }
+        },
+        {
+          "id": "workspace-list",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "GET",
+            "dataType": "workspace"
+          }
+        },
+        {
+          "id": "workspace-get",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "GET",
+            "dataType": "workspace"
+          }
+        },
+        {
+          "id": "workspace-set",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "SET",
+            "dataType": "workspace"
+          }
+        },
+        {
+          "id": "workspace-remove",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "REMOVE",
+            "dataType": "workspace"
+          }
+        },
+        {
+          "id": "page-list",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "GET",
+            "dataType": "page"
+          }
+        },
+        {
+          "id": "page-get",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "GET",
+            "dataType": "page"
+          }
+        },
+        {
+          "id": "page-set",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "SET",
+            "dataType": "page"
+          }
+        },
+        {
+          "id": "page-remove",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "REMOVE",
+            "dataType": "page"
+          }
+        },
+        {
+          "id": "integration-preferences-get",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "GET",
+            "dataType": "integration-preferences"
+          }
+        },
+        {
+          "id": "integration-preferences-set",
+          "type": "module",
+          "typeId": "local-storage",
+          "options": {
+            "method": "SET",
+            "dataType": "integration-preferences"
+          }
+        },
+        {
+          "id": "connection-verification",
+          "type": "module",
+          "typeId": "example-connection-validation",
+          "options": {}
+        },
+        {
+          "id": "interopbroker.process.org.dayofinterest",
+          "type": "module",
+          "typeId": "context-processor",
+          "options": {
+            "logContext": true,
+            "logProcessedContext": true
+          }
+        }
+      ],
+      "endpointClients": {
+        "clientOptions": [
+          {
+            "enabled": true,
+            "id": "default-workspace",
+            "endpointIds": [
+              "get-default-workspace",
+              "set-default-workspace"
+            ]
+          },
+          {
+            "enabled": true,
+            "id": "pages-share",
+            "endpointIds": [
+              "share-get",
+              "share-set"
+            ]
+          },
+          {
+            "enabled": true,
+            "id": "workspaces-share",
+            "endpointIds": [
+              "share-get",
+              "share-set"
+            ]
+          },
+          {
+            "enabled": true,
+            "id": "default-wps-interop",
+            "endpointIds": [
+              "*"
+            ]
+          },
+          {
+            "enabled": true,
+            "id": "default-wps-platform",
+            "endpointIds": [
+              "*"
+            ]
+          }
+        ]
+      }
+    },
+    "browserProvider": {
+      "defaultWindowOptions": {
+        "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/favicon-32x32.png",
+        "viewVisibility": {
+          "showViewsOnTabDrag": {
+            "enabled": true
+          },
+          "showViewsOnSplitterDrag": {
+            "enabled": true
+          },
+          "showViewsOnWindowResize": {
+            "enabled": true
+          }
+        },
+        "workspacePlatform": {
+          "pages": [],
+          "title": {
+            "type": "view-title"
+          },
+          "newTabUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/views/platform/new-tab/new-tab.html",
+          "newPageUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/views/platform/new-tab/new-tab.html",
+          "disableMultiplePages": true
+        }
+      },
+      "globalMenu": [
+        {
+          "include": true,
+          "label": "Toggle Notification Center",
+          "data": {
+            "type": "Custom",
+            "action": {
+              "id": "notification-toggle"
+            }
+          },
+          "position": {
+            "type": "OpenStorefront",
+            "operation": "after"
+          }
+        },
+        {
+          "include": true,
+          "label": "Open Home",
+          "data": {
+            "type": "Custom",
+            "action": {
+              "id": "home-show"
+            }
+          },
+          "position": {
+            "type": "OpenStorefront",
+            "operation": "after"
+          }
+        },
+        {
+          "include": true,
+          "label": "Quit App",
+          "position": {
+            "type": "Quit",
+            "operation": "replaceLabel"
+          }
+        },
+        {
+          "include": true,
+          "label": "Log Out and Quit App",
+          "data": {
+            "type": "Custom",
+            "action": {
+              "id": "logout-and-quit"
+            }
+          },
+          "position": {
+            "type": "Quit",
+            "operation": "after"
+          },
+          "conditions": [
+            "authenticated"
+          ]
+        }
+      ],
+      "pageMenu": [
+        {
+          "include": true,
+          "label": "Move Page to new Window",
+          "data": {
+            "type": "Custom",
+            "action": {
+              "id": "move-page-to-new-window"
+            }
+          },
+          "position": {
+            "operation": "start"
+          },
+          "separator": "after"
+        }
+      ],
+      "viewMenu": [
+        {
+          "include": true,
+          "label": "Move View(s) to new Window",
+          "data": {
+            "type": "Custom",
+            "action": {
+              "id": "move-view-to-new-window"
+            }
+          },
+          "position": {
+            "operation": "start"
+          },
+          "separator": "after"
+        }
+      ],
+      "toolbarButtons": [
+        {
+          "include": true,
+          "id": "toggle-scheme",
+          "button": {
+            "type": "Custom",
+            "tooltip": "Toggle Scheme",
+            "disabled": false,
+            "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/theme.svg",
+            "action": {
+              "id": "toggle-scheme",
+              "customData": {}
+            }
+          },
+          "conditions": [
+            "themed"
+          ]
+        },
+        {
+          "include": true,
+          "id": "change-opacity",
+          "button": {
+            "type": "Custom",
+            "tooltip": "Change Opacity",
+            "disabled": false,
+            "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+            "action": {
+              "id": "change-opacity",
+              "customData": {
+                "sourceId": "change-opacity",
+                "replacementId": "restore-opacity"
+              }
+            }
+          }
+        },
+        {
+          "include": false,
+          "id": "restore-opacity",
+          "button": {
+            "type": "Custom",
+            "tooltip": "Restore Opacity",
+            "disabled": false,
+            "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+            "action": {
+              "id": "restore-opacity",
+              "customData": {
+                "sourceId": "restore-opacity",
+                "replacementId": "change-opacity"
+              }
+            }
+          }
+        },
+        {
+          "include": true,
+          "id": "home-show",
+          "button": {
+            "type": "Custom",
+            "tooltip": "Show Home",
+            "disabled": false,
+            "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/search.svg",
+            "action": {
+              "id": "home-show",
+              "customData": {}
+            }
+          }
+        },
+        {
+          "include": true,
+          "id": "notification-toggle",
+          "button": {
+            "type": "Custom",
+            "tooltip": "Toggle Notification Center",
+            "disabled": false,
+            "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/bell.svg",
+            "action": {
+              "id": "notification-toggle",
+              "customData": {}
+            }
+          }
+        },
+        {
+          "include": true,
+          "id": "pin-window",
+          "button": {
+            "type": "Custom",
+            "tooltip": "Pin this window",
+            "disabled": false,
+            "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/pin.svg",
+            "action": {
+              "id": "pin-window",
+              "customData": {
+                "sourceId": "pin-window",
+                "replacementId": "unpin-window"
+              }
+            }
+          }
+        },
+        {
+          "include": false,
+          "id": "unpin-window",
+          "button": {
+            "type": "Custom",
+            "tooltip": "Unpin this window",
+            "disabled": false,
+            "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/pin-vertical.svg",
+            "action": {
+              "id": "unpin-window",
+              "customData": {
+                "sourceId": "unpin-window",
+                "replacementId": "pin-window"
+              }
+            }
+          }
+        },
+        {
+          "include": true,
+          "id": "lock-unlock",
+          "button": {
+            "type": "LockUnlockPage"
+          }
+        },
+        {
+          "include": true,
+          "id": "show-hide-tabs",
+          "button": {
+            "type": "ShowHideTabs"
+          }
+        },
+        {
+          "include": true,
+          "id": "color-linking",
+          "button": {
+            "type": "ColorLinking"
+          }
+        },
+        {
+          "include": true,
+          "id": "preset-layouts",
+          "button": {
+            "type": "PresetLayouts"
+          }
+        },
+        {
+          "include": true,
+          "id": "share",
+          "button": {
+            "type": "Custom",
+            "tooltip": "Share",
+            "disabled": false,
+            "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/share.svg",
+            "action": {
+              "id": "share",
+              "customData": {}
+            }
+          },
+          "conditions": [
+            "sharing"
+          ]
+        },
+        {
+          "include": true,
+          "id": "save-menu",
+          "button": {
+            "type": "SaveMenu"
+          }
+        }
+      ]
+    },
+    "themeProvider": {
+      "themes": [
+        {
+          "id": "default",
+          "label": "Default",
+          "logoUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/favicon-32x32.png",
+          "default": "light",
+          "palettes": {
+            "light": {
+              "brandPrimary": "#1B3280",
+              "brandSecondary": "#7483B3",
+              "backgroundPrimary": "#FFFFFF",
+              "background1": "#FFFFFF",
+              "background2": "#FAFBFE",
+              "background3": "#F3F5F8",
+              "background4": "#ECEEF1",
+              "background5": "#DDDFE4",
+              "background6": "#C9CBD2",
+              "statusSuccess": "#35C759",
+              "statusWarning": "#F48F00",
+              "statusCritical": "#BE1D1F",
+              "statusActive": "#0498FB",
+              "inputBackground": "#ECEEF1",
+              "inputColor": "#1E1F23",
+              "inputPlaceholder": "#383A40",
+              "inputDisabled": "#7D808A",
+              "inputFocused": "#C9CBD2",
+              "textDefault": "#1E1F23",
+              "textHelp": "#2F3136",
+              "textInactive": "#7D808A",
+              "contentBackground1": "#0A76D3",
+              "contentBackground2": "#000000",
+              "contentBackground3": "#000000",
+              "contentBackground4": "#000000",
+              "contentBackground5": "#000000",
+              "linkDefault": "#6CADE5",
+              "linkHover": "#0A76D3"
+            },
+            "dark": {
+              "brandPrimary": "#1B3280",
+              "brandSecondary": "#1F1F1F",
+              "backgroundPrimary": "#111111",
+              "background1": "#111214",
+              "background2": "#1E1F23",
+              "background3": "#24262B",
+              "background4": "#2F3136",
+              "background5": "#383A40",
+              "background6": "#53565F",
+              "statusSuccess": "#35C759",
+              "statusWarning": "#F48F00",
+              "statusCritical": "#BE1D1F",
+              "statusActive": "#0498FB",
+              "inputBackground": "#53565F",
+              "inputColor": "#FFFFFF",
+              "inputPlaceholder": "#C9CBD2",
+              "inputDisabled": "#7D808A",
+              "inputFocused": "#C9CBD2",
+              "textDefault": "#FFFFFF",
+              "textHelp": "#C9CBD2",
+              "textInactive": "#7D808A",
+              "contentBackground1": "#0A76D3",
+              "contentBackground2": "#000000",
+              "contentBackground3": "#000000",
+              "contentBackground4": "#000000",
+              "contentBackground5": "#000000",
+              "linkDefault": "#6CADE5",
+              "linkHover": "#0A76D3"
+            }
+          }
+        }
+      ]
+    },
+    "homeProvider": {
+      "id": "workspace-platform-front-office-apps-uat-19.2.12",
+      "title": "[UAT] Front Office Apps - v19.2.12",
+      "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/favicon-32x32.png",
+      "queryMinLength": 3,
+      "queryAgainst": [
+        "title"
+      ]
+    },
+    "storefrontProvider": {
+      "id": "workspace-platform-front-office-apps-uat-19.2.12",
+      "title": "[UAT] Front Office Apps - v19.2.12",
+      "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/favicon-32x32.png",
+      "landingPage": {
+        "topRow": {
+          "title": "[UAT] Front Office Apps - v19.2.12",
+          "items": [
+            {
+              "id": "sales",
+              "title": "Sales",
+              "description": "A collection of Merlin Sales Apps",
+              "image": {
+                "src": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/store/Sales.png"
+              },
+              "tags": [
+                "fo-store-merlin-sales"
+              ],
+              "buttonTitle": "View"
+            },
+            {
+              "id": "trader",
+              "title": "Trader",
+              "description": "A collection of Merlin Trader Apps",
+              "image": {
+                "src": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/store/Trader.png"
+              },
+              "tags": [
+                "fo-store-merlin-trader"
+              ],
+              "buttonTitle": "View"
+            },
+            {
+              "id": "dashboards",
+              "title": "Dashboards",
+              "description": "A collection of Merlin Dashboard Apps",
+              "image": {
+                "src": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/store/Dashboard.png"
+              },
+              "tags": [
+                "dashboards"
+              ],
+              "buttonTitle": "View"
+            },
+            {
+              "id": "settings",
+              "title": "Settings",
+              "description": "A collection of Merlin Settings Apps",
+              "image": {
+                "src": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/app/Settings.png"
+              },
+              "tags": [
+                "settings"
+              ],
+              "buttonTitle": "View"
+            }
+          ]
+        },
+        "middleRow": {
+          "id": "native",
+          "title": "A collection of Native Apps",
+          "tags": [
+            "native"
+          ]
+        },
+        "bottomRow": {
+          "title": "Quick Access",
+          "items": [
+            {
+              "id": "tools",
+              "title": "Tools",
+              "description": "A collection of Tools i.e. Open Process Manager",
+              "image": {
+                "src": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/store/Tools.png"
+              },
+              "tags": [
+                "openfin"
+              ],
+              "buttonTitle": "View"
+            }
+          ]
+        }
+      },
+      "navigation": [
+        {
+          "id": "applications",
+          "title": "Applications",
+          "items": [
+            {
+              "id": "all-apps",
+              "title": "All Apps",
+              "tags": [
+                "maverick",
+                "merlin",
+                "openfin",
+                "native"
+              ]
+            },
+            {
+              "id": "maverick",
+              "title": "Maverick",
+              "tags": [
+                "maverick"
+              ]
+            },
+            {
+              "id": "merlin",
+              "title": "Merlin",
+              "tags": [
+                "merlin"
+              ]
+            },
+            {
+              "id": "openfin",
+              "title": "OpenFin Tools",
+              "tags": [
+                "openfin"
+              ]
+            },
+            {
+              "id": "native",
+              "title": "Native Apps",
+              "tags": [
+                "native"
+              ]
+            }
+          ]
+        }
+      ],
+      "footer": {
+        "logo": {
+          "src": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "size": "32"
+        },
+        "text": "Front Office Apps Store Front",
+        "links": []
+      }
+    },
+    "dockProvider": {
+      "id": "workspace-platform-front-office-apps-uat-19.2.12",
+      "title": "[UAT] Front Office Apps - v19.2.12",
+      "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+      "supportInformation": {
+        "company": "Mizuho",
+        "name": "[UAT] Front Office Apps - v19.2.12",
+        "email": "fosupport@uk.mizuho-sc.com",
+        "forwardErrorReports": true
+      },
+      "workspaceComponents": {
+        "hideHomeButton": false,
+        "hideWorkspacesButton": true,
+        "hideNotificationsButton": false,
+        "hideStorefrontButton": false
+      },
+      "entries": [
+        {
+          "id": "show-user",
+          "tooltip": "User Profile",
+          "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/images/user.png",
+          "action": {
+            "id": "show-user",
+            "customData": {
+              "env": {
+                "SERVER_BASE_URL": "https://fo-openfin.uat.apps.uk.mizuho-sc.com",
+                "MERLIN_APP_SETTINGS_BASE_URL": "https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/app-settings"
+              }
+            }
+          }
+        },
+        {
+          "id": "layout-settings",
+          "tooltip": "Layout Settings",
+          "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/settings.svg",
+          "options": [
+            {
+              "tooltip": "Toggle Theme",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/default/light/theme.svg",
+              "action": {
+                "id": "toggle-scheme"
+              }
+            },
+            {
+              "tooltip": "Save Layout",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/default/light/save.svg",
+              "action": {
+                "id": "save-platform-layout",
+                "customData": {
+                  "env": {
+                    "NODE_ENV": "UAT",
+                    "MERLIN_USER_SETTINGS_BASE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/api/settings/usersettings",
+                    "SERVER_BASE_URL": "https://fo-openfin.uat.apps.uk.mizuho-sc.com",
+                    "PLATFORM_VERSION": "19.2.12"
+                  }
+                }
+              }
+            },
+            {
+              "tooltip": "Reload Layout",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/default/light/reload.svg",
+              "action": {
+                "id": "reload-platform-layout",
+                "customData": {
+                  "env": {
+                    "NODE_ENV": "UAT",
+                    "MERLIN_USER_SETTINGS_BASE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/api/settings/usersettings",
+                    "SERVER_BASE_URL": "https://fo-openfin.uat.apps.uk.mizuho-sc.com",
+                    "PLATFORM_VERSION": "19.2.12"
+                  }
+                }
+              }
+            },
+            {
+              "tooltip": "Reset Layout",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/default/light/reset.svg",
+              "action": {
+                "id": "reset-platform-layout",
+                "customData": {
+                  "env": {
+                    "NODE_ENV": "UAT",
+                    "MERLIN_USER_SETTINGS_BASE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/api/settings/usersettings",
+                    "SERVER_BASE_URL": "https://fo-openfin.uat.apps.uk.mizuho-sc.com",
+                    "PLATFORM_VERSION": "19.2.12"
+                  }
+                }
+              }
+            },
+            {
+              "tooltip": "Inspect",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/default/light/devtools.svg",
+              "action": {
+                "id": "devtools"
+              }
+            },
+            {
+              "id": "openfin-process-manager",
+              "display": "individual",
+              "tooltip": "Process Manager",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.png",
+              "tags": [
+                "openfin-process-manager"
+              ]
+            },
+            {
+              "tooltip": "Quit [UAT] Front Office Apps - v19.2.12",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/default/light/quit.svg",
+              "action": {
+                "id": "quit-platform",
+                "customData": {
+                  "env": {
+                    "NODE_ENV": "UAT",
+                    "SERVER_BASE_URL": "https://fo-openfin.uat.apps.uk.mizuho-sc.com",
+                    "PLATFORM_VERSION": "19.2.12"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "native-apps",
+          "tooltip": "Native Apps",
+          "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/images/ms/apps/microsoft365.svg",
+          "options": [
+            {
+              "id": "notepad",
+              "display": "individual",
+              "tooltip": "Notepad",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/images/native/icon-notepad.png",
+              "tags": [
+                "notepad"
+              ]
+            },
+            {
+              "id": "ms-outlook-mail",
+              "display": "individual",
+              "tooltip": "Microsoft Outlook",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/images/ms/apps/outlook-mail.svg",
+              "tags": [
+                "outlook"
+              ]
+            },
+            {
+              "id": "ms-word",
+              "display": "individual",
+              "tooltip": "Microsoft Word",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/images/ms/apps/word.svg",
+              "tags": [
+                "word"
+              ]
+            },
+            {
+              "id": "ms-excel",
+              "display": "individual",
+              "tooltip": "Microsoft Excel",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/images/ms/apps/excel.svg",
+              "tags": [
+                "excel"
+              ]
+            },
+            {
+              "id": "ms-powerpoint",
+              "display": "individual",
+              "tooltip": "Microsoft Powerpoint",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/images/ms/apps/powerpoint.svg",
+              "tags": [
+                "powerpoint"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "maverick-apps",
+          "display": "group",
+          "tooltip": "Maverick",
+          "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/maverick/images/app/Maverick.png",
+          "tags": [
+            "maverick"
+          ]
+        },
+        {
+          "id": "merlin-apps",
+          "tooltip": "Merlin",
+          "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/app/Merlin.png",
+          "options": [
+            {
+              "id": "comments-main",
+              "display": "individual",
+              "tooltip": "Comments",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/app/Comments.png",
+              "tags": [
+                "comments-main"
+              ]
+            },
+            {
+              "id": "historical-trader-blotter",
+              "display": "individual",
+              "tooltip": "Historical Trader Blotter",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/app/HistoricalBlotter.png",
+              "tags": [
+                "historical-trader-blotter"
+              ]
+            },
+            {
+              "id": "trader-blotter",
+              "display": "individual",
+              "tooltip": "Trader Blotter",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/app/TraderBlotter.png",
+              "tags": [
+                "trader-blotter"
+              ]
+            },
+            {
+              "id": "sales-blotter",
+              "display": "individual",
+              "tooltip": "Sales Blotter",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/app/SalesBlotter.png",
+              "tags": [
+                "sales-blotter"
+              ]
+            },
+            {
+              "id": "dashboard",
+              "display": "group",
+              "tooltip": "Dashboard",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/app/Dashboard.png",
+              "tags": [
+                "dashboard"
+              ]
+            },
+            {
+              "id": "position-manager",
+              "display": "individual",
+              "tooltip": "Position Manager",
+              "iconUrl": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/images/app/PositionManager.png",
+              "tags": [
+                "position-manager"
+              ]
+            },
+            {
+              "id": "settings",
+              "display": "group",
+              "tooltip": "Settings",
+              "tags": [
+                "settings"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notificationProvider": {
+      "id": "workspace-platform-front-office-apps-uat-19.2.12",
+      "title": "[UAT] Front Office Apps - v19.2.12",
+      "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/favicon-32x32.png"
+    },
+    "integrationProvider": {
+      "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+      "isManagementEnabled": true,
+      "command": "integrations",
+      "commandDescription": "Allows the management of integrations for this platform. You can decide whether enabled integrations should be included when a query is entered.",
+      "modules": [
+        {
+          "id": "apps",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "Apps",
+          "description": "Search Applications",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/integrations/apps.bundle.js",
+          "data": {
+            "manifestTypeMapping": {
+              "view": {
+                "entryLabel": "View",
+                "actionName": ""
+              },
+              "inline-view": {
+                "entryLabel": "View",
+                "actionName": ""
+              },
+              "window": {
+                "entryLabel": "Window",
+                "actionName": ""
+              },
+              "inline-window": {
+                "entryLabel": "Window",
+                "actionName": ""
+              },
+              "snapshot": {
+                "entryLabel": "Snapshot",
+                "actionName": "Launch Snapshot"
+              },
+              "inline-snapshot": {
+                "entryLabel": "Snapshot",
+                "actionName": "Launch Snapshot"
+              },
+              "manifest": {
+                "entryLabel": "App",
+                "actionName": "Launch App"
+              },
+              "external": {
+                "entryLabel": "Native App",
+                "actionName": "Launch Native App"
+              },
+              "inline-external": {
+                "entryLabel": "Native App",
+                "actionName": "Launch Native App"
+              },
+              "appasset": {
+                "entryLabel": "Native App",
+                "actionName": "Launch Native App"
+              },
+              "inline-appasset": {
+                "entryLabel": "Native App",
+                "actionName": "Launch Native App"
+              },
+              "desktop-browser": {
+                "entryLabel": "Desktop Browser",
+                "actionName": ""
+              },
+              "endpoint": {
+                "entryLabel": "Endpoint",
+                "actionName": "Launch"
+              },
+              "connection": {
+                "entryLabel": "Connected App",
+                "actionName": "Launch Connected App"
+              }
+            }
+          }
+        },
+        {
+          "id": "workspaces",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "Workspaces",
+          "description": "Manage workspaces",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/integrations/workspaces.bundle.js",
+          "data": {
+            "images": {
+              "workspace": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/workspace.svg"
+            }
+          }
+        },
+        {
+          "id": "pages",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "Pages",
+          "description": "Manage Pages",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/integrations/pages.bundle.js",
+          "data": {
+            "images": {
+              "page": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/page.svg"
+            }
+          }
+        },
+        {
+          "id": "salesforce",
+          "icon": "https://built-on-openfin.github.io/workspace-starter/workspace/v19.1.0/integrate-with-salesforce/favicon.ico",
+          "title": "Salesforce",
+          "enabled": false,
+          "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v19.1.0/integrate-with-salesforce/js/modules/integrations/salesforce.bundle.js",
+          "data": {
+            "consumerKey": "",
+            "orgUrl": "",
+            "preload": "https://built-on-openfin.github.io/workspace-starter/workspace/v19.1.0/integrate-with-salesforce/js/preload.js",
+            "iconMap": {
+              "contact": "https://built-on-openfin.github.io/workspace-starter/workspace/v19.1.0/integrate-with-salesforce/images/contact.svg",
+              "account": "https://built-on-openfin.github.io/workspace-starter/workspace/v19.1.0/integrate-with-salesforce/images/account.svg",
+              "chatter": "https://built-on-openfin.github.io/workspace-starter/workspace/v19.1.0/integrate-with-salesforce/images/chatter.svg",
+              "note": "https://built-on-openfin.github.io/workspace-starter/workspace/v19.1.0/integrate-with-salesforce/images/note.svg",
+              "task": "https://built-on-openfin.github.io/workspace-starter/workspace/v19.1.0/integrate-with-salesforce/images/task.svg"
+            }
+          }
+        },
+        {
+          "id": "about",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "About",
+          "description": "Provides information about this platform.",
+          "enabled": true,
+          "excludeFromSourceFilter": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/about.bundle.js",
+          "data": {}
+        },
+        {
+          "id": "isin-integration",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "My Integration",
+          "description": "My Integration",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/integrations/isin-integration.bundle.js",
+          "data": {
+            "env": {
+              "SERVER_BASE_URL": "https://fo-openfin.uat.apps.uk.mizuho-sc.com",
+              "MERLIN_GRAPHQL_BASE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/graphql",
+              "BOND_INFO_URL": "{BOND_INFO_URL}"
+            }
+          }
+        }
+      ]
+    },
+    "initOptionsProvider": {
+      "modules": [
+        {
+          "enabled": true,
+          "id": "interop",
+          "title": "Interop Init Options",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/init-options/interop.bundle.js",
+          "data": {
+            "supportedActions": [
+              "raise-intent",
+              "share-context"
+            ]
+          }
+        },
+        {
+          "enabled": true,
+          "id": "launch-app",
+          "title": "Launch App Init Options",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/init-options/launch-app.bundle.js",
+          "data": {
+            "supportedActions": [
+              "launch-app"
+            ],
+            "supportedManifestTypes": [
+              "view",
+              "inline-view",
+              "window",
+              "inline-window",
+              "snapshot",
+              "inline-snapshot"
+            ]
+          }
+        }
+      ]
+    },
+    "loggerProvider": {
+      "modules": [
+        {
+          "enabled": true,
+          "id": "console",
+          "title": "Console Logger",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/log/console.bundle.js",
+          "data": {
+            "env": {
+              "LOG_LEVEL": "INFO",
+              "GRAFANA_COLLECTOR_URL": "https://grafana-alloy.uat.apps.uk.mizuho-sc.com/collect",
+              "NODE_ENV": "UAT"
+            }
+          }
+        }
+      ]
+    },
+    "actionsProvider": {
+      "modules": [
+        {
+          "enabled": true,
+          "id": "opacity",
+          "title": "Opacity Action",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/actions/opacity.bundle.js"
+        },
+        {
+          "enabled": true,
+          "id": "developer-actions",
+          "title": "Developer Actions",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/developer.bundle.js"
+        },
+        {
+          "enabled": true,
+          "id": "about-actions",
+          "title": "About Actions",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/about.bundle.js",
+          "data": {
+            "windowOptions": {
+              "name": "about",
+              "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/windows/version/about.html",
+              "defaultCentered": true,
+              "showTaskbarIcon": false,
+              "autoShow": true,
+              "minimizable": false,
+              "maximizable": false,
+              "defaultHeight": 396,
+              "defaultWidth": 760,
+              "customData": {}
+            }
+          }
+        },
+        {
+          "enabled": true,
+          "id": "page-actions",
+          "title": "Page Actions",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/pages.bundle.js"
+        },
+        {
+          "enabled": true,
+          "id": "window-actions",
+          "title": "Window Actions",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/windows.bundle.js"
+        },
+        {
+          "id": "shared-custom-buttons",
+          "title": "Shared Custom Buttons",
+          "description": "Shared Custom Button",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/actions/shared-custom-buttons.bundle.js",
+          "data": {
+            "env": {
+              "NODE_ENV": "UAT",
+              "PLATFORM_VERSION": "19.2.12",
+              "SERVER_BASE_URL": "https://fo-openfin.uat.apps.uk.mizuho-sc.com",
+              "MERLIN_USER_SETTINGS_BASE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/api/settings/usersettings",
+              "MERLIN_WIDGETS_BASE_URL": "https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/widgets",
+              "MERLIN_GRAPHQL_BASE_URL": "https://merlin.uat.apps.uk.mizuho-sc.com/graphql",
+              "BOND_INFO_URL": "{BOND_INFO_URL}",
+              "MERLIN_HISTORICAL_BLOTTER_BASE_URL": "https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/historical-blotter",
+              "GRAFANA_ALLOY_METRICS_URL": "https://grafana-alloy.uat.apps.uk.mizuho-sc.com/v1/metrics"
+            }
+          }
+        }
+      ]
+    },
+    "conditionsProvider": {
+      "modules": [
+        {
+          "enabled": true,
+          "id": "about-conditions",
+          "title": "About Conditions",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/about.bundle.js"
+        }
+      ]
+    },
+    "connectionProvider": {
+      "connectionId": "workspace-connection",
+      "connectionValidationEndpoint": "connection-verification",
+      "supportedActions": [
+        "show-home",
+        "show-store",
+        "show-dock",
+        "show-notifications",
+        "hide-home",
+        "hide-store",
+        "minimize-dock",
+        "hide-notifications"
+      ],
+      "connections": [
+        {
+          "identity": {
+            "uuid": "*"
+          },
+          "validatePayload": true,
+          "connectionTypes": [
+            {
+              "type": "appSource"
+            },
+            {
+              "type": "snapshotSource"
+            },
+            {
+              "type": "actions"
+            },
+            {
+              "type": "broker"
+            }
+          ]
+        }
+      ]
+    },
+    "analyticsProvider": {
+      "modules": [
+        {
+          "id": "console",
+          "title": "Console Analytics",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/analytics/console.bundle.js",
+          "data": {
+            "eventLogLevel": "info"
+          }
+        }
+      ]
+    },
+    "versionProvider": {
+      "appVersion": "1.0.0",
+      "minVersion": {
+        "workspace": "19.0.0"
+      },
+      "versionWindow": {
+        "name": "versioning",
+        "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/windows/version/version.html",
+        "defaultCentered": true,
+        "showTaskbarIcon": false,
+        "autoShow": true,
+        "minimizable": false,
+        "maximizable": false,
+        "defaultHeight": 481,
+        "defaultWidth": 760,
+        "saveWindowState": false,
+        "includeInSnapshots": false
+      },
+      "endpointId": "version",
+      "versionCheckIntervalInSeconds": 30
+    },
+    "menusProvider": {
+      "modules": [
+        {
+          "enabled": true,
+          "id": "developer-menus",
+          "title": "Developer Menus",
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/developer.bundle.js",
+          "data": {}
+        },
+        {
+          "id": "about",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "About",
+          "description": "Provides information about this platform.",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/about.bundle.js",
+          "data": {}
+        },
+        {
+          "id": "pages",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "Pages",
+          "description": "Provides additional menu options for pages.",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/pages.bundle.js",
+          "data": {}
+        },
+        {
+          "id": "windows",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "Windows",
+          "description": "Provides additional menu options for windows.",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/windows.bundle.js",
+          "data": {}
+        }
+      ]
+    },
+    "shareProvider": {
+      "confirmationMode": "modal",
+      "modules": [
+        {
+          "id": "pages-share",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "Pages Share",
+          "description": "Pages Share",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/share/pages.bundle.js",
+          "data": {
+            "getEndpointId": "share-get",
+            "setEndpointId": "share-set",
+            "images": {
+              "error": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/error.svg",
+              "success": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/success.svg"
+            }
+          }
+        },
+        {
+          "id": "workspaces-share",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "Workspaces Share",
+          "description": "Workspaces Share",
+          "enabled": true,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/share/workspaces.bundle.js",
+          "data": {
+            "getEndpointId": "share-get",
+            "setEndpointId": "share-set",
+            "images": {
+              "error": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/error.svg",
+              "success": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/common/icons/{theme}/{scheme}/success.svg"
+            }
+          }
+        }
+      ]
+    },
+    "dialogProvider": {
+      "dialogHtml": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/popups/dialog/index.html"
+    },
+    "snapProvider": {
+      "enabled": true,
+      "id": "workspace-platform-front-office-apps-uat-19.2.12",
+      "enableAutoWindowRegistration": true,
+      "serverAssetInfo": {
+        "src": "https://cdn.openfin.co/release/snap/1.0.0/snap.zip",
+        "alias": "openfin-snap",
+        "version": "1.0.0",
+        "target": "OpenFinSnap.exe"
+      },
+      "serverOptions": {
+        "showDebug": false,
+        "keyToStick": true,
+        "disableBlurDropPreview": false,
+        "disableGPUAcceleratedDragging": false,
+        "disableUserUnstick": false
+      }
+    },
+    "lifecycleProvider": {
+      "modules": [
+        {
+          "id": "default-workspace",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "default workspace management",
+          "description": "set and apply your default workspace.",
+          "enabled": false,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/composite/default-workspace.bundle.js",
+          "data": {}
+        },
+        {
+          "id": "example-notification-service",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "Example Notification Service",
+          "description": "Example Notification Service. See more at client/src/modules/lifecycle/example-notification-service/README.md",
+          "enabled": false,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/lifecycle/example-notification-service.bundle.js",
+          "data": {}
+        },
+        {
+          "id": "bootstrap-mizuho",
+          "icon": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/favicon.ico",
+          "title": "bootstrap mizuho",
+          "description": "bootstrap mizuho",
+          "enabled": false,
+          "url": "https://fo-openfin.uat.apps.uk.mizuho-sc.com/js/modules/lifecycle/bootstrap-mizuho.bundle.js",
+          "data": {
+            "exampleProp": "value"
+          }
+        }
+      ]
+    }
+  }
+}
