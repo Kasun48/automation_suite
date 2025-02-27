@@ -19,13 +19,16 @@ def logout():
     app = Application(backend='uia').connect(handle=dock_window._hWnd)
     dock_window = app.window(title="Dock")
 
-    # Click on the Log Out button in the Dock
+    # Print available controls for debugging
+    logger.info("Available controls in the Dock window: %s", dock_window.print_control_identifiers())
+
+    # Click on the Layout Settings button in the Dock
     try:
-        log_out_button = dock_window.child_window(title="Log Out", control_type="Button")
-        log_out_button.click()
-        logger.info("Clicked on Log Out button.")
+        layout_settings_button = dock_window.child_window(title="Layout Settings", control_type="Button")
+        layout_settings_button.click()
+        logger.info("Clicked on Layout Settings button.")
     except Exception as e:
-        logger.error("Error clicking Log Out button: %s", e)
+        logger.error("Error clicking Layout Settings button: %s", e)
         return False
 
     # Wait for the confirmation dialog to appear
