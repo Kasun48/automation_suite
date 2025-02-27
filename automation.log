@@ -38,15 +38,177 @@
 fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
 2025-02-26 17:00:23,165 - INFO - Waiting for the Mizuho login window to appear...
 2025-02-26 17:00:37,281 - INFO - Filling in login credentials...
-
-
 (venv) PS C:\Automation\automation_suite> python -m tests.test_login_logout
+2025-02-27 13:12:08,249 - INFO - Starting the login/logout test...
+2025-02-27 13:12:08,250 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-02-27 13:12:23,283 - INFO - Waiting for the Mizuho login window to appear...
+Control Identifiers:
+
+Dialog - 'Mizuho Front Office'    (L660, T273, R1260, B761)
+['Mizuho Front OfficeDialog', 'Dialog', 'Mizuho Front Office', 'Mizuho Front Office0', 'Mizuho Front Office1']
+child_window(title="Mizuho Front Office", control_type="Window")
+   |
+   | Pane - 'Mizuho Front Office'    (L670, T318, R1250, B750)
+   | ['Mizuho Front OfficePane', 'Pane', 'Mizuho Front Office2', 'Pane0', 'Pane1']
+   | child_window(title="Mizuho Front Office", control_type="Pane")
+   |    | 
+   |    | Pane - ''    (L670, T318, R1250, B750)
+   |    | ['Pane2']
+   |    |    | 
+   |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    | ['Pane3']
+   |    |    |    |
+   |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    | ['Pane4']
+   |    |    |    |    | 
+   |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    | ['Pane5']
+   |    |    |    |    |    | 
+   |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    |    | ['Pane6']
+   |    |    |    |    |    |    | 
+   |    |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    |    |    | ['Pane7']
+   |    |    |    |    |    |    | 
+   |    |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    |    |    | ['Pane8']
+2025-02-27 13:12:28,660 - INFO - Available controls in the window: None
+2025-02-27 13:12:28,660 - INFO - Filling in login credentials...
+2025-02-27 13:12:30,191 - INFO - Login attempt made.
+2025-02-27 13:12:43,390 - INFO - Login successful.
+2025-02-27 13:12:43,391 - INFO - Login test completed successfully.
+2025-02-27 13:12:43,392 - INFO - Logging out of the application...
+Traceback (most recent call last):
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\uia_defines.py", line 234, in get_elem_interface
+    iface = cur_ptrn.QueryInterface(cls_name)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\comtypes\_post_coinit\unknwn.py", line 395, in QueryInterface
+    self.__com_QueryInterface(byref(iid), byref(p))  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+ValueError: NULL COM pointer access
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uia_controls.py", line 121, in click
+    self.invoke()
+    ~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uiawrapper.py", line 513, in invoke
+    self.iface_invoke.Invoke()
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uiawrapper.py", line 132, in __get__
+    value = self.fget(obj)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uiawrapper.py", line 231, in iface_invoke
+    return uia_defs.get_elem_interface(elem, "Invoke")
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\uia_defines.py", line 236, in get_elem_interface
+    raise NoPatternInterfaceError()
+pywinauto.uia_defines.NoPatternInterfaceError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\uia_defines.py", line 234, in get_elem_interface
+    iface = cur_ptrn.QueryInterface(cls_name)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\comtypes\_post_coinit\unknwn.py", line 395, in QueryInterface
+    self.__com_QueryInterface(byref(iid), byref(p))  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+ValueError: NULL COM pointer access
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "<frozen runpy>", line 198, in _run_module_as_main
   File "<frozen runpy>", line 88, in _run_code
-  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 2, in <module>
-    from openfin.login import automate_login
-  File "C:\Automation\automation_suite\openfin\login.py", line 41
-    except Exception as e:
-    ^^^^^^
-SyntaxError: invalid syntax
+  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 20, in <module>
+    test_login_logout()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 12, in test_login_logout
+    if logout():
+       ~~~~~~^^
+  File "C:\Automation\automation_suite\openfin\logout.py", line 22, in logout
+    layout_settings_button.click()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uia_controls.py", line 123, in click
+    self.select()
+    ~~~~~~~~~~~^^
+(venv) PS C:\Automation\automation_suite> python -m tests.test_login_logout
+2025-02-27 18:06:49,790 - INFO - Starting the login/logout test...
+2025-02-27 18:06:49,790 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-02-27 18:07:04,857 - INFO - Waiting for the Mizuho login window to appear...
+Control Identifiers:
+
+Dialog - 'Mizuho Front Office'    (L660, T273, R1260, B761)
+['Mizuho Front Office', 'Dialog', 'Mizuho Front OfficeDialog', 'Mizuho Front Office0', 'Mizuho Front Office1']
+child_window(title="Mizuho Front Office", control_type="Window")
+   |
+   | Pane - 'Mizuho Front Office'    (L670, T318, R1250, B750)
+   | ['Mizuho Front OfficePane', 'Mizuho Front Office2', 'Pane', 'Pane0', 'Pane1']
+   | child_window(title="Mizuho Front Office", control_type="Pane")
+   |    | 
+   |    | Pane - ''    (L670, T318, R1250, B750)
+   |    | ['Pane2']
+   |    |    | 
+   |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    | ['Pane3']
+   |    |    |    | 
+   |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    | ['Pane4']
+   |    |    |    |    | 
+   |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    | ['Pane5']
+   |    |    |    |    |    | 
+   |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    |    | ['Pane6']
+   |    |    |    |    |    |    | 
+   |    |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    |    |    | ['Pane7']
+   |    |    |    |    |    |    | 
+   |    |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    |    |    | ['Pane8']
+2025-02-27 18:07:10,996 - INFO - Available controls in the window: None
+2025-02-27 18:07:10,996 - INFO - Filling in login credentials...
+2025-02-27 18:07:12,848 - INFO - Login attempt made.
+2025-02-27 18:07:22,853 - INFO - Login successful.
+2025-02-27 18:07:22,864 - INFO - Login test completed successfully.
+2025-02-27 18:07:22,934 - INFO - Logging out of the application...
+
+Traceback (most recent call last):
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\application.py", line 250, in __resolve_control
+    ctrl = wait_until_passes(
+        timeout,
+    ...<5 lines>...
+         controls.InvalidElement),
+        criteria)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\timings.py", line 458, in wait_until_passes
+    raise err
+pywinauto.timings.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 20, in <module>
+    test_login_logout()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 12, in test_login_logout
+    if logout():
+       ~~~~~~^^
+  File "C:\Automation\automation_suite\openfin\logout.py", line 22, in logout
+    layout_settings_button.click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\application.py", line 379, in __getattribute__
+    ctrls = self.__resolve_control(self.criteria)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\application.py", line 261, in __resolve_control
+    raise e.original_exception
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\timings.py", line 436, in wait_until_passes
+    func_val = func(*args, **kwargs)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\application.py", line 203, in __get_ctrl
+    dialog = self.backend.generic_wrapper_class(findwindows.find_element(**criteria[0]))
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\findwindows.py", line 87, in find_element
+    raise ElementNotFoundError(kwargs)
+pywinauto.findwindows.ElementNotFoundError: {'title': 'Dock', 'backend': 'uia', 'process': 19752}
+(venv) PS C:\Automation\automation_suite> 
