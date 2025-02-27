@@ -1,0 +1,13 @@
+# 1. Verify Virtual Environment Creation:
+# python -m venv venv
+# 2. Check the Correct Path:
+# cd E:\Acuity\automation_suite
+# 3. Activate the Virtual Environment:
+# venv\Scripts\activate
+
+# pip install selenium
+# python.exe -m pip install --upgrade pip
+# pip install pytest
+# pip install selenium pygetwindow pywinauto requests
+
+# python -m tests.test_login
