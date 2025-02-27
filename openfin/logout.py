@@ -9,7 +9,7 @@ logger = setup_logger()
 def logout():
     logger.info("Logging out of the application...")
 
-    # Wait for the Dock window to appear after login
+    # Wait for the Dock window to appear
     dock_window = wait_for_window("Dock", timeout=60)
 
     if dock_window is None:
@@ -19,16 +19,32 @@ def logout():
     app = Application(backend='uia').connect(handle=dock_window._hWnd)
     dock_window = app.window(title="Dock")
 
-    # Print available controls for debugging
-    logger.info("Available controls in the Dock window: %s", dock_window.print_control_identifiers())
-
-    # Click on the Layout Settings button in the Dock
+    # Click on the User Profile button in the Dock
     try:
-        layout_settings_button = dock_window.child_window(title="Layout Settings", control_type="Button")
-        layout_settings_button.click()
-        logger.info("Clicked on Layout Settings button.")
+        user_profile_button = dock_window.child_window(title="User Profile", control_type="ActionButton")
+        user_profile_button.click()
+        logger.info("Clicked on User Profile button.")
     except Exception as e:
-        logger.error("Error clicking Layout Settings button: %s", e)
+        logger.error("Error clicking User Profile button: %s", e)
+        return False
+
+    # Wait for the User Profile window to appear
+    user_profile_window = wait_for_window("User Profile", timeout=30)
+
+    if user_profile_window is None:
+        logger.error("User Profile window not found!")
+        return False
+
+    user_profile_app = Application(backend='uia').connect(handle=user_profile_window._hWnd)
+    user_profile_window = user_profile_app.window(title="User Profile")
+
+    # Click the Log Out button
+    try:
+        log_out_button = user_profile_window.child_window(title="Log Out", control_type="Button")
+        log_out_button.click()
+        logger.info("Clicked on Log Out button.")
+    except Exception as e:
+        logger.error("Error clicking Log Out button: %s", e)
         return False
 
     # Wait for the confirmation dialog to appear
