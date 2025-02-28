@@ -33,38 +33,22 @@
 2025-02-18 00:13:54,526 - ERROR - Login test failed.
 
 (venv) PS C:\Automation\automation_suite> python -m tests.test_login_logout
-2025-02-28 16:17:14,998 - INFO - Logging out of the application...
-2025-02-28 16:17:15,510 - INFO - Title: Taskbar, Handle: 197016
-2025-02-28 16:17:15,511 - INFO - Title: , Handle: 65810
-2025-02-28 16:17:15,513 - INFO - Title: ● requirement.txt - automation_suite - Visual Studio Code, Handle: 67002
-2025-02-28 16:17:15,514 - INFO - Title: Source of notification.ts - merlin-mfe - Bitbucket - Google Chrome, Handle: 329850
-2025-02-28 16:17:15,515 - INFO - Title: Snipping Tool, Handle: 855534
-2025-02-28 16:17:15,516 - INFO - Title: 3 Reminder(s), Handle: 199792
-2025-02-28 16:17:15,517 - INFO - Title: , Handle: 331172
-2025-02-28 16:17:15,518 - INFO - Title: , Handle: 1772888
-2025-02-28 16:17:15,519 - INFO - Title: , Handle: 331160
-2025-02-28 16:17:15,521 - INFO - Title: , Handle: 7538510
-2025-02-28 16:17:15,522 - INFO - Title: *Untitled - Notepad, Handle: 787226
-2025-02-28 16:17:15,523 - INFO - Title: Desktop, Handle: 264392
-2025-02-28 16:17:15,524 - INFO - Title: automation_suite, Handle: 1638544
-2025-02-28 16:17:15,525 - INFO - Title: Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook, Handle: 395210
-2025-02-28 16:17:15,526 - INFO - Title: Chat | Carey Linus | Microsoft Teams, Handle: 66852
-2025-02-28 16:17:15,530 - INFO - Title: Program Manager, Handle: 66048
-2025-02-28 16:18:15,531 - ERROR - Dock window not found!
-2025-02-28 16:18:15,532 - INFO - Starting the login/logout test...
-2025-02-28 16:18:15,532 - INFO - Launching OpenFin application...
+2025-02-28 22:41:09,367 - INFO - Logging out of the application...
+2025-02-28 22:41:39,367 - ERROR - Dock window not found!
+2025-02-28 22:41:39,368 - INFO - Starting the login/logout test...
+2025-02-28 22:41:39,368 - INFO - Launching OpenFin application... 
 fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-02-28 16:18:30,605 - INFO - Waiting for the Mizuho login window to appear...
+2025-02-28 22:41:54,433 - INFO - Waiting for the Mizuho login window to appear...
 Control Identifiers:
 
 Dialog - 'Mizuho Front Office'    (L660, T273, R1260, B761)
-['Dialog', 'Mizuho Front Office', 'Mizuho Front OfficeDialog', 'Mizuho Front Office0', 'Mizuho Front Office1']
+['Mizuho Front Office', 'Dialog', 'Mizuho Front OfficeDialog', 'Mizuho Front Office0', 'Mizuho Front Office1']
 child_window(title="Mizuho Front Office", control_type="Window")
-   |
+   | 
    | Pane - 'Mizuho Front Office'    (L670, T318, R1250, B750)
-   | ['Mizuho Front OfficePane', 'Pane', 'Mizuho Front Office2', 'Pane0', 'Pane1']
+   | ['Mizuho Front Office2', 'Mizuho Front OfficePane', 'Pane', 'Pane0', 'Pane1']
    | child_window(title="Mizuho Front Office", control_type="Pane")
-   |    |
+   |    | 
    |    | Pane - ''    (L670, T318, R1250, B750)
    |    | ['Pane2']
    |    |    | 
@@ -73,7 +57,7 @@ child_window(title="Mizuho Front Office", control_type="Window")
    |    |    |    | 
    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
    |    |    |    | ['Pane4']
-   |    |    |    |    | 
+   |    |    |    |    |
    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
    |    |    |    |    | ['Pane5']
    |    |    |    |    |    | 
@@ -85,334 +69,24 @@ child_window(title="Mizuho Front Office", control_type="Window")
    |    |    |    |    |    |    | 
    |    |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
    |    |    |    |    |    |    | ['Pane8']
-2025-02-28 16:18:33,337 - INFO - Available controls in the window: None
-2025-02-28 16:18:33,337 - INFO - Filling in login credentials...
-2025-02-28 16:18:34,886 - INFO - Login attempt made.
-2025-02-28 16:18:44,896 - INFO - Login successful.
-2025-02-28 16:18:44,903 - INFO - Login test completed successfully.
-2025-02-28 16:18:44,912 - INFO - Logging out of the application...
-2025-02-28 16:18:47,024 - INFO - Title: workspace-platform-front-office-apps-uat-19.2.12:1, Handle: 789992
-2025-02-28 16:18:47,026 - INFO - Title: Dock, Handle: 724458
-2025-02-28 16:18:47,027 - INFO - Title: Taskbar, Handle: 197016
-2025-02-28 16:18:47,028 - INFO - Title: , Handle: 65810
-2025-02-28 16:18:47,030 - INFO - Title: ● requirement.txt - automation_suite - Visual Studio Code, Handle: 67002
-2025-02-28 16:18:47,031 - INFO - Title: Source of notification.ts - merlin-mfe - Bitbucket - Google Chrome, Handle: 329850
-2025-02-28 16:18:47,032 - INFO - Title: Snipping Tool, Handle: 855534
-2025-02-28 16:18:47,033 - INFO - Title: 3 Reminder(s), Handle: 199792
-2025-02-28 16:18:47,034 - INFO - Title: , Handle: 331172
-2025-02-28 16:18:47,038 - INFO - Title: , Handle: 1772888
-2025-02-28 16:18:47,039 - INFO - Title: , Handle: 331160
-2025-02-28 16:18:47,041 - INFO - Title: , Handle: 7538510
-2025-02-28 16:18:47,043 - INFO - Title: *Untitled - Notepad, Handle: 787226
-2025-02-28 16:18:47,044 - INFO - Title: Desktop, Handle: 264392
-2025-02-28 16:18:47,046 - INFO - Title: automation_suite, Handle: 1638544
-2025-02-28 16:18:47,048 - INFO - Title: Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook, Handle: 395210
-2025-02-28 16:18:47,050 - INFO - Title: Chat | Carey Linus | Microsoft Teams, Handle: 66852
-2025-02-28 16:18:47,052 - INFO - Title: Program Manager, Handle: 66048
-2025-02-28 16:18:48,175 - INFO - Clicked on User Profile button.
-2025-02-28 16:18:50,631 - INFO - Clicked on Log Out button.
-2025-02-28 16:19:20,965 - ERROR - Confirmation dialog not found!
-2025-02-28 16:19:20,966 - ERROR - Logout test failed.
-How found:	Selected from tree...
-Name:	"Confirm"
-ControlType:	UIA_ButtonControlTypeId (0xC350)
-LocalizedControlType:	"button"
-BoundingRectangle:	{l:1095 t:565 r:1230 b:616}
-IsEnabled:	true
-IsOffscreen:	false
-IsKeyboardFocusable:	true
-HasKeyboardFocus:	false
-ProcessId:	26152
-RuntimeId:	[2A.A0224.4.A.8.85]
-AutomationId:	""
-FrameworkId:	"Chrome"
-ClassName:	""
-IsControlElement:	true
-IsContentElement:	true
-ProviderDescription:	"[pid:26152,providerId:0x0 Main(parent link):Unidentified Provider (unmanaged:chrome.dll)]"
-IsPeripheral:	false
-AriaRole:	"button"
-AriaProperties:	"readonly=true;expanded=false;multiline=false;multiselectable=false;required=false"
-LiveSettingProperty:	Off (0)
-IsPassword:	false
-IsRequiredForForm:	false
-IsDataValidForForm:	true
-DescribedBy:	
-ControllerForProperty:	
-FlowsTo:	
-FlowsFrom:	
-ClickablePoint:	{x:1162 y:590}
-Culture:	9
-Orientation:	0
-OptimizeForVisualContent:	false
-AnnotationObjects:	
-FullDescription:	""
-IsDialog:	false
-LegacyIAccessible.ChildId:	0
-LegacyIAccessible.DefaultAction:	"Press"
-LegacyIAccessible.Description:	""
-LegacyIAccessible.Help:	""
-LegacyIAccessible.KeyboardShortcut:	""
-LegacyIAccessible.Name:	"Confirm"
-LegacyIAccessible.Role:	push button (0x2B)
-LegacyIAccessible.State:	focusable (0x100000)
-LegacyIAccessible.Value:	""
-IsAnnotationPatternAvailable:	false
-IsDragPatternAvailable:	false
-IsDockPatternAvailable:	false
-IsDropTargetPatternAvailable:	false
-IsExpandCollapsePatternAvailable:	false
-IsGridItemPatternAvailable:	false
-IsGridPatternAvailable:	false
-IsInvokePatternAvailable:	true
-IsItemContainerPatternAvailable:	false
-IsLegacyIAccessiblePatternAvailable:	true
-IsMultipleViewPatternAvailable:	false
-IsObjectModelPatternAvailable:	false
-IsRangeValuePatternAvailable:	false
-IsScrollItemPatternAvailable:	true
-IsScrollPatternAvailable:	false
-IsSelectionItemPatternAvailable:	false
-IsSelectionPatternAvailable:	false
-IsSpreadsheetItemPatternAvailable:	false
-IsSpreadsheetPatternAvailable:	false
-IsStylesPatternAvailable:	false
-IsSynchronizedInputPatternAvailable:	false
-IsTableItemPatternAvailable:	false
-IsTablePatternAvailable:	false
-IsTextChildPatternAvailable:	true
-IsTextEditPatternAvailable:	false
-IsTextPatternAvailable:	false
-IsTextPattern2Available:	false
-IsTogglePatternAvailable:	false
-IsTransformPatternAvailable:	false
-IsTransform2PatternAvailable:	false
-IsValuePatternAvailable:	false
-IsVirtualizedItemPatternAvailable:	false
-IsWindowPatternAvailable:	false
-IsCustomNavigationPatternAvailable:	false
-IsSelectionPattern2Available:	false
-FirstChild:	[null]
-LastChild:	[null]
-Next:	[null]
-Previous:	"Cancel" button
-Other Props:	Object has no additional properties
-Children:	Container has no children
-Ancestors:	"" footer
-	"Confirmation" document
-	"Chrome Legacy Window" pane
-	"" region
-	"" region
-	"" region
-	"" region
-	"" region
-	"" region
-	"Confirmation" region
-	"Confirmation" window
-	"User Profile" window
-	"Desktop 1" pane
-	[ No Parent ]
-
-
-
-
-
-
-
-
-
-----------------------------------------------------
-
-How found:	Selected from tree...
-Name:	"Chrome Legacy Window"
-ControlType:	UIA_PaneControlTypeId (0xC371)
-LocalizedControlType:	"pane"
-BoundingRectangle:	{l:660 t:405 r:1260 b:633}
-IsEnabled:	true
-HasKeyboardFocus:	false
-ProcessId:	26152
-RuntimeId:	[2A.A0224.4.0.0.169]
-AutomationId:	"35607872"
-FrameworkId:	"Win32"
-ClassName:	"Chrome_RenderWidgetHostHWND"
-NativeWindowHandle:	0xA0224
-IsControlElement:	false
-IsContentElement:	false
-ProviderDescription:	"[pid:19032,providerId:0xA0224 Main(parent link):Nested [pid:26152,providerId:0xA0224 Main(parent link):Unidentified Provider (unmanaged:chrome.dll)]; Hwnd:Microsoft: HWND Proxy (unmanaged:uiautomationcore.dll)]"
-IsDialog:	false
-LegacyIAccessible.ChildId:	0
-LegacyIAccessible.DefaultAction:	""
-LegacyIAccessible.Description:	""
-LegacyIAccessible.Help:	""
-LegacyIAccessible.KeyboardShortcut:	""
-LegacyIAccessible.Name:	""
-LegacyIAccessible.Role:	client (0xA)
-LegacyIAccessible.State:	normal (0x0)
-LegacyIAccessible.Value:	""
-Scroll.HorizontallyScrollable:	false
-Scroll.HorizontalScrollPercent:	0.000000
-Scroll.HorizontalViewSize:	100.000000
-Scroll.VerticallyScrollable:	false
-Scroll.VerticalScrollPercent:	0.000000
-Scroll.VerticalViewSize:	100.000000
-IsAnnotationPatternAvailable:	false
-IsDragPatternAvailable:	false
-IsDockPatternAvailable:	false
-IsDropTargetPatternAvailable:	false
-IsExpandCollapsePatternAvailable:	false
-IsGridItemPatternAvailable:	false
-IsGridPatternAvailable:	false
-IsInvokePatternAvailable:	false
-IsItemContainerPatternAvailable:	true
-IsLegacyIAccessiblePatternAvailable:	true
-IsMultipleViewPatternAvailable:	false
-IsObjectModelPatternAvailable:	false
-IsRangeValuePatternAvailable:	false
-IsScrollItemPatternAvailable:	true
-IsScrollPatternAvailable:	true
-IsSelectionItemPatternAvailable:	false
-IsSelectionPatternAvailable:	false
-IsSpreadsheetItemPatternAvailable:	false
-IsSpreadsheetPatternAvailable:	false
-IsStylesPatternAvailable:	false
-IsSynchronizedInputPatternAvailable:	false
-IsTableItemPatternAvailable:	false
-IsTablePatternAvailable:	false
-IsTextChildPatternAvailable:	false
-IsTextEditPatternAvailable:	false
-IsTextPatternAvailable:	false
-IsTextPattern2Available:	false
-IsTogglePatternAvailable:	false
-IsTransformPatternAvailable:	false
-IsTransform2PatternAvailable:	false
-IsValuePatternAvailable:	false
-IsVirtualizedItemPatternAvailable:	false
-IsWindowPatternAvailable:	false
-IsCustomNavigationPatternAvailable:	false
-IsSelectionPattern2Available:	false
-FirstChild:	"Confirmation" document
-LastChild:	"Confirmation" document
-Next:	[null]
-Previous:	"" document
-Other Props:	Object has no additional properties
-Children:	"Confirmation" document
-Ancestors:	"" region
-	"" region
-	"" region
-	"" region
-	"" region
-	"" region
-	"Confirmation" region
-	"Confirmation" window
-	"User Profile" window
-	"Desktop 1" pane
-	[ No Parent ]
-
-
---------------------------------------------------
-How found:	Selected from tree...
-Name:	"Confirmation"
-ControlType:	UIA_DocumentControlTypeId (0xC36E)
-LocalizedControlType:	"document"
-BoundingRectangle:	{l:660 t:405 r:1260 b:633}
-IsEnabled:	true
-IsOffscreen:	false
-IsKeyboardFocusable:	true
-HasKeyboardFocus:	true
-ProcessId:	26152
-RuntimeId:	[2A.A0224.4.A.8.83]
-AutomationId:	"RootWebArea"
-FrameworkId:	"Chrome"
-ClassName:	""
-IsControlElement:	true
-IsContentElement:	true
-ProviderDescription:	"[pid:26152,providerId:0x0 Main(parent link):Unidentified Provider (unmanaged:chrome.dll)]"
-IsPeripheral:	false
-AriaRole:	"document"
-AriaProperties:	"readonly=true;expanded=false;multiline=false;multiselectable=false;required=false"
-LiveSettingProperty:	Off (0)
-IsPassword:	false
-IsRequiredForForm:	false
-DescribedBy:	
-ControllerForProperty:	
-FlowsTo:	
-FlowsFrom:	
-ClickablePoint:	{x:960 y:519}
-Culture:	9
-Orientation:	0
-OptimizeForVisualContent:	false
-AnnotationObjects:	
-FullDescription:	""
-IsDialog:	false
-LegacyIAccessible.ChildId:	0
-LegacyIAccessible.DefaultAction:	""
-LegacyIAccessible.Description:	""
-LegacyIAccessible.Help:	""
-LegacyIAccessible.KeyboardShortcut:	""
-LegacyIAccessible.Name:	"Confirmation"
-LegacyIAccessible.Role:	document (0xF)
-LegacyIAccessible.State:	focused,read only,focusable (0x100044)
-LegacyIAccessible.Value:	"https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/popups/dialog/index.html"
-Scroll.HorizontallyScrollable:	false
-Scroll.HorizontalScrollPercent:	-1.000000
-Scroll.HorizontalViewSize:	100.000000
-Scroll.VerticallyScrollable:	false
-Scroll.VerticalScrollPercent:	-1.000000
-Scroll.VerticalViewSize:	100.000000
-Value.IsReadOnly:	true
-Value.Value:	"https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/popups/dialog/index.html"
-IsAnnotationPatternAvailable:	false
-IsDragPatternAvailable:	false
-IsDockPatternAvailable:	false
-IsDropTargetPatternAvailable:	false
-IsExpandCollapsePatternAvailable:	false
-IsGridItemPatternAvailable:	false
-IsGridPatternAvailable:	false
-IsInvokePatternAvailable:	false
-IsItemContainerPatternAvailable:	false
-IsLegacyIAccessiblePatternAvailable:	true
-IsMultipleViewPatternAvailable:	false
-IsObjectModelPatternAvailable:	false
-IsRangeValuePatternAvailable:	false
-IsScrollItemPatternAvailable:	true
-IsScrollPatternAvailable:	true
-IsSelectionItemPatternAvailable:	false
-IsSelectionPatternAvailable:	false
-IsSpreadsheetItemPatternAvailable:	false
-IsSpreadsheetPatternAvailable:	false
-IsStylesPatternAvailable:	false
-IsSynchronizedInputPatternAvailable:	false
-IsTableItemPatternAvailable:	false
-IsTablePatternAvailable:	false
-IsTextChildPatternAvailable:	false
-IsTextEditPatternAvailable:	true
-IsTextPatternAvailable:	true
-IsTextPattern2Available:	false
-IsTogglePatternAvailable:	false
-IsTransformPatternAvailable:	false
-IsTransform2PatternAvailable:	false
-IsValuePatternAvailable:	true
-IsVirtualizedItemPatternAvailable:	false
-IsWindowPatternAvailable:	false
-IsCustomNavigationPatternAvailable:	false
-IsSelectionPattern2Available:	false
-FirstChild:	"" header
-LastChild:	"" footer
-Next:	[null]
-Previous:	[null]
-Other Props:	Object has no additional properties
-Children:	"" header
-	"" main
-	"" footer
-Ancestors:	"Chrome Legacy Window" pane
-	"" region
-	"" region
-	"" region
-	"" region
-	"" region
-	"" region
-	"Confirmation" region
-	"Confirmation" window
-	"User Profile" window
-	"Desktop 1" pane
-	[ No Parent ]
+2025-02-28 22:41:56,795 - INFO - Available controls in the window: None
+2025-02-28 22:41:56,795 - INFO - Filling in login credentials...
+2025-02-28 22:41:58,301 - INFO - Login attempt made.
+2025-02-28 22:42:08,303 - INFO - Login successful.
+2025-02-28 22:42:08,304 - INFO - Login test completed successfully.
+2025-02-28 22:42:08,310 - INFO - Logging out of the application...
+2025-02-28 22:42:10,915 - INFO - Clicked on User Profile button.
+2025-02-28 22:42:13,308 - INFO - Clicked on Log Out button.
+2025-02-28 22:42:34,987 - INFO - Title: Dock, Handle: 1575124
+2025-02-28 22:42:34,988 - INFO - Title: Taskbar, Handle: 197016
+2025-02-28 22:42:34,989 - INFO - Title: , Handle: 65810
+2025-02-28 22:42:34,990 - INFO - Title: User Profile, Handle: 788812
+2025-02-28 22:42:34,992 - INFO - Title: test_login_logout.py - automation_suite - Visual Studio Code, Handle: 330164
+2025-02-28 22:42:34,993 - INFO - Title: *Untitled - Notepad, Handle: 787226
+2025-02-28 22:42:34,994 - INFO - Title: Training to gain Business and product knowledge-20250219_134221-Meeting Recording.mp4 - Google Chrome, Handle: 329850
+2025-02-28 22:42:34,996 - INFO - Title: *Untitled - Notepad, Handle: 1181256
+2025-02-28 22:42:34,997 - INFO - Title: Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook, Handle: 3542286
+2025-02-28 22:42:34,998 - INFO - Title: Chat | Training to gain Business and product knowledge | Microsoft Teams, Handle: 66852
+2025-02-28 22:42:34,999 - INFO - Title: Program Manager, Handle: 66048
+2025-02-28 22:42:35,000 - ERROR - Confirmation dialog not found!
+2025-02-28 22:42:35,000 - ERROR - Logout test failed.
