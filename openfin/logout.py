@@ -6,6 +6,20 @@ from utils.window_utils import wait_for_window, list_open_windows
 
 logger = setup_logger()
 
+def wait_for_confirmation_dialog(app, timeout=30):
+    """Wait for the confirmation dialog to appear."""
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        try:
+            # Check for the confirmation dialog
+            confirmation_dlg = app.window(title="Log Out of [UAT] Front Office Apps - v19.2.12")
+            if confirmation_dlg.exists():
+                return confirmation_dlg
+        except Exception as e:
+            logger.error("Error checking for confirmation dialog: %s", e)
+        time.sleep(1)  # Wait before checking again
+    return None
+
 def logout():
     logger.info("Logging out of the application...")
 
@@ -48,29 +62,18 @@ def logout():
         return False
 
     # Wait for the confirmation dialog to appear
-    confirmation_dialog = wait_for_window("Log Out of [UAT] Front Office Apps - v19.2.12", timeout=30)
+    confirmation_dlg = wait_for_confirmation_dialog(app)
 
-    if confirmation_dialog is None:
+    if confirmation_dlg is None:
         logger.error("Confirmation dialog not found!")
         return False
-
-    confirmation_app = Application(backend='uia').connect(handle=confirmation_dialog._hWnd)
-    confirmation_dlg = confirmation_app.window(title="Log Out of [UAT] Front Office Apps - v19.2.12")
-
-    # Wait briefly to ensure the dialog is fully loaded
-    time.sleep(2)  # Increased wait time
 
     # Print available controls for debugging
     logger.info("Available controls in the confirmation dialog: %s", confirmation_dlg.print_control_identifiers())
 
-    # Try to click the Confirm button with multiple attribute checks
+    # Try to click the Confirm button
     try:
         confirm_button = confirmation_dlg.child_window(aria_label="Confirm", control_type="Button")
-        if not confirm_button.exists():
-            logger.warning("Confirm button not found by aria-label, trying other methods.")
-            confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
-            if not confirm_button.exists():
-                confirm_button = confirmation_dlg.child_window(control_type="Button", found_index=1)  # Assuming it's the second button
         confirm_button.click()
         logger.info("Logout confirmed.")
     except Exception as e:
