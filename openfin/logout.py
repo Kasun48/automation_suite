@@ -24,7 +24,7 @@ def logout():
 
     # Click on the User Profile button in the Dock
     try:
-        user_profile_button = dock_window.child_window(title="User Profile", control_type="ActionButton")
+        user_profile_button = dock_window.child_window(title="User Profile", control_type="Button")
         user_profile_button.click()
         logger.info("Clicked on User Profile button.")
     except Exception as e:
