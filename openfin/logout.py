@@ -57,6 +57,9 @@ def logout():
     confirmation_app = Application(backend='uia').connect(handle=confirmation_dialog._hWnd)
     confirmation_dlg = confirmation_app.window(title="Log Out of [UAT] Front Office Apps - v19.2.12")
 
+    # Wait briefly to ensure the dialog is fully loaded
+    time.sleep(1)  # Adjust this duration if necessary
+
     # Print available controls for debugging
     logger.info("Available controls in the confirmation dialog: %s", confirmation_dlg.print_control_identifiers())
 
