@@ -1,7 +1,7 @@
 import time
 from pywinauto import Application, Desktop
 from utils.logger import setup_logger
-from utils.window_utils import wait_for_window  # Ensure this import is correct
+from utils.window_utils import wait_for_window
 
 logger = setup_logger()
 
@@ -16,17 +16,32 @@ def wait_for_confirmation_dialog(timeout=30):
     start_time = time.time()
     while time.time() - start_time < timeout:
         for window in Desktop(backend="uia").windows():
-            if "Log Out of" in window.window_text():  # Adjusted to match part of the title
+            if "Log Out of" in window.window_text():
                 logger.info(f"Found Confirmation Dialog: {window.window_text()}")
                 return window
         time.sleep(1)
     return None
 
+def click_confirm_button(confirmation_dlg, retries=5):
+    """Try to click the Confirm button multiple times."""
+    for attempt in range(retries):
+        logger.info(f"Attempt {attempt + 1} to click Confirm button.")
+        confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
+        
+        if confirm_button.exists() and confirm_button.is_enabled():
+            confirm_button.click()
+            logger.info("Logout confirmed.")
+            return True
+        
+        time.sleep(1)  # Wait before retrying
+    logger.error("Confirm button not found or not enabled after retries!")
+    return False
+
 def logout():
     logger.info("Logging out of the application...")
 
     # Debug - List all open windows
-    list_open_windows()
+    # list_open_windows()
 
     # Wait for the Dock window
     dock_window = wait_for_window("Dock", timeout=60)
@@ -65,7 +80,8 @@ def logout():
         return False
 
     # Wait for Confirmation Dialog
-    confirmation_dlg = wait_for_confirmation_dialog(timeout=60)  # Increased timeout
+    list_open_windows()
+    confirmation_dlg = wait_for_confirmation_dialog(timeout=60)
 
     if confirmation_dlg is None:
         logger.error("Confirmation dialog not found!")
@@ -79,16 +95,7 @@ def logout():
     time.sleep(2)
 
     # Try to click Confirm button
-    try:
-        confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
-        if confirm_button.exists():
-            confirm_button.click()
-            logger.info("Logout confirmed.")
-        else:
-            logger.error("Confirm button not found!")
-            return False
-    except Exception as e:
-        logger.error("Error during logout confirmation: %s", e)
+    if not click_confirm_button(confirmation_dlg):
         return False
 
     return True
