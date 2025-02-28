@@ -58,14 +58,19 @@ def logout():
     confirmation_dlg = confirmation_app.window(title="Log Out of [UAT] Front Office Apps - v19.2.12")
 
     # Wait briefly to ensure the dialog is fully loaded
-    time.sleep(1)  # Adjust this duration if necessary
+    time.sleep(2)  # Increased wait time
 
     # Print available controls for debugging
     logger.info("Available controls in the confirmation dialog: %s", confirmation_dlg.print_control_identifiers())
 
-    # Click the Confirm button to log out
+    # Try to click the Confirm button with multiple attribute checks
     try:
         confirm_button = confirmation_dlg.child_window(aria_label="Confirm", control_type="Button")
+        if not confirm_button.exists():
+            logger.warning("Confirm button not found by aria-label, trying other methods.")
+            confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
+            if not confirm_button.exists():
+                confirm_button = confirmation_dlg.child_window(control_type="Button", found_index=1)  # Assuming it's the second button
         confirm_button.click()
         logger.info("Logout confirmed.")
     except Exception as e:
