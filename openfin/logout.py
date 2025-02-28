@@ -1,71 +1,90 @@
 import time
-import logging
-from pywinauto import Application, findwindows
+from pywinauto import Application, Desktop
+from utils.logger import setup_logger
+from utils.window_utils import wait_for_window
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = setup_logger()
 
-def find_window_by_title(title_substring):
-    """Finds a window containing the given substring in its title."""
-    try:
-        windows = findwindows.find_windows()
-        for hwnd in windows:
-            app = Application().connect(handle=hwnd)
-            window = app.window(handle=hwnd)
-            if title_substring.lower() in window.window_text().lower():
+def list_open_windows():
+    """Debug function to list all open windows."""
+    windows = Desktop(backend="uia").windows()
+    for w in windows:
+        logger.info(f"Title: {w.window_text()}, Handle: {w.handle}")
+
+def wait_for_confirmation_dialog(timeout=30):
+    """Wait for the confirmation dialog to appear dynamically."""
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        for window in Desktop(backend="uia").windows():
+            if "Log Out of [UAT] Front Office Apps" in window.window_text():
+                logger.info(f"Found Confirmation Dialog: {window.window_text()}")
                 return window
+        time.sleep(1)
+    return None
+
+def logout():
+    logger.info("Logging out of the application...")
+
+    # Debug - List all open windows
+    list_open_windows()
+
+    # Wait for the Dock window
+    dock_window = wait_for_window("Dock", timeout=60)
+    if dock_window is None:
+        logger.error("Dock window not found!")
+        return False
+
+    app = Application(backend='uia').connect(handle=dock_window._hWnd)
+    dock_window = app.window(title="Dock")
+
+    # Click on User Profile button
+    try:
+        user_profile_button = dock_window.child_window(title="User Profile", control_type="Button")
+        user_profile_button.click()
+        logger.info("Clicked on User Profile button.")
     except Exception as e:
-        logging.error(f"Error finding window: {e}")
-    return None
+        logger.error("Error clicking User Profile button: %s", e)
+        return False
 
-def wait_for_dock_window(max_attempts=5, delay=5):
-    """Waits for the Dock window to appear."""
-    for attempt in range(max_attempts):
-        dock_window = find_window_by_title("Dock")  # Adjust title if needed
-        if dock_window:
-            logging.info("Dock window found.")
-            return dock_window
-        logging.info(f"Attempt {attempt + 1}: Dock window not found. Retrying...")
-        time.sleep(delay)
-    logging.error("Dock window not found after multiple attempts!")
-    return None
+    # Wait for User Profile window
+    user_profile_window = wait_for_window("User Profile", timeout=30)
+    if user_profile_window is None:
+        logger.error("User Profile window not found!")
+        return False
 
-def wait_for_confirmation_dialog(max_attempts=5, delay=5):
-    """Waits for the logout confirmation dialog."""
-    for attempt in range(max_attempts):
-        confirmation_dialog = find_window_by_title("Confirm Logout")  # Adjust if needed
-        if confirmation_dialog:
-            logging.info("Logout confirmation dialog found.")
-            return confirmation_dialog
-        logging.info(f"Attempt {attempt + 1}: Confirmation dialog not found. Retrying...")
-        time.sleep(delay)
-    logging.error("Logout confirmation dialog not found after multiple attempts!")
-    return None
+    user_profile_app = Application(backend='uia').connect(handle=user_profile_window._hWnd)
+    user_profile_window = user_profile_app.window(title="User Profile")
 
-def main():
-    logging.info("Starting the logout test...")
-    
-    # Ensure the Dock window is available
-    dock_window = wait_for_dock_window()
-    if not dock_window:
-        logging.error("Test failed: Dock window not found!")
-        return
+    # Click Log Out button
+    try:
+        log_out_button = user_profile_window.child_window(title="Log Out", control_type="Button")
+        log_out_button.click()
+        logger.info("Clicked on Log Out button.")
+    except Exception as e:
+        logger.error("Error clicking Log Out button: %s", e)
+        return False
 
-    # Click on the user profile button (modify selector as needed)
-    logging.info("Clicked on User Profile button.")
-    time.sleep(2)  # Adjust timing as needed
+    # Wait for Confirmation Dialog
+    confirmation_dlg = wait_for_confirmation_dialog()
 
-    # Click on the logout button
-    logging.info("Clicked on Log Out button.")
-    time.sleep(2)
+    if confirmation_dlg is None:
+        logger.error("Confirmation dialog not found!")
+        return False
 
-    # Wait for the confirmation dialog
-    confirmation_dialog = wait_for_confirmation_dialog()
-    if not confirmation_dialog:
-        logging.error("Test failed: Confirmation dialog not found!")
-        return
+    # Print available controls in the confirmation dialog
+    logger.info("Available controls in the confirmation dialog:")
+    confirmation_dlg.print_control_identifiers()
 
-    logging.info("Logout test completed successfully.")
+    # Click Confirm button
+    try:
+        confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
+        confirm_button.click()
+        logger.info("Logout confirmed.")
+    except Exception as e:
+        logger.error("Error during logout confirmation: %s", e)
+        return False
 
-if __name__ == "__main__":
-    main()
+    return True
+
+# Call the logout function
+logout()
