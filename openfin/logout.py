@@ -1,6 +1,7 @@
 import time
 from pywinauto import Application, Desktop
 from utils.logger import setup_logger
+from utils.window_utils import wait_for_window
 
 logger = setup_logger()
 
@@ -64,7 +65,7 @@ def logout():
         return False
 
     # Wait for Confirmation Dialog
-    confirmation_dlg = wait_for_confirmation_dialog(timeout=60)  # Increased timeout
+    confirmation_dlg = wait_for_confirmation_dialog()
 
     if confirmation_dlg is None:
         logger.error("Confirmation dialog not found!")
@@ -74,18 +75,11 @@ def logout():
     logger.info("Available controls in the confirmation dialog:")
     confirmation_dlg.print_control_identifiers()
 
-    # Wait briefly to ensure the dialog is fully loaded
-    time.sleep(2)
-
-    # Try to click Confirm button
+    # Click Confirm button
     try:
         confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
-        if confirm_button.exists():
-            confirm_button.click()
-            logger.info("Logout confirmed.")
-        else:
-            logger.error("Confirm button not found!")
-            return False
+        confirm_button.click()
+        logger.info("Logout confirmed.")
     except Exception as e:
         logger.error("Error during logout confirmation: %s", e)
         return False
