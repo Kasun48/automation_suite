@@ -19,6 +19,9 @@ def logout():
     app = Application(backend='uia').connect(handle=dock_window._hWnd)
     dock_window = app.window(title="Dock")
 
+    # Print available controls for debugging
+    logger.info("Available controls in the Dock window: %s", dock_window.print_control_identifiers())
+
     # Click on the User Profile button in the Dock
     try:
         user_profile_button = dock_window.child_window(title="User Profile", control_type="ActionButton")
