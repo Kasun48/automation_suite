@@ -19,9 +19,6 @@ def logout():
     app = Application(backend='uia').connect(handle=dock_window._hWnd)
     dock_window = app.window(title="Dock")
 
-    # Print available controls for debugging
-    logger.info("Available controls in the Dock window: %s", dock_window.print_control_identifiers())
-
     # Click on the User Profile button in the Dock
     try:
         user_profile_button = dock_window.child_window(title="User Profile", control_type="Button")
@@ -59,6 +56,9 @@ def logout():
 
     confirmation_app = Application(backend='uia').connect(handle=confirmation_dialog._hWnd)
     confirmation_dlg = confirmation_app.window(title="Log Out of [UAT] Front Office Apps - v19.2.12")
+
+    # Print available controls for debugging
+    logger.info("Available controls in the confirmation dialog: %s", confirmation_dlg.print_control_identifiers())
 
     # Click the Confirm button to log out
     try:
