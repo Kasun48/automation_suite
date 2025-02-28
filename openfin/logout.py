@@ -5,21 +5,28 @@ from utils.window_utils import wait_for_window
 
 logger = setup_logger()
 
+def list_open_windows():
+    """Debug function to list all open windows."""
+    windows = Desktop(backend="uia").windows()
+    for w in windows:
+        logger.info(f"Title: {w.window_text()}, Handle: {w.handle}")
+
 def wait_for_confirmation_dialog(timeout=30):
-    """Wait for the confirmation dialog to appear."""
+    """Wait for the confirmation dialog to appear dynamically."""
     start_time = time.time()
     while time.time() - start_time < timeout:
-        try:
-            confirmation_dlg = Desktop(backend="uia").window(title_re="Log Out of .* Front Office Apps")
-            if confirmation_dlg.exists():
-                return confirmation_dlg
-        except Exception as e:
-            logger.error("Error checking for confirmation dialog: %s", e)
-        time.sleep(1)  # Wait before checking again
+        for window in Desktop(backend="uia").windows():
+            if "Log Out of [UAT] Front Office Apps" in window.window_text():
+                logger.info(f"Found Confirmation Dialog: {window.window_text()}")
+                return window
+        time.sleep(1)
     return None
 
 def logout():
     logger.info("Logging out of the application...")
+
+    # Debug - List all open windows
+    list_open_windows()
 
     # Wait for the Dock window
     dock_window = wait_for_window("Dock", timeout=60)
@@ -30,7 +37,7 @@ def logout():
     app = Application(backend='uia').connect(handle=dock_window._hWnd)
     dock_window = app.window(title="Dock")
 
-    # Click User Profile
+    # Click on User Profile button
     try:
         user_profile_button = dock_window.child_window(title="User Profile", control_type="Button")
         user_profile_button.click()
@@ -64,24 +71,20 @@ def logout():
         logger.error("Confirmation dialog not found!")
         return False
 
-    # Print available controls for debugging
-    logger.info("Available controls: %s", confirmation_dlg.print_control_identifiers())
+    # Print available controls in the confirmation dialog
+    logger.info("Available controls in the confirmation dialog:")
+    confirmation_dlg.print_control_identifiers()
 
-    # Click Confirm Button
+    # Click Confirm button
     try:
-        confirm_button = confirmation_dlg.child_window(best_match="Confirm", control_type="Button")
+        confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
         confirm_button.click()
         logger.info("Logout confirmed.")
     except Exception as e:
-        logger.error("Error clicking Confirm button: %s", e)
-
-        # Fallback to keyboard input
-        try:
-            confirmation_dlg.set_focus()
-            send_keys("{ENTER}")
-            logger.info("Logout confirmed using ENTER key.")
-        except Exception as fallback_e:
-            logger.error("Error using ENTER key: %s", fallback_e)
-            return False
+        logger.error("Error during logout confirmation: %s", e)
+        return False
 
     return True
+
+# Call the logout function
+logout()
