@@ -113,290 +113,306 @@ child_window(title="Mizuho Front Office", control_type="Window")
 2025-02-28 16:18:50,631 - INFO - Clicked on Log Out button.
 2025-02-28 16:19:20,965 - ERROR - Confirmation dialog not found!
 2025-02-28 16:19:20,966 - ERROR - Logout test failed.
-(venv) PS C:\Automation\automation_suite> 
+How found:	Selected from tree...
+Name:	"Confirm"
+ControlType:	UIA_ButtonControlTypeId (0xC350)
+LocalizedControlType:	"button"
+BoundingRectangle:	{l:1095 t:565 r:1230 b:616}
+IsEnabled:	true
+IsOffscreen:	false
+IsKeyboardFocusable:	true
+HasKeyboardFocus:	false
+ProcessId:	26152
+RuntimeId:	[2A.A0224.4.A.8.85]
+AutomationId:	""
+FrameworkId:	"Chrome"
+ClassName:	""
+IsControlElement:	true
+IsContentElement:	true
+ProviderDescription:	"[pid:26152,providerId:0x0 Main(parent link):Unidentified Provider (unmanaged:chrome.dll)]"
+IsPeripheral:	false
+AriaRole:	"button"
+AriaProperties:	"readonly=true;expanded=false;multiline=false;multiselectable=false;required=false"
+LiveSettingProperty:	Off (0)
+IsPassword:	false
+IsRequiredForForm:	false
+IsDataValidForForm:	true
+DescribedBy:	
+ControllerForProperty:	
+FlowsTo:	
+FlowsFrom:	
+ClickablePoint:	{x:1162 y:590}
+Culture:	9
+Orientation:	0
+OptimizeForVisualContent:	false
+AnnotationObjects:	
+FullDescription:	""
+IsDialog:	false
+LegacyIAccessible.ChildId:	0
+LegacyIAccessible.DefaultAction:	"Press"
+LegacyIAccessible.Description:	""
+LegacyIAccessible.Help:	""
+LegacyIAccessible.KeyboardShortcut:	""
+LegacyIAccessible.Name:	"Confirm"
+LegacyIAccessible.Role:	push button (0x2B)
+LegacyIAccessible.State:	focusable (0x100000)
+LegacyIAccessible.Value:	""
+IsAnnotationPatternAvailable:	false
+IsDragPatternAvailable:	false
+IsDockPatternAvailable:	false
+IsDropTargetPatternAvailable:	false
+IsExpandCollapsePatternAvailable:	false
+IsGridItemPatternAvailable:	false
+IsGridPatternAvailable:	false
+IsInvokePatternAvailable:	true
+IsItemContainerPatternAvailable:	false
+IsLegacyIAccessiblePatternAvailable:	true
+IsMultipleViewPatternAvailable:	false
+IsObjectModelPatternAvailable:	false
+IsRangeValuePatternAvailable:	false
+IsScrollItemPatternAvailable:	true
+IsScrollPatternAvailable:	false
+IsSelectionItemPatternAvailable:	false
+IsSelectionPatternAvailable:	false
+IsSpreadsheetItemPatternAvailable:	false
+IsSpreadsheetPatternAvailable:	false
+IsStylesPatternAvailable:	false
+IsSynchronizedInputPatternAvailable:	false
+IsTableItemPatternAvailable:	false
+IsTablePatternAvailable:	false
+IsTextChildPatternAvailable:	true
+IsTextEditPatternAvailable:	false
+IsTextPatternAvailable:	false
+IsTextPattern2Available:	false
+IsTogglePatternAvailable:	false
+IsTransformPatternAvailable:	false
+IsTransform2PatternAvailable:	false
+IsValuePatternAvailable:	false
+IsVirtualizedItemPatternAvailable:	false
+IsWindowPatternAvailable:	false
+IsCustomNavigationPatternAvailable:	false
+IsSelectionPattern2Available:	false
+FirstChild:	[null]
+LastChild:	[null]
+Next:	[null]
+Previous:	"Cancel" button
+Other Props:	Object has no additional properties
+Children:	Container has no children
+Ancestors:	"" footer
+	"Confirmation" document
+	"Chrome Legacy Window" pane
+	"" region
+	"" region
+	"" region
+	"" region
+	"" region
+	"" region
+	"Confirmation" region
+	"Confirmation" window
+	"User Profile" window
+	"Desktop 1" pane
+	[ No Parent ]
 
 
 
-notification.js
-import { create, IndicatorColor } from '@openfin/workspace/notifications'
-import { fin } from '@openfin/core'
-import { v4 as uuidv4 } from 'uuid'
-import { uniqueId } from 'lodash'
 
-import { envConfig } from '@merlin-mfe/config'
-import { EnvConfig, toTitleCase } from '@merlin-mfe/utils'
-import { generateTraderNotificationTemplate } from './traderNotificationBaseTemplate'
-import { LiveInquiryRecord, RawClosedInquiryRecord } from '@merlin-mfe/api'
 
-const env: EnvConfig = envConfig
 
-const IndicatorMapper: { [key: string]: { color: IndicatorColor; text: string } } = {
-    ERROR: { color: IndicatorColor.RED, text: 'Error' },
-    SUCCESS: { color: IndicatorColor.GREEN, text: 'Notification' },
-    INFO: { color: IndicatorColor.BLUE, text: 'Info' }
-}
 
-export enum IndicatorType {
-    'ERROR' = 'ERROR',
-    'SUCCESS' = 'SUCCESS',
-    'INFO' = 'INFO'
-}
 
-type TradeNotificationProps = {
-    titleOne: string
-    titleTwo: string
-    firm: string
-    customer: string
-    settleDate: string
-    closeTime: string
-    coverPrice: string
-    spread: string
-    coverSpread: string | number
-    market: string
-    traderUser: string
-    dv: string
-    source: string
-    benchmark: string
-    benchmarkIsin: string | undefined
-}
 
-export const createTradeNotification = async (
-    rfq: LiveInquiryRecord | RawClosedInquiryRecord,
-    info: TradeNotificationProps,
-    headerColor: string,
-    sticky: boolean,
-    isDark?: boolean
-) => {
-    const now = new Date() // Get the current time
-    const midnight = new Date() // Get midnight time (next day at 00:00)
-    midnight.setHours(24, 0, 0, 0) // Set the hours to 24:00 (which is equivalent to 00:00 of the next day)
+----------------------------------------------------
 
-    const baseTemplate = generateTraderNotificationTemplate(headerColor, isDark)
+How found:	Selected from tree...
+Name:	"Chrome Legacy Window"
+ControlType:	UIA_PaneControlTypeId (0xC371)
+LocalizedControlType:	"pane"
+BoundingRectangle:	{l:660 t:405 r:1260 b:633}
+IsEnabled:	true
+HasKeyboardFocus:	false
+ProcessId:	26152
+RuntimeId:	[2A.A0224.4.0.0.169]
+AutomationId:	"35607872"
+FrameworkId:	"Win32"
+ClassName:	"Chrome_RenderWidgetHostHWND"
+NativeWindowHandle:	0xA0224
+IsControlElement:	false
+IsContentElement:	false
+ProviderDescription:	"[pid:19032,providerId:0xA0224 Main(parent link):Nested [pid:26152,providerId:0xA0224 Main(parent link):Unidentified Provider (unmanaged:chrome.dll)]; Hwnd:Microsoft: HWND Proxy (unmanaged:uiautomationcore.dll)]"
+IsDialog:	false
+LegacyIAccessible.ChildId:	0
+LegacyIAccessible.DefaultAction:	""
+LegacyIAccessible.Description:	""
+LegacyIAccessible.Help:	""
+LegacyIAccessible.KeyboardShortcut:	""
+LegacyIAccessible.Name:	""
+LegacyIAccessible.Role:	client (0xA)
+LegacyIAccessible.State:	normal (0x0)
+LegacyIAccessible.Value:	""
+Scroll.HorizontallyScrollable:	false
+Scroll.HorizontalScrollPercent:	0.000000
+Scroll.HorizontalViewSize:	100.000000
+Scroll.VerticallyScrollable:	false
+Scroll.VerticalScrollPercent:	0.000000
+Scroll.VerticalViewSize:	100.000000
+IsAnnotationPatternAvailable:	false
+IsDragPatternAvailable:	false
+IsDockPatternAvailable:	false
+IsDropTargetPatternAvailable:	false
+IsExpandCollapsePatternAvailable:	false
+IsGridItemPatternAvailable:	false
+IsGridPatternAvailable:	false
+IsInvokePatternAvailable:	false
+IsItemContainerPatternAvailable:	true
+IsLegacyIAccessiblePatternAvailable:	true
+IsMultipleViewPatternAvailable:	false
+IsObjectModelPatternAvailable:	false
+IsRangeValuePatternAvailable:	false
+IsScrollItemPatternAvailable:	true
+IsScrollPatternAvailable:	true
+IsSelectionItemPatternAvailable:	false
+IsSelectionPatternAvailable:	false
+IsSpreadsheetItemPatternAvailable:	false
+IsSpreadsheetPatternAvailable:	false
+IsStylesPatternAvailable:	false
+IsSynchronizedInputPatternAvailable:	false
+IsTableItemPatternAvailable:	false
+IsTablePatternAvailable:	false
+IsTextChildPatternAvailable:	false
+IsTextEditPatternAvailable:	false
+IsTextPatternAvailable:	false
+IsTextPattern2Available:	false
+IsTogglePatternAvailable:	false
+IsTransformPatternAvailable:	false
+IsTransform2PatternAvailable:	false
+IsValuePatternAvailable:	false
+IsVirtualizedItemPatternAvailable:	false
+IsWindowPatternAvailable:	false
+IsCustomNavigationPatternAvailable:	false
+IsSelectionPattern2Available:	false
+FirstChild:	"Confirmation" document
+LastChild:	"Confirmation" document
+Next:	[null]
+Previous:	"" document
+Other Props:	Object has no additional properties
+Children:	"Confirmation" document
+Ancestors:	"" region
+	"" region
+	"" region
+	"" region
+	"" region
+	"" region
+	"Confirmation" region
+	"Confirmation" window
+	"User Profile" window
+	"Desktop 1" pane
+	[ No Parent ]
 
-    await create({
-        toast: sticky ? 'sticky' : 'transient',
-        buttons: info.benchmarkIsin
-            ? [
-                  {
-                      title: 'ALLQ BM',
-                      type: 'button',
-                      cta: true,
-                      onClick: {
-                          customData: {
-                              action: 'open-benchmark',
-                              benchmarkIsin: info.benchmarkIsin
-                          }
-                      }
-                  },
-                  {
-                      title: 'Historical Ticket',
-                      type: 'button',
-                      cta: true,
-                      onClick: {
-                          customData: {
-                              action: 'open-historical-ticket',
-                              rfq: rfq
-                          }
-                      }
-                  }
-              ]
-            : [
-                  {
-                      title: 'Historical Ticket',
-                      type: 'button',
-                      cta: true,
-                      onClick: {
-                          customData: {
-                              action: 'open-historical-ticket',
-                              rfq: rfq
-                          }
-                      }
-                  }
-              ],
-        title: '',
-        id: uniqueId(),
-        platform: fin.me.uuid,
-        icon: env?.OPENFIN_SERVER_BASE_URL ? `${env.OPENFIN_SERVER_BASE_URL}/favicon.png` : '',
-        soundOptions: { mode: 'default' },
-        stream: {
-            id: fin.me.uuid,
-            displayName: 'Merlin',
-            appId: 'Merlin'
-        },
-        timeout: midnight.getTime() - now.getTime(), // Calculate the difference & Set the timeout in milliseconds
-        template: 'custom',
-        templateOptions: baseTemplate,
-        templateData: {
-            contentHeaderOne: info.titleOne,
-            contentHeaderTwo: info.titleTwo,
-            contentDate: info.settleDate,
-            contentTime: info.closeTime,
-            contentTraderUser: info.traderUser,
-            contentClientName: info.firm,
-            contentClientTrader: info.customer,
-            contentDV: info.dv,
-            contentSource: info.source,
-            contentCoverPriceHeader: 'Cover Price',
-            contentCoverPrice: info.coverPrice.toString(),
-            contentSpreadHeader: 'Spread',
-            contentSpread: info.spread.toString(),
-            contentCoverSpreadHeader: 'Cover Spread',
-            contentCoverSpread: info.coverSpread.toString(),
-            contentMarketHeader: 'Market',
-            contentMarket: info.market,
-            contentBenchmark: info.benchmark
-        }
-    })
-}
 
-export const createNotification = async (notification: {
-    indicator: { type: IndicatorType; text?: string }
-    body: string
-}) => {
-    const {
-        indicator: { type, text },
-        body
-    } = notification
-    const now = new Date() // Get the current time
-    const midnight = new Date() // Get midnight time (next day at 00:00)
-    midnight.setHours(24, 0, 0, 0) // Set the hours to 24:00 (which is equivalent to 00:00 of the next day)
-
-    await create({
-        buttons: [],
-        indicator: { color: IndicatorMapper[type].color, text: text ?? IndicatorMapper[type].text },
-        title: '',
-        body: body,
-        id: uniqueId(),
-        platform: fin.me.uuid,
-        icon: env?.OPENFIN_SERVER_BASE_URL ? `${env.OPENFIN_SERVER_BASE_URL}/favicon.png` : '',
-        soundOptions: { mode: 'default' },
-        stream: {
-            id: fin.me.uuid,
-            displayName: 'Merlin',
-            appId: 'Merlin'
-        },
-        timeout: midnight.getTime() - now.getTime() // Calculate the difference & Set the timeout in milliseconds
-    })
-}
-
-const identity = {
-    uuid: toTitleCase(fin.me.uuid?.replaceAll('-', ' ') ?? ''),
-    name: toTitleCase(fin.me.name?.replaceAll('-', ' ') ?? '')
-}
-
-const PopupMessageMapper = (action: string, platformName: string): { title: string; desc: string } => {
-    const mapper: { [key: string]: { title: string; desc: string } } = {
-        resetWindowLayout: {
-            title: `Reset ${identity.name} Layout`,
-            desc: `Are you sure you want to replace existing ${identity.name} layout to default App layout.`
-        },
-        resetColumns: {
-            title: 'Reset Columns',
-            desc: `Are you sure you want to replace existing ${identity.name} Columns to default Column settings`
-        },
-        resetFilters: {
-            title: 'Reset Filters',
-            desc: `Are you sure you want to replace existing ${identity.name} Filters to default Filter settings`
-        },
-        resetSoundFilters: {
-            title: 'Reset Sound Filters',
-            desc: `Are you sure you want to replace existing ${identity.name} Sound Filters to default Sound settings`
-        },
-        resetQuoting: {
-            title: 'Reset Quoting',
-            desc: `Are you sure you want to replace existing ${identity.name} Quoting to default Quoting settings`
-        },
-        logout: {
-            title: `Log Out of ${platformName}`,
-            desc: `Are you sure you want to Log out of ${platformName}`
-        }
-    }
-
-    return mapper[action]
-}
-
-export async function showPopup(
-    isPlatform: boolean,
-    action:
-        | 'resetWindowLayout'
-        | 'resetPlatformLayout'
-        | 'resetColumns'
-        | 'resetFilters'
-        | 'resetSoundFilters'
-        | 'resetQuoting'
-        | 'logout',
-    popupResultConfirmCallback: (payload: any) => Promise<void>
-) {
-    if (fin.me.isOpenFin) {
-        const popupWidth = 400
-        const popupHeight = 150
-        let windowWidth
-        let windowHeight
-
-        if (fin.me.isWindow) {
-            const win = fin.Window.getCurrentSync()
-            const winState = await win.getState()
-
-            if (isPlatform || winState === 'maximized') {
-                windowWidth = window.screen.width
-                windowHeight = window.screen.height
-            } else {
-                const bounds = await win.getBounds()
-                windowWidth = bounds.width
-                windowHeight = bounds.height
-            }
-        } else {
-            const view = fin.View.getCurrentSync()
-            const bounds = await view.getBounds()
-            windowWidth = bounds.width
-            windowHeight = bounds.height
-        }
-
-        const platformName = `[${env.REACT_NODE_ENV}] Front Office Apps - v${env.OPENFIN_PLATFORM_VERSION}`
-        const x = windowWidth / 2 - popupWidth / 2 // Location and size of popup window derived from parent window bounds.
-        const y = windowHeight / 2 - popupHeight / 2
-
-        await fin.me.showPopupWindow({
-            name: `modal-${uuidv4()}`,
-            initialOptions: {
-                showTaskbarIcon: false,
-                defaultCentered: true,
-                modalParentIdentity: fin.me.identity,
-                // contextMenu: false,
-                includeInSnapshots: false,
-                preloadScripts: [
-                    {
-                        url: `${env?.OPENFIN_SERVER_BASE_URL}/common/style/style-changed-preload.js`
-                    }
-                ],
-                customData: {
-                    title: PopupMessageMapper(action, platformName).title,
-                    message: PopupMessageMapper(action, platformName).desc,
-                    buttons: [
-                        {
-                            label: 'Cancel',
-                            value: 'cancel'
-                        },
-                        {
-                            label: 'Confirm',
-                            value: 'confirm'
-                        }
-                    ]
-                }
-            },
-            x,
-            y,
-            width: popupWidth,
-            height: popupHeight,
-            url: `${env?.OPENFIN_SERVER_BASE_URL}/merlin/popups/dialog/index.html`,
-            blurBehavior: 'modal',
-            onPopupResult: async function (payload: any) {
-                if (payload.result === 'clicked') {
-                    if (payload.data.value === 'confirm') {
-                        await popupResultConfirmCallback(payload)
-                    }
-                }
-            }
-        })
-    }
-}
+--------------------------------------------------
+How found:	Selected from tree...
+Name:	"Confirmation"
+ControlType:	UIA_DocumentControlTypeId (0xC36E)
+LocalizedControlType:	"document"
+BoundingRectangle:	{l:660 t:405 r:1260 b:633}
+IsEnabled:	true
+IsOffscreen:	false
+IsKeyboardFocusable:	true
+HasKeyboardFocus:	true
+ProcessId:	26152
+RuntimeId:	[2A.A0224.4.A.8.83]
+AutomationId:	"RootWebArea"
+FrameworkId:	"Chrome"
+ClassName:	""
+IsControlElement:	true
+IsContentElement:	true
+ProviderDescription:	"[pid:26152,providerId:0x0 Main(parent link):Unidentified Provider (unmanaged:chrome.dll)]"
+IsPeripheral:	false
+AriaRole:	"document"
+AriaProperties:	"readonly=true;expanded=false;multiline=false;multiselectable=false;required=false"
+LiveSettingProperty:	Off (0)
+IsPassword:	false
+IsRequiredForForm:	false
+DescribedBy:	
+ControllerForProperty:	
+FlowsTo:	
+FlowsFrom:	
+ClickablePoint:	{x:960 y:519}
+Culture:	9
+Orientation:	0
+OptimizeForVisualContent:	false
+AnnotationObjects:	
+FullDescription:	""
+IsDialog:	false
+LegacyIAccessible.ChildId:	0
+LegacyIAccessible.DefaultAction:	""
+LegacyIAccessible.Description:	""
+LegacyIAccessible.Help:	""
+LegacyIAccessible.KeyboardShortcut:	""
+LegacyIAccessible.Name:	"Confirmation"
+LegacyIAccessible.Role:	document (0xF)
+LegacyIAccessible.State:	focused,read only,focusable (0x100044)
+LegacyIAccessible.Value:	"https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/popups/dialog/index.html"
+Scroll.HorizontallyScrollable:	false
+Scroll.HorizontalScrollPercent:	-1.000000
+Scroll.HorizontalViewSize:	100.000000
+Scroll.VerticallyScrollable:	false
+Scroll.VerticalScrollPercent:	-1.000000
+Scroll.VerticalViewSize:	100.000000
+Value.IsReadOnly:	true
+Value.Value:	"https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/popups/dialog/index.html"
+IsAnnotationPatternAvailable:	false
+IsDragPatternAvailable:	false
+IsDockPatternAvailable:	false
+IsDropTargetPatternAvailable:	false
+IsExpandCollapsePatternAvailable:	false
+IsGridItemPatternAvailable:	false
+IsGridPatternAvailable:	false
+IsInvokePatternAvailable:	false
+IsItemContainerPatternAvailable:	false
+IsLegacyIAccessiblePatternAvailable:	true
+IsMultipleViewPatternAvailable:	false
+IsObjectModelPatternAvailable:	false
+IsRangeValuePatternAvailable:	false
+IsScrollItemPatternAvailable:	true
+IsScrollPatternAvailable:	true
+IsSelectionItemPatternAvailable:	false
+IsSelectionPatternAvailable:	false
+IsSpreadsheetItemPatternAvailable:	false
+IsSpreadsheetPatternAvailable:	false
+IsStylesPatternAvailable:	false
+IsSynchronizedInputPatternAvailable:	false
+IsTableItemPatternAvailable:	false
+IsTablePatternAvailable:	false
+IsTextChildPatternAvailable:	false
+IsTextEditPatternAvailable:	true
+IsTextPatternAvailable:	true
+IsTextPattern2Available:	false
+IsTogglePatternAvailable:	false
+IsTransformPatternAvailable:	false
+IsTransform2PatternAvailable:	false
+IsValuePatternAvailable:	true
+IsVirtualizedItemPatternAvailable:	false
+IsWindowPatternAvailable:	false
+IsCustomNavigationPatternAvailable:	false
+IsSelectionPattern2Available:	false
+FirstChild:	"" header
+LastChild:	"" footer
+Next:	[null]
+Previous:	[null]
+Other Props:	Object has no additional properties
+Children:	"" header
+	"" main
+	"" footer
+Ancestors:	"Chrome Legacy Window" pane
+	"" region
+	"" region
+	"" region
+	"" region
+	"" region
+	"" region
+	"Confirmation" region
+	"Confirmation" window
+	"User Profile" window
+	"Desktop 1" pane
+	[ No Parent ]
