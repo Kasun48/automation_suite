@@ -10,4 +10,15 @@
 # pip install pytest
 # pip install selenium pygetwindow pywinauto requests
 
-# python -m tests.test_login
+# python -m tests.test_login_logout
+
+# Poweshell command to remove VM when there are python errors
+# Remove-Item -Recurse -Force .\venv 
+# Get-ChildItem
+
+selenium
+pytest
+pywinauto
+pygetwindow
+behave
+Pillow

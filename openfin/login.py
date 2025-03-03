@@ -1,20 +1,29 @@
-# openfin/login.py
 import time
 import subprocess
+import os
 from pywinauto import Application
 from utils.config import USERNAME, PASSWORD, WINDOW_TITLE, BAT_FILE_PATH
 from utils.logger import setup_logger
 from utils.window_utils import wait_for_window, list_open_windows
+from utils.screenshot import take_screenshot  # Add this line
 
 logger = setup_logger()
 
 def launch_application():
+    if not os.path.exists(BAT_FILE_PATH):
+        logger.error(f"Batch file not found: {BAT_FILE_PATH}")
+        take_screenshot("bat_file_missing.png")
+        raise FileNotFoundError(f"Batch file not found: {BAT_FILE_PATH}")
+
     logger.info("Launching OpenFin application...")
     subprocess.Popen(BAT_FILE_PATH)
     time.sleep(15)  # Adjust based on loading time
 
-def automate_login():
-    launch_application()
+def automate_login(username=USERNAME, password=PASSWORD):
+    try:
+        launch_application()
+    except FileNotFoundError:
+        return False
     
     logger.info("Waiting for the Mizuho login window to appear...")
     login_window = wait_for_window(WINDOW_TITLE, timeout=60)
@@ -26,16 +35,14 @@ def automate_login():
     app = Application(backend='uia').connect(handle=login_window._hWnd)
     dlg = app.window(title=WINDOW_TITLE)
 
-    logger.info("Available controls in the window: %s", dlg.print_control_identifiers())
-
     logger.info("Filling in login credentials...")
     try:
-        username_field = dlg.child_window(control_type="Edit", found_index=0)  # Adjusting to use index
-        password_field = dlg.child_window(control_type="Edit", found_index=1)  # Adjusting to use index
+        username_field = dlg.child_window(control_type="Edit", found_index=0)
+        password_field = dlg.child_window(control_type="Edit", found_index=1)
         auth_button = dlg.child_window(control_type="Button", title="Login")
 
-        username_field.set_text(USERNAME)
-        password_field.set_text(PASSWORD)
+        username_field.set_text(username)
+        password_field.set_text(password)
         auth_button.click()
 
         logger.info("Login attempt made.")

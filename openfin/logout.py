@@ -5,12 +5,6 @@ from utils.window_utils import wait_for_window
 
 logger = setup_logger()
 
-def list_open_windows():
-    """Debug function to list all open windows."""
-    windows = Desktop(backend="uia").windows()
-    for w in windows:
-        logger.info(f"Title: {w.window_text()}, Handle: {w.handle}")
-
 def wait_for_confirmation_dialog(timeout=30):
     """Wait for the confirmation dialog to appear dynamically."""
     start_time = time.time()
@@ -39,9 +33,6 @@ def click_confirm_button(confirmation_dlg, retries=5):
 
 def logout():
     logger.info("Logging out of the application...")
-
-    # Debug - List all open windows
-    # list_open_windows()
 
     # Wait for the Dock window
     dock_window = wait_for_window("Dock", timeout=60)
@@ -80,7 +71,6 @@ def logout():
         return False
 
     # Wait for Confirmation Dialog
-    list_open_windows()
     confirmation_dlg = wait_for_confirmation_dialog(timeout=60)
 
     if confirmation_dlg is None:
@@ -91,14 +81,11 @@ def logout():
     logger.info("Available controls in the confirmation dialog:")
     confirmation_dlg.print_control_identifiers()
 
-    # Wait briefly to ensure the dialog is fully loaded
-    time.sleep(2)
-
     # Try to click Confirm button
     if not click_confirm_button(confirmation_dlg):
         return False
 
     return True
 
-# Call the logout function
-logout()
+if __name__ == "__main__":
+    logout()
