@@ -90,3 +90,122 @@ child_window(title="Mizuho Front Office", control_type="Window")
 2025-02-28 22:42:34,999 - INFO - Title: Program Manager, Handle: 66048
 2025-02-28 22:42:35,000 - ERROR - Confirmation dialog not found!
 2025-02-28 22:42:35,000 - ERROR - Logout test failed.
+
+<body>
+		<div class="container">
+			<div class="header">
+				<img src="../../../../favicon.ico" alt="Logo" height="40px">
+			</div>
+			<form id="login-form" class="content">
+				<input class="input-field" type="text" id="username" name="username" placeholder="Username" required="">
+				<br>
+				<input class="input-field" type="password" id="password" name="password" placeholder="Password" required="">
+				<br>
+				<button id="auth-button" class="auth-button" type="submit">Login</button>
+			</form>
+			<div style="min-height:60px;min-width:100%;">
+				<div class="error-message" id="error-field" style="display: block;">Login failed. 
+
+Incorrect username and/or password OR Invalid/missing access token</div>
+			</div>
+		</div>
+
+		<!-- <div>
+				<button id="skip">Console</button>
+			</div> -->
+		<footer></footer>
+		<script src="./mizuho-login.js"></script>
+	
+</body>
+
+
+(venv) PS C:\Automation\automation_suite> behave features/login.feature
+Feature: Login to Mizuho OpenFin Application # features/login.feature:1
+
+  Scenario: Successful login with valid credentials  # features/login.feature:3
+    Given the OpenFin application is launched        # steps/login_steps.py:12
+2025-03-03 13:17:44,469 - INFO - Launching the OpenFin application...
+2025-03-03 13:17:44,472 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-03-03 13:17:59,548 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-03 13:18:14,315 - INFO - Filling in login credentials...
+2025-03-03 13:18:16,614 - INFO - Login attempt made.
+2025-03-03 13:18:55,700 - INFO - Login successful.
+2025-03-03 13:18:55,721 - INFO - OpenFin application launched.
+    When I enter valid credentials                   # steps/login_steps.py:18
+2025-03-03 13:18:55,997 - INFO - Entering valid credentials...
+2025-03-03 13:18:56,022 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-03-03 13:19:11,156 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-03 13:20:11,158 - ERROR - Login window not found! Current windows: ['Dock', '', '', 'login.feature - automation_suite - Visual Studio Code', 'Chat | Merlin Devs | Microsoft Teams', 'Settings', 'Settings', 'Microsoft Text Input Application', '', '', '', '', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-03 13:20:11,159 - INFO - Valid credentials entered.
+    Then I should be logged in successfully          # steps/login_steps.py:30
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\PIL\Image.py", line 2571, in save
+          format = EXTENSION[ext]
+                   ~~~~~~~~~^^^^^
+      KeyError: ''
+
+      The above exception was the direct cause of the following exception:
+
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\login_steps.py", line 33, in step_impl
+          screenshot_path = take_screenshot("login_failure")
+        File "C:\Automation\automation_suite\utils\screenshot.py", line 7, in take_screenshot
+          screenshot.save(os.path.join('reports', filename))
+          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\PIL\Image.py", line 2574, in save
+          raise ValueError(msg) from e
+      ValueError: unknown file extension:
+
+      Captured logging:
+      INFO:builtins:Launching the OpenFin application...
+      INFO:root:Launching OpenFin application...
+      INFO:root:Waiting for the Mizuho login window to appear...
+      INFO:root:Filling in login credentials...
+      INFO:root:Login attempt made.
+      INFO:root:Login successful.
+      INFO:builtins:OpenFin application launched.
+      INFO:builtins:Entering valid credentials...
+      INFO:root:Launching OpenFin application...
+      INFO:root:Waiting for the Mizuho login window to appear...
+      ERROR:root:Login window not found! Current windows: ['Dock', '', '', 'login.feature - automation_suite - Visual Studio Code', 'Chat 
+| Merlin Devs | Microsoft Teams', 'Settings', 'Settings', 'Microsoft Text Input Application', '', '', '', '', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+      INFO:builtins:Valid credentials entered.
+
+
+  Scenario: Unsuccessful login with invalid credentials  # features/login.feature:8
+    Given the OpenFin application is launched            # steps/login_steps.py:12
+2025-03-03 13:20:11,466 - INFO - Launching the OpenFin application...
+2025-03-03 13:20:11,468 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-03-03 13:20:26,519 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-03 13:21:26,520 - ERROR - Login window not found! Current windows: ['', '', '.gitignore - automation_suite - Visual Studio Code', 
+'Chat | Merlin Devs | Microsoft Teams', 'Settings', 'Settings', 'Microsoft Text Input Application', '', '', '', '', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-03 13:21:26,521 - INFO - OpenFin application launched.
+    When I enter invalid credentials                     # steps/login_steps.py:24
+2025-03-03 13:21:26,523 - INFO - Entering invalid credentials...
+2025-03-03 13:21:26,525 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-03-03 13:21:41,592 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-03 13:21:49,915 - INFO - Filling in login credentials...
+2025-03-03 13:21:52,108 - INFO - Login attempt made.
+2025-03-03 13:23:02,123 - ERROR - Login failed. Current windows: ['Mizuho Front Office', '', '', 'Chat | Merlin Devs | Microsoft Teams', '[UAT] Front Office Apps - v19.2.12', 'Settings', 'Settings', 'Microsoft Text Input Application', '', '', '', '', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', '.gitignore - automation_suite - Visual Studio Code', 'Program Manager']
+2025-03-03 13:23:02,124 - INFO - Invalid credentials entered.
+    Then I should see an error message                   # steps/login_steps.py:37
+
+
+Failing scenarios:
+  features/login.feature:3  Successful login with valid credentials
+
+0 features passed, 1 failed, 0 skipped
+1 scenario passed, 1 failed, 0 skipped
+5 steps passed, 1 failed, 0 skipped, 0 undefined
+Took 5m17.407s
+(venv) PS C:\Automation\automation_suite> 
