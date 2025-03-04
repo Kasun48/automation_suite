@@ -1,0 +1,18 @@
+When the user clicks on the launch_openfin_fo_apps_uat.bat file,
+after a while it will load https://fo-openfin.uat.apps.uk.mizuho-sc.com/platform/splash.html
+
+After sometimes it will load the login screen. https://fo-openfin.uat.apps.uk.mizuho-sc.com/windows/modules/auth/foapps/mizuho-login.html
+
+Once the user enters the username and passwords, it will load the dock 
+from https://workspace.openfin.co/workspace/20.1.5/dock/
+
+From the dock, the user selects the Historical Trader Blotter
+then it will load https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/historical-blotter/historical-blotter-core
+From the dock, the user selects the "User Profile", then it will load the User Profile
+https://merlin-mfe-proxy.uat.apps.uk.mizuho-sc.com/app/app-settings/user-profile
+
+When the user presses Log Out button, it will load the popup
+https://fo-openfin.uat.apps.uk.mizuho-sc.com/merlin/popups/dialog/index.html
+
+merlin-mfe/browse/shared/services/openfin/modules/notification.ts
+

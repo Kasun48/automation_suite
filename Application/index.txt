@@ -1,0 +1,56 @@
+<html lang="en" class="light" style="--theme-scheme: light; --theme-brand-primary: #1B3280; --theme-brand-secondary: #7483B3; --theme-background-primary: #FFFFFF; --theme-background1: #FFFFFF; --theme-background2: #FAFBFE; --theme-background3: #F3F5F8; --theme-background4: #ECEEF1; --theme-background5: #DDDFE4; --theme-background6: #C9CBD2; --theme-status-success: #35C759; --theme-status-warning: #F48F00; --theme-status-critical: #BE1D1F; --theme-status-active: #0498FB; --theme-input-background: #ECEEF1; --theme-input-color: #1E1F23; --theme-input-placeholder: #383A40; --theme-input-disabled: #7D808A; --theme-input-focused: #C9CBD2; --theme-text-default: #1E1F23; --theme-text-help: #2F3136; --theme-text-inactive: #7D808A; --theme-content-background1: #0A76D3; --theme-content-background2: #000000; --theme-content-background3: #000000; --theme-content-background4: #000000; --theme-content-background5: #000000; --theme-link-default: #6CADE5; --theme-link-hover: #0A76D3;"><head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../../common/style/app.css">
+		<title>Confirmation</title>
+		<script src="./dialog.js"></script>
+		<style>
+			main {
+				min-height: 50px;
+			}
+			#message {
+				margin-top: 10px;
+				white-space: pre-wrap;
+				overflow: hidden;
+				word-break: break-word;
+			}
+		</style>
+	</head>
+
+	<body class="col theme-light">
+		<header class="row gap10 middle"><h4>Log Out of [UAT] Front Office Apps - v19.2.12</h4></header>
+		<main class="scroll fill">
+			<p id="message">Are you sure you want to Log out of [UAT] Front Office Apps - v19.2.12</p>
+		</main>
+		<footer class="row gap10 right"><button aria-label="Cancel">Cancel</button><button aria-label="Confirm">Confirm</button></footer>
+	
+</body></html>
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../../common/style/app.css">
+		<title>Confirmation</title>
+		<script src="./dialog.js"></script>
+		<style>
+			main {
+				min-height: 50px;
+			}
+			#message {
+				margin-top: 10px;
+				white-space: pre-wrap;
+				overflow: hidden;
+				word-break: break-word;
+			}
+		</style>
+	</head>
+<body class="col theme-light">
+		<header class="row gap10 middle"><h4>Log Out of [UAT] Front Office Apps - v19.2.12</h4></header>
+		<main class="scroll fill">
+			<p id="message">Are you sure you want to Log out of [UAT] Front Office Apps - v19.2.12</p>
+		</main>
+		<footer class="row gap10 right"><button aria-label="Cancel">Cancel</button><button aria-label="Confirm">Confirm</button></footer>
+	
+</body>
+</html>

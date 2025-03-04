@@ -1,0 +1,8 @@
+@echo off
+
+REM Construct the URL with the username
+set URL=fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/%USERNAME%
+
+REM Launch the URL in the default browser
+echo %URL%
+start "" "%URL%"

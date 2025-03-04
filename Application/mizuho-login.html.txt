@@ -1,0 +1,33 @@
+<html lang="en"><head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mizuho Front Office</title>
+		<link rel="icon" type="image/x-icon" href="../../../../favicon.ico">
+		<link rel="stylesheet" href="./auth.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<img src="../../../../favicon.ico" alt="Logo" height="40px">
+			</div>
+			<form id="login-form" class="content">
+				<input class="input-field" type="text" id="username" name="username" placeholder="Username" required="">
+				<br>
+				<input class="input-field" type="password" id="password" name="password" placeholder="Password" required="">
+				<br>
+				<button id="auth-button" class="auth-button" type="submit">Login</button>
+			</form>
+			<div style="min-height:60px;min-width:100%;">
+				<div class="error-message" id="error-field"></div>
+			</div>
+		</div>
+
+		<!-- <div>
+				<button id="skip">Console</button>
+			</div> -->
+		<footer></footer>
+		<script src="./mizuho-login.js"></script>
+	
+</body></html>
