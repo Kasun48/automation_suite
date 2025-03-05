@@ -1,5 +1,5 @@
 import time
-from pywinauto import Application, Desktop
+from pywinauto import Application, Desktop, keyboard
 from utils.logger import setup_logger
 from utils.window_utils import wait_for_window
 
@@ -17,7 +17,7 @@ def wait_for_confirmation_dialog(timeout=30):
     return None
 
 def click_confirm_button(confirmation_dlg, retries=5):
-    """Try to click the Confirm button multiple times."""
+    """Try to click the Confirm button multiple times, fallback to keyboard input."""
     for attempt in range(retries):
         logger.info(f"Attempt {attempt + 1} to click Confirm button.")
         confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
@@ -28,8 +28,18 @@ def click_confirm_button(confirmation_dlg, retries=5):
             return True
         
         time.sleep(1)  # Wait before retrying
-    logger.error("Confirm button not found or not enabled after retries!")
-    return False
+
+    # Fallback to keyboard input if the button is not clickable
+    logger.info("Confirm button not found or not enabled after retries, trying keyboard input.")
+    try:
+        confirmation_dlg.set_focus()  # Focus on the confirmation dialog
+        keyboard.send_keys("{TAB 2}")  # Press TAB twice
+        keyboard.send_keys("{ENTER}")   # Press ENTER
+        logger.info("Logout confirmed via keyboard input.")
+        return True
+    except Exception as e:
+        logger.error("Error during keyboard input for confirmation: %s", e)
+        return False
 
 def logout():
     logger.info("Logging out of the application...")
@@ -71,7 +81,7 @@ def logout():
         return False
 
     # Wait for Confirmation Dialog
-    confirmation_dlg = wait_for_confirmation_dialog(timeout=60)
+    confirmation_dlg = wait_for_confirmation_dialog(timeout=15)
 
     if confirmation_dlg is None:
         logger.error("Confirmation dialog not found!")
