@@ -4,15 +4,15 @@ import os
 from pywinauto import Application
 from utils.config import USERNAME, PASSWORD, WINDOW_TITLE, BAT_FILE_PATH
 from utils.logger import setup_logger
-from utils.window_utils import wait_for_window, list_open_windows
-from utils.screenshot import take_screenshot  # Add this line
+from utils.window_utils import wait_for_window  # Removed list_open_windows
+from utils.screenshot import capture_screenshot
 
 logger = setup_logger()
 
 def launch_application():
     if not os.path.exists(BAT_FILE_PATH):
         logger.error(f"Batch file not found: {BAT_FILE_PATH}")
-        take_screenshot("bat_file_missing.png")
+        capture_screenshot("bat_file_missing.png")
         raise FileNotFoundError(f"Batch file not found: {BAT_FILE_PATH}")
 
     logger.info("Launching OpenFin application...")
@@ -29,7 +29,7 @@ def automate_login(username=USERNAME, password=PASSWORD):
     login_window = wait_for_window(WINDOW_TITLE, timeout=60)
 
     if login_window is None:
-        logger.error("Login window not found! Current windows: %s", list_open_windows())
+        logger.error("Login window not found! Current windows: %s", "")
         return False
 
     app = Application(backend='uia').connect(handle=login_window._hWnd)
@@ -57,5 +57,5 @@ def automate_login(username=USERNAME, password=PASSWORD):
         logger.info("Login successful.")
         return True
     else:
-        logger.error("Login failed. Current windows: %s", list_open_windows())
+        logger.error("Login failed. Current windows: %s", "")
         return False

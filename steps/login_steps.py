@@ -1,9 +1,9 @@
-import datetime
-import os
 import logging
 from behave import given, when, then
 from openfin.login import automate_login
-from utils.screenshot import take_screenshot
+from utils.screenshot import capture_screenshot  # Updated import
+
+# Other code remains the same
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -18,7 +18,7 @@ def step_impl(context):
 @when("I enter valid credentials")
 def step_impl(context):
     logger.info("Entering valid credentials...")
-    context.result = automate_login(username="test_user", password="test_password")
+    context.result = automate_login(username=context.config.userdata['username'], password=context.config.userdata['password'])
     logger.info("Valid credentials entered.")
 
 @when("I enter invalid credentials")
@@ -30,13 +30,13 @@ def step_impl(context):
 @then("I should be logged in successfully")
 def step_impl(context):
     if not context.result:
-        screenshot_path = take_screenshot("login_failure")
+        screenshot_path = capture_screenshot("login_failure")
         logger.error(f"Login failed, check the screenshot: {screenshot_path}")
     assert context.result is True, "Login was not successful."
 
 @then("I should see an error message")
 def step_impl(context):
     if context.result:
-        screenshot_path = take_screenshot("invalid_login_success")
+        screenshot_path = capture_screenshot("invalid_login_success")
         logger.error(f"Invalid login was successful, check the screenshot: {screenshot_path}")
     assert context.result is False, "Error message not displayed for invalid login."

@@ -1,0 +1,11 @@
+Feature: Comments Screen # features/comments_screen.feature:1
+
+  Scenario: Open Comments Screen                 # features/comments_screen.feature:3
+    Given I am logged in to the application      # steps/logout_steps.py:8
+    When I open the Comments screen              # steps/comments_screen_steps.py:4
+      ABORTED: By user (KeyboardInterrupt).
+      Captured logging:
+      INFO:automation:Opening Merlin screen: comments-main
+
+    Then the Comments screen should be displayed # None
+

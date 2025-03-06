@@ -208,4 +208,88 @@ Failing scenarios:
 1 scenario passed, 1 failed, 0 skipped
 5 steps passed, 1 failed, 0 skipped, 0 undefined
 Took 5m17.407s
-(venv) PS C:\Automation\automation_suite> 
+(venv) PS C:\Automation\automation_suite> 2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
+2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
+2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
+2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
+2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
+2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
+2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
+2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
+2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
+2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
+2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
+2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
+2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
+2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
+2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
+2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
+2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
+2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
+2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
+2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
+2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
+2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
+2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
+2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
+2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
+2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
+2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main

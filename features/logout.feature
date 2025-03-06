@@ -1,4 +1,4 @@
-Feature: Logout from Mizuho OpenFin Application
+Feature: User Logout
 
   Scenario: Successful logout
     Given I am logged in to the application
