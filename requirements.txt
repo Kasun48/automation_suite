@@ -22,3 +22,11 @@ pywinauto
 pygetwindow
 behave
 Pillow
+behave-html-report
+
+# pip install behave-html-report 
+# behave features/login.feature
+# behave-html -i reports/results.json -o reports/results.html
+# behave --format=pretty --format=html --outfile=reports/results.html features/
+# behave --format=json --outfile=reports/results.json features/
+# python json_to_html.py
