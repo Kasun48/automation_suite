@@ -1,776 +1,7 @@
-2025-02-17 20:31:08,723 - INFO - Launching OpenFin application...
-2025-02-17 20:55:29,158 - INFO - Launching OpenFin application...
-2025-02-17 20:58:24,050 - INFO - Launching OpenFin application...
-2025-02-17 21:08:52,541 - INFO - Launching OpenFin application...
-2025-02-17 21:09:40,759 - INFO - Launching OpenFin application...
-2025-02-17 23:04:04,623 - INFO - Launching OpenFin application...
-2025-02-17 23:04:04,690 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:04:34,693 - ERROR - Login window not found!
-2025-02-17 23:04:34,693 - ERROR - Login test failed.
-2025-02-17 23:07:23,744 - INFO - Launching OpenFin application...
-2025-02-17 23:07:23,846 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:07:53,849 - ERROR - Login window not found!
-2025-02-17 23:07:53,849 - ERROR - Login test failed.
-2025-02-17 23:23:36,543 - INFO - Launching OpenFin application...
-2025-02-17 23:23:36,587 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:23:55,983 - INFO - Filling in login credentials...
-2025-02-17 23:23:58,454 - INFO - Login attempt made.
-2025-02-17 23:34:38,939 - INFO - Launching OpenFin application...
-2025-02-17 23:34:38,990 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:35:08,991 - ERROR - Login window not found!
-2025-02-17 23:35:08,991 - ERROR - Login test failed.
-2025-02-17 23:37:01,676 - INFO - Launching OpenFin application...
-2025-02-17 23:37:01,709 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:37:31,709 - ERROR - Login window not found!
-2025-02-17 23:37:31,709 - ERROR - Login test failed.
-2025-02-18 00:02:43,565 - INFO - Launching OpenFin application...
-2025-02-18 00:02:43,620 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-18 00:03:13,636 - ERROR - Login window not found!
-2025-02-18 00:03:13,637 - ERROR - Login test failed.
-2025-02-18 00:13:24,496 - INFO - Launching OpenFin application...
-2025-02-18 00:13:24,526 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-18 00:13:54,526 - ERROR - Login window not found!
-2025-02-18 00:13:54,526 - ERROR - Login test failed.
-
-(venv) PS C:\Automation\automation_suite> python -m tests.test_login_logout
-2025-02-28 22:41:09,367 - INFO - Logging out of the application...
-2025-02-28 22:41:39,367 - ERROR - Dock window not found!
-2025-02-28 22:41:39,368 - INFO - Starting the login/logout test...
-2025-02-28 22:41:39,368 - INFO - Launching OpenFin application... 
-fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-02-28 22:41:54,433 - INFO - Waiting for the Mizuho login window to appear...
-Control Identifiers:
-
-Dialog - 'Mizuho Front Office'    (L660, T273, R1260, B761)
-['Mizuho Front Office', 'Dialog', 'Mizuho Front OfficeDialog', 'Mizuho Front Office0', 'Mizuho Front Office1']
-child_window(title="Mizuho Front Office", control_type="Window")
-   | 
-   | Pane - 'Mizuho Front Office'    (L670, T318, R1250, B750)
-   | ['Mizuho Front Office2', 'Mizuho Front OfficePane', 'Pane', 'Pane0', 'Pane1']
-   | child_window(title="Mizuho Front Office", control_type="Pane")
-   |    | 
-   |    | Pane - ''    (L670, T318, R1250, B750)
-   |    | ['Pane2']
-   |    |    | 
-   |    |    | Pane - ''    (L670, T318, R1250, B750)
-   |    |    | ['Pane3']
-   |    |    |    | 
-   |    |    |    | Pane - ''    (L670, T318, R1250, B750)
-   |    |    |    | ['Pane4']
-   |    |    |    |    |
-   |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
-   |    |    |    |    | ['Pane5']
-   |    |    |    |    |    | 
-   |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
-   |    |    |    |    |    | ['Pane6']
-   |    |    |    |    |    |    | 
-   |    |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
-   |    |    |    |    |    |    | ['Pane7']
-   |    |    |    |    |    |    | 
-   |    |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
-   |    |    |    |    |    |    | ['Pane8']
-2025-02-28 22:41:56,795 - INFO - Available controls in the window: None
-2025-02-28 22:41:56,795 - INFO - Filling in login credentials...
-2025-02-28 22:41:58,301 - INFO - Login attempt made.
-2025-02-28 22:42:08,303 - INFO - Login successful.
-2025-02-28 22:42:08,304 - INFO - Login test completed successfully.
-2025-02-28 22:42:08,310 - INFO - Logging out of the application...
-2025-02-28 22:42:10,915 - INFO - Clicked on User Profile button.
-2025-02-28 22:42:13,308 - INFO - Clicked on Log Out button.
-2025-02-28 22:42:34,987 - INFO - Title: Dock, Handle: 1575124
-2025-02-28 22:42:34,988 - INFO - Title: Taskbar, Handle: 197016
-2025-02-28 22:42:34,989 - INFO - Title: , Handle: 65810
-2025-02-28 22:42:34,990 - INFO - Title: User Profile, Handle: 788812
-2025-02-28 22:42:34,992 - INFO - Title: test_login_logout.py - automation_suite - Visual Studio Code, Handle: 330164
-2025-02-28 22:42:34,993 - INFO - Title: *Untitled - Notepad, Handle: 787226
-2025-02-28 22:42:34,994 - INFO - Title: Training to gain Business and product knowledge-20250219_134221-Meeting Recording.mp4 - Google Chrome, Handle: 329850
-2025-02-28 22:42:34,996 - INFO - Title: *Untitled - Notepad, Handle: 1181256
-2025-02-28 22:42:34,997 - INFO - Title: Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook, Handle: 3542286
-2025-02-28 22:42:34,998 - INFO - Title: Chat | Training to gain Business and product knowledge | Microsoft Teams, Handle: 66852
-2025-02-28 22:42:34,999 - INFO - Title: Program Manager, Handle: 66048
-2025-02-28 22:42:35,000 - ERROR - Confirmation dialog not found!
-2025-02-28 22:42:35,000 - ERROR - Logout test failed.
-
-<body>
-		<div class="container">
-			<div class="header">
-				<img src="../../../../favicon.ico" alt="Logo" height="40px">
-			</div>
-			<form id="login-form" class="content">
-				<input class="input-field" type="text" id="username" name="username" placeholder="Username" required="">
-				<br>
-				<input class="input-field" type="password" id="password" name="password" placeholder="Password" required="">
-				<br>
-				<button id="auth-button" class="auth-button" type="submit">Login</button>
-			</form>
-			<div style="min-height:60px;min-width:100%;">
-				<div class="error-message" id="error-field" style="display: block;">Login failed. 
-
-Incorrect username and/or password OR Invalid/missing access token</div>
-			</div>
-		</div>
-
-		<!-- <div>
-				<button id="skip">Console</button>
-			</div> -->
-		<footer></footer>
-		<script src="./mizuho-login.js"></script>
-	
-</body>
-
-
-(venv) PS C:\Automation\automation_suite> behave features/login.feature
-Feature: Login to Mizuho OpenFin Application # features/login.feature:1
-
-  Scenario: Successful login with valid credentials  # features/login.feature:3
-    Given the OpenFin application is launched        # steps/login_steps.py:12
-2025-03-03 13:17:44,469 - INFO - Launching the OpenFin application...
-2025-03-03 13:17:44,472 - INFO - Launching OpenFin application...
-fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-03 13:17:59,548 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-03 13:18:14,315 - INFO - Filling in login credentials...
-2025-03-03 13:18:16,614 - INFO - Login attempt made.
-2025-03-03 13:18:55,700 - INFO - Login successful.
-2025-03-03 13:18:55,721 - INFO - OpenFin application launched.
-    When I enter valid credentials                   # steps/login_steps.py:18
-2025-03-03 13:18:55,997 - INFO - Entering valid credentials...
-2025-03-03 13:18:56,022 - INFO - Launching OpenFin application...
-fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-03 13:19:11,156 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-03 13:20:11,158 - ERROR - Login window not found! Current windows: ['Dock', '', '', 'login.feature - automation_suite - Visual Studio Code', 'Chat | Merlin Devs | Microsoft Teams', 'Settings', 'Settings', 'Microsoft Text Input Application', '', '', '', '', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
-2025-03-03 13:20:11,159 - INFO - Valid credentials entered.
-    Then I should be logged in successfully          # steps/login_steps.py:30
-      Traceback (most recent call last):
-        File "C:\Automation\automation_suite\venv\Lib\site-packages\PIL\Image.py", line 2571, in save
-          format = EXTENSION[ext]
-                   ~~~~~~~~~^^^^^
-      KeyError: ''
-
-      The above exception was the direct cause of the following exception:
-
-      Traceback (most recent call last):
-        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
-          match.run(runner.context)
-          ~~~~~~~~~^^^^^^^^^^^^^^^^
-        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
-          self.func(context, *args, **kwargs)
-          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "steps\login_steps.py", line 33, in step_impl
-          screenshot_path = take_screenshot("login_failure")
-        File "C:\Automation\automation_suite\utils\screenshot.py", line 7, in take_screenshot
-          screenshot.save(os.path.join('reports', filename))
-          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "C:\Automation\automation_suite\venv\Lib\site-packages\PIL\Image.py", line 2574, in save
-          raise ValueError(msg) from e
-      ValueError: unknown file extension:
-
-      Captured logging:
-      INFO:builtins:Launching the OpenFin application...
-      INFO:root:Launching OpenFin application...
-      INFO:root:Waiting for the Mizuho login window to appear...
-      INFO:root:Filling in login credentials...
-      INFO:root:Login attempt made.
-      INFO:root:Login successful.
-      INFO:builtins:OpenFin application launched.
-      INFO:builtins:Entering valid credentials...
-      INFO:root:Launching OpenFin application...
-      INFO:root:Waiting for the Mizuho login window to appear...
-      ERROR:root:Login window not found! Current windows: ['Dock', '', '', 'login.feature - automation_suite - Visual Studio Code', 'Chat 
-| Merlin Devs | Microsoft Teams', 'Settings', 'Settings', 'Microsoft Text Input Application', '', '', '', '', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
-      INFO:builtins:Valid credentials entered.
-
-
-  Scenario: Unsuccessful login with invalid credentials  # features/login.feature:8
-    Given the OpenFin application is launched            # steps/login_steps.py:12
-2025-03-03 13:20:11,466 - INFO - Launching the OpenFin application...
-2025-03-03 13:20:11,468 - INFO - Launching OpenFin application...
-fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-03 13:20:26,519 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-03 13:21:26,520 - ERROR - Login window not found! Current windows: ['', '', '.gitignore - automation_suite - Visual Studio Code', 
-'Chat | Merlin Devs | Microsoft Teams', 'Settings', 'Settings', 'Microsoft Text Input Application', '', '', '', '', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
-2025-03-03 13:21:26,521 - INFO - OpenFin application launched.
-    When I enter invalid credentials                     # steps/login_steps.py:24
-2025-03-03 13:21:26,523 - INFO - Entering invalid credentials...
-2025-03-03 13:21:26,525 - INFO - Launching OpenFin application...
-fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-03 13:21:41,592 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-03 13:21:49,915 - INFO - Filling in login credentials...
-2025-03-03 13:21:52,108 - INFO - Login attempt made.
-2025-03-03 13:23:02,123 - ERROR - Login failed. Current windows: ['Mizuho Front Office', '', '', 'Chat | Merlin Devs | Microsoft Teams', '[UAT] Front Office Apps - v19.2.12', 'Settings', 'Settings', 'Microsoft Text Input Application', '', '', '', '', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', '.gitignore - automation_suite - Visual Studio Code', 'Program Manager']
-2025-03-03 13:23:02,124 - INFO - Invalid credentials entered.
-    Then I should see an error message                   # steps/login_steps.py:37
-
-
-Failing scenarios:
-  features/login.feature:3  Successful login with valid credentials
-
-0 features passed, 1 failed, 0 skipped
-1 scenario passed, 1 failed, 0 skipped
-5 steps passed, 1 failed, 0 skipped, 0 undefined
-Took 5m17.407s
-(venv) PS C:\Automation\automation_suite> 2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 13:28:43,243 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:29:44,195 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
-2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
-2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
-2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
-2025-03-06 13:29:44,196 - automation - ERROR - Dock window not found!
-2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
-2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
-2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
-2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
-2025-03-06 13:29:44,208 - automation - INFO - Opening Merlin screen: dashboard
-2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:30:45,278 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
-2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
-2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
-2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
-2025-03-06 13:30:45,278 - automation - ERROR - Dock window not found!
-2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
-2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
-2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
-2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
-2025-03-06 13:30:45,283 - automation - INFO - Opening Merlin screen: historical-trader-blotter
-2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:31:45,582 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
-2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
-2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
-2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
-2025-03-06 13:31:45,583 - automation - ERROR - Dock window not found!
-2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,599 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,726 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,773 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
-2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
-2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
-2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
-2025-03-06 13:31:45,832 - automation - INFO - Logging out of the application...
-2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:25,957 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,041 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:47:26,075 - automation - ERROR - Batch file not found: X:\Secure\DIR_FixedIncomeDev\OpenFin-FOApps\launch_openfin_fo_apps_uat.bat
-2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 13:48:45,362 - automation - INFO - Opening Merlin screen: comments-main
-2025-03-06 14:38:51,589 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:38:51,589 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:38:51,589 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:38:51,589 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:38:51,589 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:39:06,707 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:06,707 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:06,707 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:06,707 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:06,707 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:22,647 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 14:39:22,647 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 14:39:22,647 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 14:39:22,647 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 14:39:22,647 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 14:39:22,669 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:39:22,669 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:39:22,669 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:39:22,669 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:39:22,669 - automation - INFO - Launching OpenFin application...
-2025-03-06 14:39:37,699 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:37,699 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:37,699 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:37,699 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:37,699 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 14:39:38,136 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 14:39:38,136 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 14:39:38,136 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 14:39:38,136 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 14:39:38,136 - automation - INFO - Found window: Mizuho Front Office
-
-
-2025-03-06 15:28:43,533 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:28:43,533 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:28:43,533 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:28:43,533 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:28:43,533 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:28:58,625 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:28:58,625 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:28:58,625 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:28:58,625 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:28:58,625 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:29:11,971 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:29:11,971 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:29:11,971 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:29:11,971 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:29:11,971 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:29:11,972 - automation - INFO - Filling in login credentials...
-2025-03-06 15:29:11,972 - automation - INFO - Filling in login credentials...
-2025-03-06 15:29:11,972 - automation - INFO - Filling in login credentials...
-2025-03-06 15:29:11,972 - automation - INFO - Filling in login credentials...
-2025-03-06 15:29:11,972 - automation - INFO - Filling in login credentials...
-2025-03-06 15:29:14,188 - automation - INFO - Login attempt made.
-2025-03-06 15:29:14,188 - automation - INFO - Login attempt made.
-2025-03-06 15:29:14,188 - automation - INFO - Login attempt made.
-2025-03-06 15:29:14,188 - automation - INFO - Login attempt made.
-2025-03-06 15:29:14,188 - automation - INFO - Login attempt made.
-2025-03-06 15:29:30,266 - automation - INFO - Found window: Dock
-2025-03-06 15:29:30,266 - automation - INFO - Found window: Dock
-2025-03-06 15:29:30,266 - automation - INFO - Found window: Dock
-2025-03-06 15:29:30,266 - automation - INFO - Found window: Dock
-2025-03-06 15:29:30,266 - automation - INFO - Found window: Dock
-2025-03-06 15:29:30,267 - automation - INFO - Login successful.
-2025-03-06 15:29:30,267 - automation - INFO - Login successful.
-2025-03-06 15:29:30,267 - automation - INFO - Login successful.
-2025-03-06 15:29:30,267 - automation - INFO - Login successful.
-2025-03-06 15:29:30,267 - automation - INFO - Login successful.
-2025-03-06 15:29:30,267 - automation - INFO - Logging out of the application...
-2025-03-06 15:29:30,267 - automation - INFO - Logging out of the application...
-2025-03-06 15:29:30,267 - automation - INFO - Logging out of the application...
-2025-03-06 15:29:30,267 - automation - INFO - Logging out of the application...
-2025-03-06 15:29:30,267 - automation - INFO - Logging out of the application...
-2025-03-06 15:29:30,781 - automation - INFO - Found window: Dock
-2025-03-06 15:29:30,781 - automation - INFO - Found window: Dock
-2025-03-06 15:29:30,781 - automation - INFO - Found window: Dock
-2025-03-06 15:29:30,781 - automation - INFO - Found window: Dock
-2025-03-06 15:29:30,781 - automation - INFO - Found window: Dock
-2025-03-06 15:29:31,921 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:29:31,921 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:29:31,921 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:29:31,921 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:29:31,921 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:29:34,148 - automation - INFO - Found window: User Profile
-2025-03-06 15:29:34,148 - automation - INFO - Found window: User Profile
-2025-03-06 15:29:34,148 - automation - INFO - Found window: User Profile
-2025-03-06 15:29:34,148 - automation - INFO - Found window: User Profile
-2025-03-06 15:29:34,148 - automation - INFO - Found window: User Profile
-2025-03-06 15:29:34,689 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:29:34,689 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:29:34,689 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:29:34,689 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:29:34,689 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:29:49,844 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:29:49,844 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:29:49,844 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:29:49,844 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:29:49,844 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:29:49,909 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:29:49,909 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:29:49,909 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:29:49,909 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:29:49,909 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:30:04,985 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:30:04,985 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:30:04,985 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:30:04,985 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:30:04,985 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:30:19,119 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:30:19,119 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:30:19,119 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:30:19,119 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:30:19,119 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:30:19,121 - automation - INFO - Filling in login credentials...
-2025-03-06 15:30:19,121 - automation - INFO - Filling in login credentials...
-2025-03-06 15:30:19,121 - automation - INFO - Filling in login credentials...
-2025-03-06 15:30:19,121 - automation - INFO - Filling in login credentials...
-2025-03-06 15:30:19,121 - automation - INFO - Filling in login credentials...
-2025-03-06 15:30:21,310 - automation - INFO - Login attempt made.
-2025-03-06 15:30:21,310 - automation - INFO - Login attempt made.
-2025-03-06 15:30:21,310 - automation - INFO - Login attempt made.
-2025-03-06 15:30:21,310 - automation - INFO - Login attempt made.
-2025-03-06 15:30:21,310 - automation - INFO - Login attempt made.
-2025-03-06 15:30:35,374 - automation - INFO - Found window: Dock
-2025-03-06 15:30:35,374 - automation - INFO - Found window: Dock
-2025-03-06 15:30:35,374 - automation - INFO - Found window: Dock
-2025-03-06 15:30:35,374 - automation - INFO - Found window: Dock
-2025-03-06 15:30:35,374 - automation - INFO - Found window: Dock
-2025-03-06 15:30:35,377 - automation - INFO - Login successful.
-2025-03-06 15:30:35,377 - automation - INFO - Login successful.
-2025-03-06 15:30:35,377 - automation - INFO - Login successful.
-2025-03-06 15:30:35,377 - automation - INFO - Login successful.
-2025-03-06 15:30:35,377 - automation - INFO - Login successful.
-2025-03-06 15:30:35,378 - automation - INFO - Logging out of the application...
-2025-03-06 15:30:35,378 - automation - INFO - Logging out of the application...
-2025-03-06 15:30:35,378 - automation - INFO - Logging out of the application...
-2025-03-06 15:30:35,378 - automation - INFO - Logging out of the application...
-2025-03-06 15:30:35,378 - automation - INFO - Logging out of the application...
-2025-03-06 15:30:35,867 - automation - INFO - Found window: Dock
-2025-03-06 15:30:35,867 - automation - INFO - Found window: Dock
-2025-03-06 15:30:35,867 - automation - INFO - Found window: Dock
-2025-03-06 15:30:35,867 - automation - INFO - Found window: Dock
-2025-03-06 15:30:35,867 - automation - INFO - Found window: Dock
-2025-03-06 15:30:37,026 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:30:37,026 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:30:37,026 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:30:37,026 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:30:37,026 - automation - INFO - Clicked on User Profile button.
-2025-03-06 15:30:39,272 - automation - INFO - Found window: User Profile
-2025-03-06 15:30:39,272 - automation - INFO - Found window: User Profile
-2025-03-06 15:30:39,272 - automation - INFO - Found window: User Profile
-2025-03-06 15:30:39,272 - automation - INFO - Found window: User Profile
-2025-03-06 15:30:39,272 - automation - INFO - Found window: User Profile
-2025-03-06 15:30:39,814 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:30:39,814 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:30:39,814 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:30:39,814 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:30:39,814 - automation - INFO - Clicked on Log Out button.
-2025-03-06 15:30:55,012 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:30:55,012 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:30:55,012 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:30:55,012 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:30:55,012 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 15:30:55,018 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:30:55,018 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:30:55,018 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:30:55,018 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:30:55,018 - automation - INFO - Launching OpenFin application...
-2025-03-06 15:31:10,084 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:31:10,084 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:31:10,084 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:31:10,084 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:31:10,084 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 15:31:22,491 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:31:22,491 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:31:22,491 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:31:22,491 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:31:22,491 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 15:31:22,492 - automation - INFO - Filling in login credentials...
-2025-03-06 15:31:22,492 - automation - INFO - Filling in login credentials...
-2025-03-06 15:31:22,492 - automation - INFO - Filling in login credentials...
-2025-03-06 15:31:22,492 - automation - INFO - Filling in login credentials...
-2025-03-06 15:31:22,492 - automation - INFO - Filling in login credentials...
-2025-03-06 15:31:24,668 - automation - INFO - Login attempt made.
-2025-03-06 15:31:24,668 - automation - INFO - Login attempt made.
-2025-03-06 15:31:24,668 - automation - INFO - Login attempt made.
-2025-03-06 15:31:24,668 - automation - INFO - Login attempt made.
-2025-03-06 15:31:24,668 - automation - INFO - Login attempt made.
-2025-03-06 15:32:34,692 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 15:32:34,692 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 15:32:34,692 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 15:32:34,692 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 15:32:34,692 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 15:32:34,693 - automation - ERROR - Login failed.
-2025-03-06 15:32:34,693 - automation - ERROR - Login failed.
-2025-03-06 15:32:34,693 - automation - ERROR - Login failed.
-2025-03-06 15:32:34,693 - automation - ERROR - Login failed.
-2025-03-06 15:32:34,693 - automation - ERROR - Login failed.
-2025-03-06 17:13:24,608 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:13:24,608 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:13:24,608 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:13:24,608 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:13:24,608 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:13:39,659 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:13:39,659 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:13:39,659 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:13:39,659 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:13:39,659 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:13:50,089 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:13:50,089 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:13:50,089 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:13:50,089 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:13:50,089 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:13:50,092 - automation - INFO - Filling in login credentials...
-2025-03-06 17:13:50,092 - automation - INFO - Filling in login credentials...
-2025-03-06 17:13:50,092 - automation - INFO - Filling in login credentials...
-2025-03-06 17:13:50,092 - automation - INFO - Filling in login credentials...
-2025-03-06 17:13:50,092 - automation - INFO - Filling in login credentials...
-2025-03-06 17:13:52,158 - automation - INFO - Login attempt made.
-2025-03-06 17:13:52,158 - automation - INFO - Login attempt made.
-2025-03-06 17:13:52,158 - automation - INFO - Login attempt made.
-2025-03-06 17:13:52,158 - automation - INFO - Login attempt made.
-2025-03-06 17:13:52,158 - automation - INFO - Login attempt made.
-2025-03-06 17:14:06,692 - automation - INFO - Found window: Dock
-2025-03-06 17:14:06,692 - automation - INFO - Found window: Dock
-2025-03-06 17:14:06,692 - automation - INFO - Found window: Dock
-2025-03-06 17:14:06,692 - automation - INFO - Found window: Dock
-2025-03-06 17:14:06,692 - automation - INFO - Found window: Dock
-2025-03-06 17:14:06,693 - automation - INFO - Login successful.
-2025-03-06 17:14:06,693 - automation - INFO - Login successful.
-2025-03-06 17:14:06,693 - automation - INFO - Login successful.
-2025-03-06 17:14:06,693 - automation - INFO - Login successful.
-2025-03-06 17:14:06,693 - automation - INFO - Login successful.
-2025-03-06 17:14:06,693 - automation - INFO - Logging out of the application...
-2025-03-06 17:14:06,693 - automation - INFO - Logging out of the application...
-2025-03-06 17:14:06,693 - automation - INFO - Logging out of the application...
-2025-03-06 17:14:06,693 - automation - INFO - Logging out of the application...
-2025-03-06 17:14:06,693 - automation - INFO - Logging out of the application...
-2025-03-06 17:14:07,198 - automation - INFO - Found window: Dock
-2025-03-06 17:14:07,198 - automation - INFO - Found window: Dock
-2025-03-06 17:14:07,198 - automation - INFO - Found window: Dock
-2025-03-06 17:14:07,198 - automation - INFO - Found window: Dock
-2025-03-06 17:14:07,198 - automation - INFO - Found window: Dock
-2025-03-06 17:14:08,364 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:14:08,364 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:14:08,364 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:14:08,364 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:14:08,364 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:14:10,466 - automation - INFO - Found window: User Profile
-2025-03-06 17:14:10,466 - automation - INFO - Found window: User Profile
-2025-03-06 17:14:10,466 - automation - INFO - Found window: User Profile
-2025-03-06 17:14:10,466 - automation - INFO - Found window: User Profile
-2025-03-06 17:14:10,466 - automation - INFO - Found window: User Profile
-2025-03-06 17:14:11,015 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:14:11,015 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:14:11,015 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:14:11,015 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:14:11,015 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:14:26,154 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:14:26,154 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:14:26,154 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:14:26,154 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:14:26,154 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:14:26,172 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:14:26,172 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:14:26,172 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:14:26,172 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:14:26,172 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:14:41,225 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:14:41,225 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:14:41,225 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:14:41,225 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:14:41,225 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:14:53,726 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:14:53,726 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:14:53,726 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:14:53,726 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:14:53,726 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:14:53,727 - automation - INFO - Filling in login credentials...
-2025-03-06 17:14:53,727 - automation - INFO - Filling in login credentials...
-2025-03-06 17:14:53,727 - automation - INFO - Filling in login credentials...
-2025-03-06 17:14:53,727 - automation - INFO - Filling in login credentials...
-2025-03-06 17:14:53,727 - automation - INFO - Filling in login credentials...
-2025-03-06 17:14:55,806 - automation - INFO - Login attempt made.
-2025-03-06 17:14:55,806 - automation - INFO - Login attempt made.
-2025-03-06 17:14:55,806 - automation - INFO - Login attempt made.
-2025-03-06 17:14:55,806 - automation - INFO - Login attempt made.
-2025-03-06 17:14:55,806 - automation - INFO - Login attempt made.
-2025-03-06 17:15:09,862 - automation - INFO - Found window: Dock
-2025-03-06 17:15:09,862 - automation - INFO - Found window: Dock
-2025-03-06 17:15:09,862 - automation - INFO - Found window: Dock
-2025-03-06 17:15:09,862 - automation - INFO - Found window: Dock
-2025-03-06 17:15:09,862 - automation - INFO - Found window: Dock
-2025-03-06 17:15:09,863 - automation - INFO - Login successful.
-2025-03-06 17:15:09,863 - automation - INFO - Login successful.
-2025-03-06 17:15:09,863 - automation - INFO - Login successful.
-2025-03-06 17:15:09,863 - automation - INFO - Login successful.
-2025-03-06 17:15:09,863 - automation - INFO - Login successful.
-2025-03-06 17:15:09,864 - automation - INFO - Logging out of the application...
-2025-03-06 17:15:09,864 - automation - INFO - Logging out of the application...
-2025-03-06 17:15:09,864 - automation - INFO - Logging out of the application...
-2025-03-06 17:15:09,864 - automation - INFO - Logging out of the application...
-2025-03-06 17:15:09,864 - automation - INFO - Logging out of the application...
-2025-03-06 17:15:10,378 - automation - INFO - Found window: Dock
-2025-03-06 17:15:10,378 - automation - INFO - Found window: Dock
-2025-03-06 17:15:10,378 - automation - INFO - Found window: Dock
-2025-03-06 17:15:10,378 - automation - INFO - Found window: Dock
-2025-03-06 17:15:10,378 - automation - INFO - Found window: Dock
-2025-03-06 17:15:11,519 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:15:11,519 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:15:11,519 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:15:11,519 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:15:11,519 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:15:13,612 - automation - INFO - Found window: User Profile
-2025-03-06 17:15:13,612 - automation - INFO - Found window: User Profile
-2025-03-06 17:15:13,612 - automation - INFO - Found window: User Profile
-2025-03-06 17:15:13,612 - automation - INFO - Found window: User Profile
-2025-03-06 17:15:13,612 - automation - INFO - Found window: User Profile
-2025-03-06 17:15:14,168 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:15:14,168 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:15:14,168 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:15:14,168 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:15:14,168 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:15:29,304 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:15:29,304 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:15:29,304 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:15:29,304 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:15:29,304 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:15:29,309 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:15:29,309 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:15:29,309 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:15:29,309 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:15:29,309 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:15:44,357 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:15:44,357 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:15:44,357 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:15:44,357 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:15:44,357 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:15:55,823 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:15:55,823 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:15:55,823 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:15:55,823 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:15:55,823 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:15:55,824 - automation - INFO - Filling in login credentials...
-2025-03-06 17:15:55,824 - automation - INFO - Filling in login credentials...
-2025-03-06 17:15:55,824 - automation - INFO - Filling in login credentials...
-2025-03-06 17:15:55,824 - automation - INFO - Filling in login credentials...
-2025-03-06 17:15:55,824 - automation - INFO - Filling in login credentials...
-2025-03-06 17:15:57,992 - automation - INFO - Login attempt made.
-2025-03-06 17:15:57,992 - automation - INFO - Login attempt made.
-2025-03-06 17:15:57,992 - automation - INFO - Login attempt made.
-2025-03-06 17:15:57,992 - automation - INFO - Login attempt made.
-2025-03-06 17:15:57,992 - automation - INFO - Login attempt made.
-2025-03-06 17:17:08,482 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:17:08,482 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:17:08,482 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:17:08,482 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:17:08,482 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:17:08,482 - automation - ERROR - Login failed.
-2025-03-06 17:17:08,482 - automation - ERROR - Login failed.
-2025-03-06 17:17:08,482 - automation - ERROR - Login failed.
-2025-03-06 17:17:08,482 - automation - ERROR - Login failed.
-2025-03-06 17:17:08,482 - automation - ERROR - Login failed.
-2025-03-06 17:18:09,231 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-2025-03-06 17:18:09,231 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-2025-03-06 17:18:09,231 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-2025-03-06 17:18:09,231 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-2025-03-06 17:18:09,231 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-2025-03-06 17:51:39,754 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:51:39,754 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:51:39,754 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:51:39,754 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:51:39,754 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:51:54,842 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:51:54,842 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:51:54,842 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:51:54,842 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:51:54,842 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:51:59,094 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:51:59,094 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:51:59,094 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:51:59,094 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:51:59,094 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:51:59,095 - automation - INFO - Filling in login credentials...
-2025-03-06 17:51:59,095 - automation - INFO - Filling in login credentials...
-2025-03-06 17:51:59,095 - automation - INFO - Filling in login credentials...
-2025-03-06 17:51:59,095 - automation - INFO - Filling in login credentials...
-2025-03-06 17:51:59,095 - automation - INFO - Filling in login credentials...
-2025-03-06 17:52:01,272 - automation - INFO - Login attempt made.
-2025-03-06 17:52:01,272 - automation - INFO - Login attempt made.
-2025-03-06 17:52:01,272 - automation - INFO - Login attempt made.
-2025-03-06 17:52:01,272 - automation - INFO - Login attempt made.
-2025-03-06 17:52:01,272 - automation - INFO - Login attempt made.
-2025-03-06 17:52:16,230 - automation - INFO - Found window: Dock
-2025-03-06 17:52:16,230 - automation - INFO - Found window: Dock
-2025-03-06 17:52:16,230 - automation - INFO - Found window: Dock
-2025-03-06 17:52:16,230 - automation - INFO - Found window: Dock
-2025-03-06 17:52:16,230 - automation - INFO - Found window: Dock
-2025-03-06 17:52:16,231 - automation - INFO - Login successful.
-2025-03-06 17:52:16,231 - automation - INFO - Login successful.
-2025-03-06 17:52:16,231 - automation - INFO - Login successful.
-2025-03-06 17:52:16,231 - automation - INFO - Login successful.
-2025-03-06 17:52:16,231 - automation - INFO - Login successful.
-2025-03-06 17:52:16,232 - automation - INFO - Logging out of the application...
-2025-03-06 17:52:16,232 - automation - INFO - Logging out of the application...
-2025-03-06 17:52:16,232 - automation - INFO - Logging out of the application...
-2025-03-06 17:52:16,232 - automation - INFO - Logging out of the application...
-2025-03-06 17:52:16,232 - automation - INFO - Logging out of the application...
-2025-03-06 17:52:16,730 - automation - INFO - Found window: Dock
-2025-03-06 17:52:16,730 - automation - INFO - Found window: Dock
-2025-03-06 17:52:16,730 - automation - INFO - Found window: Dock
-2025-03-06 17:52:16,730 - automation - INFO - Found window: Dock
-2025-03-06 17:52:16,730 - automation - INFO - Found window: Dock
-2025-03-06 17:52:17,879 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:52:17,879 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:52:17,879 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:52:17,879 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:52:17,879 - automation - INFO - Clicked on User Profile button.
-2025-03-06 17:52:20,196 - automation - INFO - Found window: User Profile
-2025-03-06 17:52:20,196 - automation - INFO - Found window: User Profile
-2025-03-06 17:52:20,196 - automation - INFO - Found window: User Profile
-2025-03-06 17:52:20,196 - automation - INFO - Found window: User Profile
-2025-03-06 17:52:20,196 - automation - INFO - Found window: User Profile
-2025-03-06 17:52:20,739 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:52:20,739 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:52:20,739 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:52:20,739 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:52:20,739 - automation - INFO - Clicked on Log Out button.
-2025-03-06 17:52:36,038 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:52:36,038 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:52:36,038 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:52:36,038 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:52:36,038 - automation - ERROR - Confirmation dialog not found!
-2025-03-06 17:52:36,043 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:52:36,043 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:52:36,043 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:52:36,043 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:52:36,043 - automation - INFO - Launching OpenFin application...
-2025-03-06 17:52:51,087 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:52:51,087 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:52:51,087 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:52:51,087 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:52:51,087 - automation - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:52:56,154 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:52:56,154 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:52:56,154 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:52:56,154 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:52:56,154 - automation - INFO - Found window: Mizuho Front Office
-2025-03-06 17:52:56,155 - automation - INFO - Filling in login credentials...
-2025-03-06 17:52:56,155 - automation - INFO - Filling in login credentials...
-2025-03-06 17:52:56,155 - automation - INFO - Filling in login credentials...
-2025-03-06 17:52:56,155 - automation - INFO - Filling in login credentials...
-2025-03-06 17:52:56,155 - automation - INFO - Filling in login credentials...
-2025-03-06 17:52:58,368 - automation - INFO - Login attempt made.
-2025-03-06 17:52:58,368 - automation - INFO - Login attempt made.
-2025-03-06 17:52:58,368 - automation - INFO - Login attempt made.
-2025-03-06 17:52:58,368 - automation - INFO - Login attempt made.
-2025-03-06 17:52:58,368 - automation - INFO - Login attempt made.
-2025-03-06 17:54:08,537 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:54:08,537 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:54:08,537 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:54:08,537 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:54:08,537 - automation - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:54:08,537 - automation - ERROR - Login failed.
-2025-03-06 17:54:08,537 - automation - ERROR - Login failed.
-2025-03-06 17:54:08,537 - automation - ERROR - Login failed.
-2025-03-06 17:54:08,537 - automation - ERROR - Login failed.
-2025-03-06 17:54:08,537 - automation - ERROR - Login failed.
-2025-03-06 17:55:09,466 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-2025-03-06 17:55:09,466 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-2025-03-06 17:55:09,466 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-2025-03-06 17:55:09,466 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-2025-03-06 17:55:09,466 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-
-
-(venv) PS C:\Automation\automation_suite> behave --tags=@invalid_login 
+(venv) PS C:\Automation\automation_suite> behave --tags=@invalid_login
 Feature: Comments Screen # features/comments_screen.feature:1
 
-  Scenario: Open Comments Screen                 # features/comments_screen.feature:3
+  Scenario: Open Comments Screen                 # features/comments_screen.feature:3  
     Given I am logged in to the application      # None
     When I open the Comments screen              # None
     Then the Comments screen should be displayed # None
@@ -799,35 +30,142 @@ Feature: User Login # features/login.feature:1
   @invalid_login
   Scenario: Unsuccessful login with invalid credentials  # features/login.feature:9
     Given the OpenFin application is launched            # steps/login_steps.py:11
-2025-03-06 17:51:39,751 - INFO - Launching the OpenFin application...
-2025-03-06 17:51:39,754 - INFO - Launching OpenFin application...
+2025-03-06 18:46:44,461 - INFO - Launching the OpenFin application...
+2025-03-06 18:46:44,519 - INFO - Launching OpenFin application...
 fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-06 17:51:54,842 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:51:59,094 - INFO - Found window: Mizuho Front Office
-2025-03-06 17:51:59,095 - INFO - Filling in login credentials...
-2025-03-06 17:52:01,272 - INFO - Login attempt made.
-2025-03-06 17:52:16,230 - INFO - Found window: Dock
-2025-03-06 17:52:16,231 - INFO - Login successful.
-2025-03-06 17:52:16,232 - INFO - Logging out of the application...
-2025-03-06 17:52:16,730 - INFO - Found window: Dock
-2025-03-06 17:52:17,879 - INFO - Clicked on User Profile button.
-2025-03-06 17:52:20,196 - INFO - Found window: User Profile
-2025-03-06 17:52:20,739 - INFO - Clicked on Log Out button.
-2025-03-06 17:52:36,038 - ERROR - Confirmation dialog not found!
-2025-03-06 17:52:36,040 - INFO - OpenFin application launched.
+2025-03-06 18:46:59,659 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-06 18:47:07,242 - INFO - Found window: Mizuho Front Office
+2025-03-06 18:47:07,244 - INFO - OpenFin application launched.
     When I enter invalid credentials                     # steps/login_steps.py:23
-2025-03-06 17:52:36,041 - INFO - Entering invalid credentials...
-2025-03-06 17:52:36,043 - INFO - Launching OpenFin application...
+2025-03-06 18:47:07,246 - INFO - Entering invalid credentials...
+2025-03-06 18:47:07,752 - INFO - Found window: Mizuho Front Office
+2025-03-06 18:47:07,754 - INFO - Filling in login credentials...
+2025-03-06 18:47:09,940 - INFO - Login attempt made.
+2025-03-06 18:47:09,942 - INFO - Invalid credentials entered.
+2025-03-06 18:47:10,444 - INFO - Error message validated successfully.
+    Then I should see an error message                   # steps/login_steps.py:40
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\login_steps.py", line 42, in step_impl
+          assert context.result is False, "Error message not displayed for invalid login."
+                 ^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\runner.py", line 321, in __getattr__
+          raise AttributeError(msg)
+      AttributeError: 'Context' object has no attribute 'result'
+
+      Captured logging:
+      INFO:builtins:Launching the OpenFin application...
+      INFO:automation:Launching OpenFin application...
+      INFO:automation:Waiting for the Mizuho login window to appear...
+      INFO:automation:Found window: Mizuho Front Office
+      INFO:builtins:OpenFin application launched.
+      INFO:builtins:Entering invalid credentials...
+      INFO:automation:Found window: Mizuho Front Office
+      INFO:automation:Filling in login credentials...
+      INFO:automation:Login attempt made.
+      INFO:builtins:Invalid credentials entered.
+      INFO:automation:Error message validated successfully.
+
+
+Feature: User Logout # features/logout.feature:1
+
+  Scenario: Successful logout                # features/logout.feature:3
+    Given I am logged in to the application  # None
+    When I log out                           # None
+    Then I should be logged out successfully # None
+
+Feature: Position Manager Screen # features/position_manager_screen.feature:1
+
+  Scenario: Open Position Manager Screen                 # features/position_manager_screen.feature:3
+    Given I am logged in to the application              # None
+    When I open the Position Manager screen              # None
+    Then the Position Manager screen should be displayed # None
+
+Feature: Sales Blotter Screen # features/sales_blotter_screen.feature:1
+
+  Scenario: Open Sales Blotter Screen                 # features/sales_blotter_screen.feature:3
+    Given I am logged in to the application           # None
+    When I open the Sales Blotter screen              # None
+    Then the Sales Blotter screen should be displayed # None
+
+Feature: Settings Screen # features/settings_screen.feature:1
+
+  Scenario: Open Settings Screen                 # features/settings_screen.feature:3
+    Given I am logged in to the application      # None
+    When I open the Settings screen              # None
+    Then the Settings screen should be displayed # None
+
+Feature: Trader Blotter Screen # features/trader_blotter_screen.feature:1
+
+  Scenario: Open Trader Blotter Screen                 # features/trader_blotter_screen.feature:3
+    Given I am logged in to the application            # None
+(venv) PS C:\Automation\automation_suite> behave --tags=@valid_login  
+Feature: Comments Screen # features/comments_screen.feature:1
+
+  Scenario: Open Comments Screen                 # features/comments_screen.feature:3  
+    Given I am logged in to the application      # None
+    When I open the Comments screen              # None
+    Then the Comments screen should be displayed # None
+
+Feature: Dashboard Screen # features/dashboard_screen.feature:1
+
+  Scenario: Open Dashboard Screen                 # features/dashboard_screen.feature:3
+    Given I am logged in to the application       # None
+    When I open the Dashboard screen              # None
+    Then the Dashboard screen should be displayed # None
+
+Feature: Historical Trader Blotter Screen # features/historical_trader_blotter_screen.feature:1
+
+  Scenario: Open Historical Trader Blotter Screen                 # features/historical_trader_blotter_screen.feature:3
+    Given I am logged in to the application                       # None
+    When I open the Historical Trader Blotter screen              # None
+    Then the Historical Trader Blotter screen should be displayed # None
+
+Feature: User Login # features/login.feature:1
+
+  @valid_login
+  Scenario: Successful login                  # features/login.feature:4
+    Given the OpenFin application is launched # steps/login_steps.py:11
+2025-03-06 18:48:54,497 - INFO - Launching the OpenFin application...
+2025-03-06 18:48:54,499 - INFO - Launching OpenFin application...
 fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-06 17:52:51,087 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 17:52:56,154 - INFO - Found window: Mizuho Front Office
-2025-03-06 17:52:56,155 - INFO - Filling in login credentials...
-2025-03-06 17:52:58,368 - INFO - Login attempt made.
-2025-03-06 17:54:08,537 - ERROR - Window 'Dock' not found within 60 seconds.
-2025-03-06 17:54:08,537 - ERROR - Login failed.
-2025-03-06 17:54:08,539 - INFO - Invalid credentials entered.
-2025-03-06 17:55:09,466 - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
-    Then I should see an error message                   # steps/login_steps.py:44
+2025-03-06 18:49:09,588 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-06 18:49:14,839 - INFO - Found window: Mizuho Front Office
+2025-03-06 18:49:14,841 - INFO - OpenFin application launched.
+    When I enter valid credentials            # steps/login_steps.py:17
+2025-03-06 18:49:14,843 - INFO - Entering valid credentials...
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\login_steps.py", line 20, in step_impl
+          login_with_credentials(context.dlg, context.config.userdata['username'], context.config.userdata['password'])
+                                              ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+      KeyError: 'username'
+
+      Captured logging:
+      INFO:builtins:Launching the OpenFin application...
+      INFO:automation:Launching OpenFin application...
+      INFO:automation:Waiting for the Mizuho login window to appear...
+      INFO:automation:Found window: Mizuho Front Office
+      INFO:builtins:OpenFin application launched.
+      INFO:builtins:Entering valid credentials...
+
+    Then I should be logged in successfully   # None
+
+  @invalid_login
+  Scenario: Unsuccessful login with invalid credentials  # features/login.feature:10
+    Given the OpenFin application is launched            # None
+    When I enter invalid credentials                     # None
+    Then I should see an error message                   # None
 
 Feature: User Logout # features/logout.feature:1
 
@@ -864,8 +202,12 @@ Feature: Trader Blotter Screen # features/trader_blotter_screen.feature:1
     When I open the Trader Blotter screen              # None
     Then the Trader Blotter screen should be displayed # None
 
-1 feature passed, 0 failed, 8 skipped
-1 scenario passed, 0 failed, 9 skipped
-3 steps passed, 0 failed, 27 skipped, 0 undefined
-Took 3m29.718s
+
+Failing scenarios:
+  features/login.feature:4  Successful login
+
+0 features passed, 1 failed, 8 skipped
+0 scenarios passed, 1 failed, 9 skipped
+1 step passed, 1 failed, 28 skipped, 0 undefined
+Took 0m20.349s
 (venv) PS C:\Automation\automation_suite> 
