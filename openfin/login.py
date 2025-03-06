@@ -6,6 +6,7 @@ from utils.config import USERNAME, PASSWORD, WINDOW_TITLE, BAT_FILE_PATH
 from utils.logger import setup_logger
 from utils.window_utils import wait_for_window
 from utils.screenshot import capture_screenshot
+from openfin.logout import logout  # Import logout function
 
 logger = setup_logger()
 
@@ -29,10 +30,10 @@ def automate_login(username=USERNAME, password=PASSWORD):
     login_window = wait_for_window(WINDOW_TITLE, timeout=60)
 
     if login_window is None:
-        logger.error("Login window not found! Current windows: %s", "")
+        logger.error("Login window not found!")
         return False
 
-    app = Application(backend='uia').connect(handle=login_window.handle)  # Change _hWnd to handle
+    app = Application(backend='uia').connect(handle=login_window.handle)
     dlg = app.window(title=WINDOW_TITLE)
 
     logger.info("Filling in login credentials...")
@@ -55,7 +56,24 @@ def automate_login(username=USERNAME, password=PASSWORD):
 
     if dock_window is not None:
         logger.info("Login successful.")
+        logout()  # Call the logout function
         return True
     else:
-        logger.error("Login failed. Current windows: %s", "")
+        logger.error("Login failed.")
+        return False
+
+def validate_error_message(dlg):
+    """Validate the error message displayed on the login screen."""
+    try:
+        error_field = dlg.child_window(control_type="Text", found_index=0)  # Adjust based on actual structure
+        error_message = error_field.window_text()
+        expected_message = "Login failed.\nIncorrect username and/or password OR Invalid/missing access token"
+        if error_message == expected_message:
+            logger.info("Error message validated successfully.")
+            return True
+        else:
+            logger.error(f"Unexpected error message: {error_message}")
+            return False
+    except Exception as e:
+        logger.error(f"Error validating error message: {e}")
         return False

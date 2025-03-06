@@ -1,11 +1,8 @@
 import logging
 from behave import given, when, then
-from openfin.login import automate_login
-from utils.screenshot import capture_screenshot  # Updated import
+from openfin.login import automate_login, validate_error_message
+from utils.screenshot import capture_screenshot
 
-# Other code remains the same
-
-# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -26,6 +23,14 @@ def step_impl(context):
     logger.info("Entering invalid credentials...")
     context.result = automate_login(username="invalid_user", password="wrong_password")
     logger.info("Invalid credentials entered.")
+
+    # Validate the error message on the login screen
+    login_window = wait_for_window("Mizuho Front Office", timeout=60)
+    if login_window:
+        app = Application(backend='uia').connect(handle=login_window.handle)
+        dlg = app.window(title="Mizuho Front Office")
+        if not validate_error_message(dlg):
+            logger.error("Error message validation failed.")
 
 @then("I should be logged in successfully")
 def step_impl(context):
