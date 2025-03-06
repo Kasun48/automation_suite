@@ -4,7 +4,7 @@ import os
 from pywinauto import Application
 from utils.config import USERNAME, PASSWORD, WINDOW_TITLE, BAT_FILE_PATH
 from utils.logger import setup_logger
-from utils.window_utils import wait_for_window  # Removed list_open_windows
+from utils.window_utils import wait_for_window
 from utils.screenshot import capture_screenshot
 
 logger = setup_logger()
@@ -32,7 +32,7 @@ def automate_login(username=USERNAME, password=PASSWORD):
         logger.error("Login window not found! Current windows: %s", "")
         return False
 
-    app = Application(backend='uia').connect(handle=login_window._hWnd)
+    app = Application(backend='uia').connect(handle=login_window.handle)  # Change _hWnd to handle
     dlg = app.window(title=WINDOW_TITLE)
 
     logger.info("Filling in login credentials...")
