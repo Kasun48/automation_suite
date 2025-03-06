@@ -1,49 +1,12 @@
-(venv) PS C:\Automation\automation_suite> behave --tags=@invalid_login
+(venv) PS C:\Automation\automation_suite>  .\run_tests.bat
 Feature: Comments Screen # features/comments_screen.feature:1
 
-  Scenario: Open Comments Screen                 # features/comments_screen.feature:3  
-    Given I am logged in to the application      # None
-    When I open the Comments screen              # None
-    Then the Comments screen should be displayed # None
-
-Feature: Dashboard Screen # features/dashboard_screen.feature:1
-
-  Scenario: Open Dashboard Screen                 # features/dashboard_screen.feature:3
-    Given I am logged in to the application       # None
-    When I open the Dashboard screen              # None
-    Then the Dashboard screen should be displayed # None
-
-Feature: Historical Trader Blotter Screen # features/historical_trader_blotter_screen.feature:1
-
-  Scenario: Open Historical Trader Blotter Screen                 # features/historical_trader_blotter_screen.feature:3
-    Given I am logged in to the application                       # None
-    When I open the Historical Trader Blotter screen              # None
-    Then the Historical Trader Blotter screen should be displayed # None
-
-Feature: User Login # features/login.feature:1
-
-  Scenario: Successful login                  # features/login.feature:3
-    Given the OpenFin application is launched # None
-    When I enter valid credentials            # None
-    Then I should be logged in successfully   # None
-
-  @invalid_login
-  Scenario: Unsuccessful login with invalid credentials  # features/login.feature:9
-    Given the OpenFin application is launched            # steps/login_steps.py:11
-2025-03-06 18:46:44,461 - INFO - Launching the OpenFin application...
-2025-03-06 18:46:44,519 - INFO - Launching OpenFin application...
-fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-06 18:46:59,659 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 18:47:07,242 - INFO - Found window: Mizuho Front Office
-2025-03-06 18:47:07,244 - INFO - OpenFin application launched.
-    When I enter invalid credentials                     # steps/login_steps.py:23
-2025-03-06 18:47:07,246 - INFO - Entering invalid credentials...
-2025-03-06 18:47:07,752 - INFO - Found window: Mizuho Front Office
-2025-03-06 18:47:07,754 - INFO - Filling in login credentials...
-2025-03-06 18:47:09,940 - INFO - Login attempt made.
-2025-03-06 18:47:09,942 - INFO - Invalid credentials entered.
-2025-03-06 18:47:10,444 - INFO - Error message validated successfully.
-    Then I should see an error message                   # steps/login_steps.py:40
+  Scenario: Open Comments Screen                 # features/comments_screen.feature:3
+    Given I am logged in to the application      # steps/logout_steps.py:8
+    When I open the Comments screen              # steps/comments_screen_steps.py:4
+2025-03-06 19:59:24,179 - INFO - Opening Merlin screen: comments-main
+2025-03-06 20:00:24,469 - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 20:00:24,470 - ERROR - Dock window not found!
       Traceback (most recent call last):
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
           match.run(runner.context)
@@ -51,8 +14,98 @@ fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
           self.func(context, *args, **kwargs)
           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "steps\login_steps.py", line 42, in step_impl
-          assert context.result is False, "Error message not displayed for invalid login."
+        File "steps\comments_screen_steps.py", line 9, in step_impl
+          assert open_merlin_screen("comments-main")
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+      AssertionError
+
+      Captured logging:
+      INFO:automation:Opening Merlin screen: comments-main
+      ERROR:automation:Window 'Dock' not found within 60 seconds.
+      ERROR:automation:Dock window not found!
+
+    Then the Comments screen should be displayed # None
+
+Feature: Dashboard Screen # features/dashboard_screen.feature:1
+
+  Scenario: Open Dashboard Screen                 # features/dashboard_screen.feature:3
+    Given I am logged in to the application       # steps/logout_steps.py:8
+    When I open the Dashboard screen              # steps/dashboard_screen_steps.py:4
+2025-03-06 20:00:24,579 - INFO - Opening Merlin screen: dashboard
+2025-03-06 20:01:25,920 - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 20:01:25,921 - ERROR - Dock window not found!
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\dashboard_screen_steps.py", line 9, in step_impl
+          assert open_merlin_screen("dashboard")
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+      AssertionError
+
+      Captured logging:
+      INFO:automation:Opening Merlin screen: dashboard
+      ERROR:automation:Window 'Dock' not found within 60 seconds.
+      ERROR:automation:Dock window not found!
+
+    Then the Dashboard screen should be displayed # None
+
+Feature: Historical Trader Blotter Screen # features/historical_trader_blotter_screen.feature:1
+
+  Scenario: Open Historical Trader Blotter Screen                 # features/historical_trader_blotter_screen.feature:3
+    Given I am logged in to the application                       # steps/logout_steps.py:8
+    When I open the Historical Trader Blotter screen              # steps/historical_trader_blotter_screen_steps.py:4
+2025-03-06 20:01:25,936 - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-06 20:02:26,711 - ERROR - Window 'Dock' not found within 60 seconds.
+2025-03-06 20:02:26,712 - ERROR - Dock window not found!
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\historical_trader_blotter_screen_steps.py", line 6, in step_impl
+          assert open_merlin_screen("historical-trader-blotter")
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      AssertionError
+
+      Captured logging:
+      INFO:automation:Opening Merlin screen: historical-trader-blotter
+      ERROR:automation:Window 'Dock' not found within 60 seconds.
+      ERROR:automation:Dock window not found!
+
+    Then the Historical Trader Blotter screen should be displayed # None
+
+Feature: User Login # features/login.feature:1
+
+  @valid_login
+  Scenario: Successful login                  # features/login.feature:4
+    Given the OpenFin application is launched # steps/login_steps.py:12
+2025-03-06 20:02:26,723 - INFO - Launching the OpenFin application...
+2025-03-06 20:02:26,725 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-03-06 20:02:41,771 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-06 20:02:46,743 - INFO - Found window: Mizuho Front Office
+2025-03-06 20:02:46,745 - INFO - OpenFin application launched.
+    When I enter valid credentials            # steps/login_steps.py:18
+2025-03-06 20:02:46,747 - INFO - Entering valid credentials...
+2025-03-06 20:02:46,747 - INFO - Filling in login credentials...
+2025-03-06 20:02:48,724 - INFO - Login attempt made.
+2025-03-06 20:02:48,732 - INFO - Valid credentials entered.
+    Then I should be logged in successfully   # steps/login_steps.py:42
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\login_steps.py", line 44, in step_impl
+          assert context.result is True, "Login was not successful."
                  ^^^^^^^^^^^^^^
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\runner.py", line 321, in __getattr__
           raise AttributeError(msg)
@@ -64,81 +117,26 @@ fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
       INFO:automation:Waiting for the Mizuho login window to appear...
       INFO:automation:Found window: Mizuho Front Office
       INFO:builtins:OpenFin application launched.
-      INFO:builtins:Entering invalid credentials...
-      INFO:automation:Found window: Mizuho Front Office
+      INFO:builtins:Entering valid credentials...
       INFO:automation:Filling in login credentials...
       INFO:automation:Login attempt made.
-      INFO:builtins:Invalid credentials entered.
-      INFO:automation:Error message validated successfully.
+      INFO:builtins:Valid credentials entered.
 
 
-Feature: User Logout # features/logout.feature:1
-
-  Scenario: Successful logout                # features/logout.feature:3
-    Given I am logged in to the application  # None
-    When I log out                           # None
-    Then I should be logged out successfully # None
-
-Feature: Position Manager Screen # features/position_manager_screen.feature:1
-
-  Scenario: Open Position Manager Screen                 # features/position_manager_screen.feature:3
-    Given I am logged in to the application              # None
-    When I open the Position Manager screen              # None
-    Then the Position Manager screen should be displayed # None
-
-Feature: Sales Blotter Screen # features/sales_blotter_screen.feature:1
-
-  Scenario: Open Sales Blotter Screen                 # features/sales_blotter_screen.feature:3
-    Given I am logged in to the application           # None
-    When I open the Sales Blotter screen              # None
-    Then the Sales Blotter screen should be displayed # None
-
-Feature: Settings Screen # features/settings_screen.feature:1
-
-  Scenario: Open Settings Screen                 # features/settings_screen.feature:3
-    Given I am logged in to the application      # None
-    When I open the Settings screen              # None
-    Then the Settings screen should be displayed # None
-
-Feature: Trader Blotter Screen # features/trader_blotter_screen.feature:1
-
-  Scenario: Open Trader Blotter Screen                 # features/trader_blotter_screen.feature:3
-    Given I am logged in to the application            # None
-(venv) PS C:\Automation\automation_suite> behave --tags=@valid_login  
-Feature: Comments Screen # features/comments_screen.feature:1
-
-  Scenario: Open Comments Screen                 # features/comments_screen.feature:3  
-    Given I am logged in to the application      # None
-    When I open the Comments screen              # None
-    Then the Comments screen should be displayed # None
-
-Feature: Dashboard Screen # features/dashboard_screen.feature:1
-
-  Scenario: Open Dashboard Screen                 # features/dashboard_screen.feature:3
-    Given I am logged in to the application       # None
-    When I open the Dashboard screen              # None
-    Then the Dashboard screen should be displayed # None
-
-Feature: Historical Trader Blotter Screen # features/historical_trader_blotter_screen.feature:1
-
-  Scenario: Open Historical Trader Blotter Screen                 # features/historical_trader_blotter_screen.feature:3
-    Given I am logged in to the application                       # None
-    When I open the Historical Trader Blotter screen              # None
-    Then the Historical Trader Blotter screen should be displayed # None
-
-Feature: User Login # features/login.feature:1
-
-  @valid_login
-  Scenario: Successful login                  # features/login.feature:4
-    Given the OpenFin application is launched # steps/login_steps.py:11
-2025-03-06 18:48:54,497 - INFO - Launching the OpenFin application...
-2025-03-06 18:48:54,499 - INFO - Launching OpenFin application...
+  @invalid_login
+  Scenario: Unsuccessful login with invalid credentials  # features/login.feature:10
+    Given the OpenFin application is launched            # steps/login_steps.py:12
+2025-03-06 20:02:48,751 - INFO - Launching the OpenFin application...
+2025-03-06 20:02:48,755 - INFO - Launching OpenFin application...
 fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-06 18:49:09,588 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-06 18:49:14,839 - INFO - Found window: Mizuho Front Office
-2025-03-06 18:49:14,841 - INFO - OpenFin application launched.
-    When I enter valid credentials            # steps/login_steps.py:17
-2025-03-06 18:49:14,843 - INFO - Entering valid credentials...
+2025-03-06 20:03:03,818 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-06 20:04:04,057 - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
+2025-03-06 20:04:04,058 - ERROR - Login window not found!
+2025-03-06 20:04:04,059 - INFO - OpenFin application launched.
+    When I enter invalid credentials                     # steps/login_steps.py:27
+2025-03-06 20:04:04,061 - INFO - Entering invalid credentials...
+2025-03-06 20:05:04,327 - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
+    Then I should see an error message                   # steps/login_steps.py:46
       Traceback (most recent call last):
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
           match.run(runner.context)
@@ -146,68 +144,192 @@ fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
           self.func(context, *args, **kwargs)
           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "steps\login_steps.py", line 20, in step_impl
-          login_with_credentials(context.dlg, context.config.userdata['username'], context.config.userdata['password'])
-                                              ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-      KeyError: 'username'
+        File "steps\login_steps.py", line 48, in step_impl
+          assert context.result is False, "Error message not displayed for invalid login."
+                 ^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\runner.py", line 321, in __getattr__
+          raise AttributeError(msg)
+      AttributeError: 'Context' object has no attribute 'result'
 
       Captured logging:
       INFO:builtins:Launching the OpenFin application...
       INFO:automation:Launching OpenFin application...
       INFO:automation:Waiting for the Mizuho login window to appear...
-      INFO:automation:Found window: Mizuho Front Office
+      ERROR:automation:Window 'Mizuho Front Office' not found within 60 seconds.
+      ERROR:automation:Login window not found!
       INFO:builtins:OpenFin application launched.
-      INFO:builtins:Entering valid credentials...
+      INFO:builtins:Entering invalid credentials...
+      ERROR:automation:Window 'Mizuho Front Office' not found within 60 seconds.
 
-    Then I should be logged in successfully   # None
-
-  @invalid_login
-  Scenario: Unsuccessful login with invalid credentials  # features/login.feature:10
-    Given the OpenFin application is launched            # None
-    When I enter invalid credentials                     # None
-    Then I should see an error message                   # None
 
 Feature: User Logout # features/logout.feature:1
 
   Scenario: Successful logout                # features/logout.feature:3
-    Given I am logged in to the application  # None
-    When I log out                           # None
-    Then I should be logged out successfully # None
+    Given I am logged in to the application  # steps/logout_steps.py:8
+    When I log out                           # steps/logout_steps.py:12
+2025-03-06 20:05:04,368 - INFO - Logging out of the application...
+2025-03-06 20:05:04,825 - INFO - Found window: Dock
+2025-03-06 20:05:05,974 - INFO - Clicked on User Profile button.
+2025-03-06 20:05:08,078 - INFO - Found window: User Profile
+2025-03-06 20:05:08,622 - INFO - Clicked on Log Out button.
+2025-03-06 20:05:23,764 - ERROR - Confirmation dialog not found!
+    Then I should be logged out successfully # steps/logout_steps.py:16
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\logout_steps.py", line 19, in step_impl
+          capture_screenshot("logout_failure.png")  # Updated to use capture_screenshot
+          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\utils\screenshot.py", line 7, in capture_screenshot
+          pyautogui.screenshot(filename)
+          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\pyscreeze\__init__.py", line 544, in _screenshot_win32
+          im.save(imageFilename)
+          ~~~~~~~^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\PIL\Image.py", line 2591, in save
+          fp = builtins.open(filename, "w+b")
+      FileNotFoundError: [Errno 2] No such file or directory: 'screenshots/logout_failure.png_20250306-200523.png'
+
+      Captured logging:
+      INFO:automation:Logging out of the application...
+      INFO:automation:Found window: Dock
+      INFO:automation:Clicked on User Profile button.
+      INFO:automation:Found window: User Profile
+      INFO:automation:Clicked on Log Out button.
+      ERROR:automation:Confirmation dialog not found!
+
 
 Feature: Position Manager Screen # features/position_manager_screen.feature:1
 
   Scenario: Open Position Manager Screen                 # features/position_manager_screen.feature:3
-    Given I am logged in to the application              # None
-    When I open the Position Manager screen              # None
+    Given I am logged in to the application              # steps/logout_steps.py:8
+    When I open the Position Manager screen              # steps/position_manager_screen_steps.py:4
+2025-03-06 20:05:23,976 - INFO - Opening Merlin screen: position-manager
+2025-03-06 20:05:24,489 - INFO - Found window: Dock
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\position_manager_screen_steps.py", line 6, in step_impl
+          assert open_merlin_screen("position-manager")
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\openfin\merlin.py", line 16, in open_merlin_screen
+          app = Application(backend='uia').connect(handle=dock_window._hWnd)
+                                                          ^^^^^^^^^^^^^^^^^
+      AttributeError: 'UIAWrapper' object has no attribute '_hWnd'
+
+      Captured logging:
+      INFO:automation:Opening Merlin screen: position-manager
+      INFO:automation:Found window: Dock
+
     Then the Position Manager screen should be displayed # None
 
 Feature: Sales Blotter Screen # features/sales_blotter_screen.feature:1
 
   Scenario: Open Sales Blotter Screen                 # features/sales_blotter_screen.feature:3
-    Given I am logged in to the application           # None
-    When I open the Sales Blotter screen              # None
+    Given I am logged in to the application           # steps/logout_steps.py:8
+    When I open the Sales Blotter screen              # steps/sales_blotter_screen_steps.py:4
+2025-03-06 20:05:24,519 - INFO - Opening Merlin screen: sales-blotter
+2025-03-06 20:05:24,995 - INFO - Found window: Dock
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\sales_blotter_screen_steps.py", line 6, in step_impl
+          assert open_merlin_screen("sales-blotter")
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\openfin\merlin.py", line 16, in open_merlin_screen
+          app = Application(backend='uia').connect(handle=dock_window._hWnd)
+                                                          ^^^^^^^^^^^^^^^^^
+      AttributeError: 'UIAWrapper' object has no attribute '_hWnd'
+
+      Captured logging:
+      INFO:automation:Opening Merlin screen: sales-blotter
+      INFO:automation:Found window: Dock
+
     Then the Sales Blotter screen should be displayed # None
 
 Feature: Settings Screen # features/settings_screen.feature:1
 
   Scenario: Open Settings Screen                 # features/settings_screen.feature:3
-    Given I am logged in to the application      # None
-    When I open the Settings screen              # None
+    Given I am logged in to the application      # steps/logout_steps.py:8
+    When I open the Settings screen              # steps/settings_screen_steps.py:4
+2025-03-06 20:05:25,010 - INFO - Opening Merlin screen: settings
+2025-03-06 20:05:25,498 - INFO - Found window: Dock
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\settings_screen_steps.py", line 6, in step_impl
+          assert open_merlin_screen("settings")
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\openfin\merlin.py", line 16, in open_merlin_screen
+          app = Application(backend='uia').connect(handle=dock_window._hWnd)
+                                                          ^^^^^^^^^^^^^^^^^
+      AttributeError: 'UIAWrapper' object has no attribute '_hWnd'
+
+      Captured logging:
+      INFO:automation:Opening Merlin screen: settings
+      INFO:automation:Found window: Dock
+
     Then the Settings screen should be displayed # None
 
 Feature: Trader Blotter Screen # features/trader_blotter_screen.feature:1
 
   Scenario: Open Trader Blotter Screen                 # features/trader_blotter_screen.feature:3
-    Given I am logged in to the application            # None
-    When I open the Trader Blotter screen              # None
+    Given I am logged in to the application            # steps/logout_steps.py:8
+    When I open the Trader Blotter screen              # steps/trader_blotter_screen_steps.py:4
+2025-03-06 20:05:25,513 - INFO - Opening Merlin screen: trader-blotter
+2025-03-06 20:05:26,004 - INFO - Found window: Dock
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\trader_blotter_screen_steps.py", line 6, in step_impl
+          assert open_merlin_screen("trader-blotter")
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\openfin\merlin.py", line 16, in open_merlin_screen
+          app = Application(backend='uia').connect(handle=dock_window._hWnd)
+                                                          ^^^^^^^^^^^^^^^^^
+      AttributeError: 'UIAWrapper' object has no attribute '_hWnd'
+
+      Captured logging:
+      INFO:automation:Opening Merlin screen: trader-blotter
+      INFO:automation:Found window: Dock
+
     Then the Trader Blotter screen should be displayed # None
 
 
 Failing scenarios:
+  features/comments_screen.feature:3  Open Comments Screen
+  features/dashboard_screen.feature:3  Open Dashboard Screen
+  features/historical_trader_blotter_screen.feature:3  Open Historical Trader Blotter Screen
   features/login.feature:4  Successful login
+  features/login.feature:10  Unsuccessful login with invalid credentials
+  features/logout.feature:3  Successful logout
+  features/position_manager_screen.feature:3  Open Position Manager Screen
+  features/sales_blotter_screen.feature:3  Open Sales Blotter Screen
+  features/settings_screen.feature:3  Open Settings Screen
+  features/trader_blotter_screen.feature:3  Open Trader Blotter Screen
 
-0 features passed, 1 failed, 8 skipped
-0 scenarios passed, 1 failed, 9 skipped
-1 step passed, 1 failed, 28 skipped, 0 undefined
-Took 0m20.349s
+0 features passed, 9 failed, 0 skipped
+0 scenarios passed, 10 failed, 0 skipped
+13 steps passed, 10 failed, 7 skipped, 0 undefined
+Took 6m1.659s
 (venv) PS C:\Automation\automation_suite> 
