@@ -6,7 +6,6 @@ from utils.config import USERNAME, PASSWORD, WINDOW_TITLE, BAT_FILE_PATH
 from utils.logger import setup_logger
 from utils.window_utils import wait_for_window
 from utils.screenshot import capture_screenshot
-from openfin.logout import logout  # Import logout function
 
 logger = setup_logger()
 
@@ -21,11 +20,7 @@ def launch_application():
     time.sleep(15)  # Adjust based on loading time
 
 def automate_login(username=USERNAME, password=PASSWORD):
-    try:
-        launch_application()
-    except FileNotFoundError:
-        return False
-    
+    launch_application()
     logger.info("Waiting for the Mizuho login window to appear...")
     login_window = wait_for_window(WINDOW_TITLE, timeout=60)
 
@@ -35,7 +30,9 @@ def automate_login(username=USERNAME, password=PASSWORD):
 
     app = Application(backend='uia').connect(handle=login_window.handle)
     dlg = app.window(title=WINDOW_TITLE)
+    return dlg
 
+def login_with_credentials(dlg, username, password):
     logger.info("Filling in login credentials...")
     try:
         username_field = dlg.child_window(control_type="Edit", found_index=0)
@@ -51,22 +48,13 @@ def automate_login(username=USERNAME, password=PASSWORD):
         logger.error("Error during login: %s", e)
         return False
 
-    time.sleep(10)  # Wait for the dock to load
-    dock_window = wait_for_window("Dock", timeout=60)
-
-    if dock_window is not None:
-        logger.info("Login successful.")
-        logout()  # Call the logout function
-        return True
-    else:
-        logger.error("Login failed.")
-        return False
+    return True
 
 def validate_error_message(dlg):
     """Validate the error message displayed on the login screen."""
     try:
         error_field = dlg.child_window(control_type="Text", found_index=0)
-        error_message = error_field.window_text()
+        error_message = error_field.window_text().strip()
         expected_message = "Login failed.\nIncorrect username and/or password OR Invalid/missing access token"
         if error_message == expected_message:
             logger.info("Error message validated successfully.")
