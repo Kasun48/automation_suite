@@ -4,6 +4,7 @@ from openfin.login import automate_login, login_with_credentials, validate_error
 from utils.screenshot import capture_screenshot
 from utils.window_utils import wait_for_window
 from pywinauto import Application
+from utils.config import USERNAME, PASSWORD, INVALID_USERNAME, INVALID_PASSWORD
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -17,7 +18,10 @@ def step_impl(context):
 @when("I enter valid credentials")
 def step_impl(context):
     logger.info("Entering valid credentials...")
-    login_with_credentials(context.dlg, context.config.userdata['username'], context.config.userdata['password'])
+    if context.dlg is None:
+        logger.error("Login dialog not found!")
+        raise Exception("Login dialog not found!")
+    login_with_credentials(context.dlg, USERNAME, PASSWORD)
     logger.info("Valid credentials entered.")
 
 @when("I enter invalid credentials")
@@ -26,11 +30,13 @@ def step_impl(context):
     login_window = wait_for_window("Mizuho Front Office", timeout=60)
     if login_window:
         context.dlg = Application(backend='uia').connect(handle=login_window.handle).window(title="Mizuho Front Office")
-        login_with_credentials(context.dlg, "invalid_user", "wrong_password")
+        login_with_credentials(context.dlg, INVALID_USERNAME, INVALID_PASSWORD)
         logger.info("Invalid credentials entered.")
         
         # Validate the error message
-        if not validate_error_message(context.dlg):
+        if validate_error_message(context.dlg):
+            logger.info("Error message validated successfully.")
+        else:
             logger.error("Error message validation failed.")
 
 @then("I should be logged in successfully")
