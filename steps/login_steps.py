@@ -2,6 +2,8 @@ import logging
 from behave import given, when, then
 from openfin.login import automate_login, validate_error_message
 from utils.screenshot import capture_screenshot
+from utils.window_utils import wait_for_window
+from pywinauto import Application
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)

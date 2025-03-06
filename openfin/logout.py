@@ -2,6 +2,8 @@ import time
 from pywinauto import Application, Desktop, keyboard
 from utils.logger import setup_logger
 from utils.window_utils import wait_for_window
+import os
+import sys
 
 logger = setup_logger()
 
@@ -81,4 +83,5 @@ def logout():
     if not click_confirm_button(confirmation_dlg):
         return False
 
-    return True
+    logger.info("Logging out completed. Terminating application.")
+    os._exit(0)  # Terminate the script after logout

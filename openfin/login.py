@@ -65,7 +65,7 @@ def automate_login(username=USERNAME, password=PASSWORD):
 def validate_error_message(dlg):
     """Validate the error message displayed on the login screen."""
     try:
-        error_field = dlg.child_window(control_type="Text", found_index=0)  # Adjust based on actual structure
+        error_field = dlg.child_window(control_type="Text", found_index=0)
         error_message = error_field.window_text()
         expected_message = "Login failed.\nIncorrect username and/or password OR Invalid/missing access token"
         if error_message == expected_message:
