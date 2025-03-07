@@ -1,42 +1,15 @@
-(venv) PS C:\Automation\automation_suite> behave features/login.feature
 Feature: User Login # features/login.feature:1
 
   @valid_login
   Scenario: Successful login                  # features/login.feature:3
     Given the OpenFin application is launched # steps/login_steps.py:12
-2025-03-08 00:39:56,413 - INFO - Launching the OpenFin application...
-2025-03-08 00:39:56,416 - INFO - Launching OpenFin application...
-fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-08 00:40:11,481 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-08 00:40:21,427 - INFO - Found window: Mizuho Front Office
-2025-03-08 00:40:21,429 - INFO - OpenFin application launched.
     When I enter valid credentials            # steps/login_steps.py:18
-2025-03-08 00:40:21,431 - INFO - Entering valid credentials...
-2025-03-08 00:40:21,431 - INFO - Filling in login credentials...
-2025-03-08 00:40:23,605 - INFO - Login attempt made.
-2025-03-08 00:40:23,607 - INFO - Valid credentials entered.
     Then I should be logged in successfully   # steps/login_steps.py:42
-2025-03-08 00:40:40,345 - INFO - Found window: Dock
-2025-03-08 00:40:40,846 - INFO - Dock window detected. Login successful.
 
   @invalid_login
   Scenario: Unsuccessful login with invalid credentials  # features/login.feature:9
     Given the OpenFin application is launched            # steps/login_steps.py:12
-2025-03-08 00:40:40,851 - INFO - Launching the OpenFin application...
-2025-03-08 00:40:40,853 - INFO - Launching OpenFin application...
-fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-03-08 00:40:55,892 - INFO - Waiting for the Mizuho login window to appear...
-2025-03-08 00:41:07,140 - INFO - Found window: Mizuho Front Office
-2025-03-08 00:41:07,141 - INFO - OpenFin application launched.
     When I enter invalid credentials                     # steps/login_steps.py:27
-2025-03-08 00:41:07,143 - INFO - Entering invalid credentials...
-2025-03-08 00:41:07,666 - INFO - Found window: Mizuho Front Office
-2025-03-08 00:41:07,667 - INFO - Filling in login credentials...
-2025-03-08 00:41:09,828 - INFO - Login attempt made.
-2025-03-08 00:41:09,828 - INFO - Invalid credentials entered.
-2025-03-08 00:41:10,324 - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
-2025-03-08 00:41:10,325 - INFO - Error message validated successfully.
-2025-03-08 00:41:10,325 - INFO - Error message validated successfully.
     Then I should see an error message                   # steps/login_steps.py:69
       Traceback (most recent call last):
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
@@ -51,7 +24,7 @@ fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\runner.py", line 321, in __getattr__
           raise AttributeError(msg)
       AttributeError: 'Context' object has no attribute 'login_window'
-
+      
       Captured logging:
       INFO:builtins:Launching the OpenFin application...
       INFO:automation:Launching OpenFin application...
@@ -68,12 +41,3 @@ fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
       INFO:builtins:Error message validated successfully.
 
 
-
-Failing scenarios:
-  features/login.feature:9  Unsuccessful login with invalid credentials
-
-0 features passed, 1 failed, 0 skipped
-1 scenario passed, 1 failed, 0 skipped
-5 steps passed, 1 failed, 0 skipped, 0 undefined
-Took 1m13.944s
-(venv) PS C:\Automation\automation_suite> 

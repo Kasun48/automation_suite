@@ -1,0 +1,34 @@
+# 1. Verify Virtual Environment Creation:
+# python -m venv venv
+# 2. Check the Correct Path:
+# cd E:\Acuity\automation_suite
+# 3. Activate the Virtual Environment:
+# venv\Scripts\activate
+
+# pip install selenium
+# python.exe -m pip install --upgrade pip
+# pip install pytest
+# pip install selenium pygetwindow pywinauto requests
+
+# python -m tests.test_login_logout
+
+# Poweshell command to remove VM when there are python errors
+# Remove-Item -Recurse -Force .\venv 
+# Get-ChildItem
+
+selenium
+pytest
+pywinauto
+pyautogui
+pygetwindow
+behave
+Pillow
+# behave-html-report
+# pip install -r requirements.txt
+# pip install behave-html-report 
+# behave features/login.feature
+# behave-html -i reports/results.json -o reports/results.html
+# behave --format=pretty --format=html --outfile=reports/results.html features/
+# behave --format=json --outfile=reports/results.json features/
+# python json_to_html.py
+# .\run_tests.bat

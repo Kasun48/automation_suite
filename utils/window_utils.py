@@ -1,14 +1,25 @@
-# utils/window_utils.py
 import time
-import pygetwindow as gw
+from pywinauto import Desktop
+from utils.logger import setup_logger
 
-def wait_for_window(title, timeout=60):
+logger = setup_logger()
+
+def wait_for_window(title, timeout=30):
+    """Wait for a window with the specified title to appear."""
     start_time = time.time()
     while time.time() - start_time < timeout:
-        windows = gw.getWindowsWithTitle(title)
-        if windows:
-            return windows[0]
+        for window in Desktop(backend="uia").windows():
+            if title in window.window_text():
+                logger.info(f"Found window: {window.window_text()}")
+                return window
+        time.sleep(1)
+    logger.error(f"Window '{title}' not found within {timeout} seconds.")
     return None
 
 def list_open_windows():
-    return [w.title for w in gw.getAllWindows()]
+    """List all open windows."""
+    open_windows = []
+    for window in Desktop(backend="uia").windows():
+        open_windows.append(window.window_text())
+    logger.info(f"Open windows: {open_windows}")
+    return open_windows

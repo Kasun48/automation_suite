@@ -1,47 +1,87 @@
-# openfin/logout.py
 import time
-from pywinauto import Application
+from pywinauto import Application, Desktop, keyboard
 from utils.logger import setup_logger
-from utils.window_utils import wait_for_window, list_open_windows
+from utils.window_utils import wait_for_window
+import os
+import sys
 
 logger = setup_logger()
 
+def wait_for_confirmation_dialog(timeout=30):
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        for window in Desktop(backend="uia").windows():
+            if "Log Out of" in window.window_text():
+                logger.info(f"Found Confirmation Dialog: {window.window_text()}")
+                return window
+        time.sleep(1)
+    return None
+
+def click_confirm_button(confirmation_dlg, retries=5):
+    for attempt in range(retries):
+        logger.info(f"Attempt {attempt + 1} to click Confirm button.")
+        confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
+        
+        if confirm_button.exists() and confirm_button.is_enabled():
+            confirm_button.click()
+            logger.info("Logout confirmed.")
+            return True
+        
+        time.sleep(1)
+
+    logger.info("Confirm button not found or not enabled after retries, trying keyboard input.")
+    try:
+        confirmation_dlg.set_focus()
+        keyboard.send_keys("{TAB 2}")
+        keyboard.send_keys("{ENTER}")
+        logger.info("Logout confirmed via keyboard input.")
+        return True
+    except Exception as e:
+        logger.error("Error during keyboard input for confirmation: %s", e)
+        return False
+
 def logout():
     logger.info("Logging out of the application...")
-
     dock_window = wait_for_window("Dock", timeout=60)
-
     if dock_window is None:
         logger.error("Dock window not found!")
         return False
 
-    app = Application(backend='uia').connect(handle=dock_window._hWnd)
+    app = Application(backend='uia').connect(handle=dock_window.handle)
     dock_window = app.window(title="Dock")
 
-    # Click on the Layout Settings button
-    layout_settings_button = dock_window.child_window(title="Layout Settings", control_type="Button")
-    layout_settings_button.click()
+    try:
+        user_profile_button = dock_window.child_window(title="User Profile", control_type="Button")
+        user_profile_button.click()
+        logger.info("Clicked on User Profile button.")
+    except Exception as e:
+        logger.error("Error clicking User Profile button: %s", e)
+        return False
 
-    # Wait for the menu items to appear
-    time.sleep(2)
+    user_profile_window = wait_for_window("User Profile", timeout=30)
+    if user_profile_window is None:
+        logger.error("User Profile window not found!")
+        return False
 
-    # Click on the "Quit" menu item
-    quit_option = dock_window.child_window(title="Quit[DEV] Front Office Apps - v19.2.12", control_type="MenuItem")
-    quit_option.click()
+    user_profile_app = Application(backend='uia').connect(handle=user_profile_window.handle)
+    user_profile_window = user_profile_app.window(title="User Profile")
 
-    # Wait for the confirmation dialog to appear
-    confirmation_window = wait_for_window("Confirmation", timeout=30)
+    try:
+        log_out_button = user_profile_window.child_window(title="Log Out", control_type="Button")
+        log_out_button.click()
+        logger.info("Clicked on Log Out button.")
+    except Exception as e:
+        logger.error("Error clicking Log Out button: %s", e)
+        return False
 
-    if confirmation_window is None:
+    confirmation_dlg = wait_for_confirmation_dialog(timeout=15)
+
+    if confirmation_dlg is None:
         logger.error("Confirmation dialog not found!")
         return False
 
-    confirmation_app = Application(backend='uia').connect(handle=confirmation_window._hWnd)
-    confirmation_dlg = confirmation_app.window(title="Confirmation")
+    if not click_confirm_button(confirmation_dlg):
+        return False
 
-    # Click the Confirm button to log out
-    confirm_button = confirmation_dlg.child_window(aria_label="Confirm", control_type="Button")
-    confirm_button.click()
-
-    logger.info("Logout confirmed.")
-    return True
+    logger.info("Logging out completed. Terminating application.")
+    os._exit(0)  # Terminate the script after logout
