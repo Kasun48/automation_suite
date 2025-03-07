@@ -1,52 +1,106 @@
-2025-02-17 20:31:08,723 - INFO - Launching OpenFin application...
-2025-02-17 20:55:29,158 - INFO - Launching OpenFin application...
-2025-02-17 20:58:24,050 - INFO - Launching OpenFin application...
-2025-02-17 21:08:52,541 - INFO - Launching OpenFin application...
-2025-02-17 21:09:40,759 - INFO - Launching OpenFin application...
-2025-02-17 23:04:04,623 - INFO - Launching OpenFin application...
-2025-02-17 23:04:04,690 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:04:34,693 - ERROR - Login window not found!
-2025-02-17 23:04:34,693 - ERROR - Login test failed.
-2025-02-17 23:07:23,744 - INFO - Launching OpenFin application...
-2025-02-17 23:07:23,846 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:07:53,849 - ERROR - Login window not found!
-2025-02-17 23:07:53,849 - ERROR - Login test failed.
-2025-02-17 23:23:36,543 - INFO - Launching OpenFin application...
-2025-02-17 23:23:36,587 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:23:55,983 - INFO - Filling in login credentials...
-2025-02-17 23:23:58,454 - INFO - Login attempt made.
-2025-02-17 23:34:38,939 - INFO - Launching OpenFin application...
-2025-02-17 23:34:38,990 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:35:08,991 - ERROR - Login window not found!
-2025-02-17 23:35:08,991 - ERROR - Login test failed.
-2025-02-17 23:37:01,676 - INFO - Launching OpenFin application...
-2025-02-17 23:37:01,709 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-17 23:37:31,709 - ERROR - Login window not found!
-2025-02-17 23:37:31,709 - ERROR - Login test failed.
-2025-02-18 00:02:43,565 - INFO - Launching OpenFin application...
-2025-02-18 00:02:43,620 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-18 00:03:13,636 - ERROR - Login window not found!
-2025-02-18 00:03:13,637 - ERROR - Login test failed.
-2025-02-18 00:13:24,496 - INFO - Launching OpenFin application...
-2025-02-18 00:13:24,526 - INFO - Waiting for the OpenFin login window to appear...
-2025-02-18 00:13:54,526 - ERROR - Login window not found!
-2025-02-18 00:13:54,526 - ERROR - Login test failed.
-
-(venv) PS C:\Automation\automation_suite> python -m tests.test_login_logout   
-2025-02-26 17:00:08,107 - INFO - Starting the login/logout test...
-2025-02-26 17:00:08,108 - INFO - Launching OpenFin application...
-fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
-2025-02-26 17:00:23,165 - INFO - Waiting for the Mizuho login window to appear...
-2025-02-26 17:00:37,281 - INFO - Filling in login credentials...
-
-
 (venv) PS C:\Automation\automation_suite> python -m tests.test_login_logout
+2025-03-07 20:33:32,601 - INFO - Starting the login/logout test...
+2025-03-07 20:33:32,601 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-03-07 20:33:47,648 - INFO - Waiting for the Mizuho login window to appear...
+Control Identifiers:
+
+Dialog - 'Mizuho Front Office'    (L660, T273, R1260, B761)
+['Mizuho Front Office', 'Dialog', 'Mizuho Front OfficeDialog', 'Mizuho Front Office0', 'Mizuho Front Office1']
+child_window(title="Mizuho Front Office", control_type="Window")
+   | 
+   | Pane - 'Mizuho Front Office'    (L670, T318, R1250, B750)
+   | ['Pane', 'Mizuho Front Office2', 'Mizuho Front OfficePane', 'Pane0', 'Pane1']
+   | child_window(title="Mizuho Front Office", control_type="Pane")
+   |    |
+   |    | Pane - ''    (L670, T318, R1250, B750)
+   |    | ['Pane2']
+   |    |    |
+   |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    | ['Pane3']
+   |    |    |    | 
+   |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    | ['Pane4']
+   |    |    |    |    | 
+   |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    | ['Pane5']
+   |    |    |    |    |    | 
+   |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    |    | ['Pane6']
+   |    |    |    |    |    |    | 
+   |    |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    |    |    | ['Pane7']
+   |    |    |    |    |    |    | 
+   |    |    |    |    |    |    | Pane - ''    (L670, T318, R1250, B750)
+   |    |    |    |    |    |    | ['Pane8']
+2025-03-07 20:33:59,199 - INFO - Available controls in the window: None
+2025-03-07 20:33:59,202 - INFO - Filling in login credentials...
+2025-03-07 20:34:00,814 - INFO - Login attempt made.
+2025-03-07 20:34:11,415 - INFO - Login successful.
+2025-03-07 20:34:11,496 - INFO - Login test completed successfully.
+2025-03-07 20:34:11,528 - INFO - Logging out of the application...
+Traceback (most recent call last):
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\uia_defines.py", line 234, in get_elem_interface
+    iface = cur_ptrn.QueryInterface(cls_name)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\comtypes\_post_coinit\unknwn.py", line 395, in QueryInterface
+    self.__com_QueryInterface(byref(iid), byref(p))  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+ValueError: NULL COM pointer access
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uia_controls.py", line 121, in click
+    self.invoke()
+    ~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uiawrapper.py", line 513, in invoke
+    self.iface_invoke.Invoke()
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uiawrapper.py", line 132, in __get__
+    value = self.fget(obj)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uiawrapper.py", line 231, in iface_invoke
+    return uia_defs.get_elem_interface(elem, "Invoke")
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\uia_defines.py", line 236, in get_elem_interface
+    raise NoPatternInterfaceError()
+pywinauto.uia_defines.NoPatternInterfaceError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\uia_defines.py", line 234, in get_elem_interface
+    iface = cur_ptrn.QueryInterface(cls_name)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\comtypes\_post_coinit\unknwn.py", line 395, in QueryInterface
+    self.__com_QueryInterface(byref(iid), byref(p))  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+ValueError: NULL COM pointer access
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "<frozen runpy>", line 198, in _run_module_as_main
   File "<frozen runpy>", line 88, in _run_code
-  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 2, in <module>
-    from openfin.login import automate_login
-  File "C:\Automation\automation_suite\openfin\login.py", line 41
-    except Exception as e:
-    ^^^^^^
-SyntaxError: invalid syntax
+  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 21, in <module>
+    test_login_logout()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\tests\test_login_logout.py", line 13, in test_login_logout
+    if logout():
+       ~~~~~~^^
+  File "C:\Automation\automation_suite\openfin\logout.py", line 23, in logout
+    layout_settings_button.click()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uia_controls.py", line 123, in click
+    self.select()
+    ~~~~~~~~~~~^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uiawrapper.py", line 605, in select
+    self.iface_selection_item.Select()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uiawrapper.py", line 132, in __get__
+    value = self.fget(obj)
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\controls\uiawrapper.py", line 224, in iface_selection_item        
+    return uia_defs.get_elem_interface(elem, "SelectionItem")
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Automation\automation_suite\venv\Lib\site-packages\pywinauto\uia_defines.py", line 236, in get_elem_interface
+    raise NoPatternInterfaceError()
+pywinauto.uia_defines.NoPatternInterfaceError
+(venv) PS C:\Automation\automation_suite> 
