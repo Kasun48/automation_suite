@@ -423,3 +423,144 @@ div.placeholder_image img {
 		<link rel="icon" type="image/x-icon" href="../../favicon.ico">
 		<script type="module" src="../../js/platform/platform-window.bundle.js"></script>
 	<style data-styled="" data-styled-version="4.4.1"></style><style data-styled="" data-styled-version="4.4.1"></style><style data-styled="" data-styled-version="4.4.1"></style><style data-styled="" data-styled-version="4.4.1"></style><style data-styled="" data-styled-version="4.4.1"></style><style data-styled="" data-styled-version="4.4.1"></style></head>
+  
+  (venv) PS C:\Automation\automation_suite> behave features/login.feature
+Feature: User Login # features/login.feature:1
+
+  Scenario: Successful login                  # features/login.feature:3
+    Given the OpenFin application is launched # steps/login_steps.py:12
+2025-03-07 15:53:18,715 - INFO - Launching the OpenFin application...
+2025-03-07 15:53:18,718 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-03-07 15:53:33,774 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:53:48,485 - INFO - Found window: Mizuho Front Office
+2025-03-07 15:53:48,486 - INFO - OpenFin application launched.
+    When I enter valid credentials            # steps/login_steps.py:18
+2025-03-07 15:53:48,488 - INFO - Entering valid credentials...
+2025-03-07 15:53:48,489 - INFO - Filling in login credentials...
+2025-03-07 15:53:50,681 - INFO - Login attempt made.
+2025-03-07 15:53:50,681 - INFO - Valid credentials entered.
+    Then I should be logged in successfully   # steps/login_steps.py:42
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\login_steps.py", line 44, in step_impl
+          assert context.result is True, "Login was not successful."
+                 ^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\runner.py", line 321, in __getattr__
+          raise AttributeError(msg)
+      AttributeError: 'Context' object has no attribute 'result'
+
+      Captured logging:
+      INFO:builtins:Launching the OpenFin application...
+      INFO:automation:Launching OpenFin application...
+      INFO:automation:Waiting for the Mizuho login window to appear...
+      INFO:automation:Found window: Mizuho Front Office
+      INFO:builtins:OpenFin application launched.
+      INFO:builtins:Entering valid credentials...
+      INFO:automation:Filling in login credentials...
+      INFO:automation:Login attempt made.
+      INFO:builtins:Valid credentials entered.
+
+
+  Scenario: Unsuccessful login with invalid credentials  # features/login.feature:8
+    Given the OpenFin application is launched            # steps/login_steps.py:12
+2025-03-07 15:53:50,704 - INFO - Launching the OpenFin application...
+2025-03-07 15:53:50,709 - INFO - Launching OpenFin application...
+fins://fo-openfin.uat.apps.uk.mizuho-sc.com/user/ranaka
+2025-03-07 15:54:05,757 - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:55:07,006 - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
+2025-03-07 15:55:07,007 - ERROR - Login window not found!
+2025-03-07 15:55:07,008 - INFO - OpenFin application launched.
+    When I enter invalid credentials                     # steps/login_steps.py:27
+2025-03-07 15:55:07,010 - INFO - Entering invalid credentials...
+2025-03-07 15:56:07,349 - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
+    Then I should see an error message                   # steps/login_steps.py:46
+      Traceback (most recent call last):
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "steps\login_steps.py", line 48, in step_impl
+          assert context.result is False, "Error message not displayed for invalid login."
+                 ^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\runner.py", line 321, in __getattr__
+          raise AttributeError(msg)
+      AttributeError: 'Context' object has no attribute 'result'
+
+      Captured logging:
+      INFO:builtins:Launching the OpenFin application...
+      INFO:automation:Launching OpenFin application...
+      INFO:automation:Waiting for the Mizuho login window to appear...
+      ERROR:automation:Window 'Mizuho Front Office' not found within 60 seconds.
+      ERROR:automation:Login window not found!
+      INFO:builtins:OpenFin application launched.
+      INFO:builtins:Entering invalid credentials...
+      ERROR:automation:Window 'Mizuho Front Office' not found within 60 seconds.
+
+
+
+Failing scenarios:
+  features/login.feature:3  Successful login
+  features/login.feature:8  Unsuccessful login with invalid credentials
+
+0 features passed, 1 failed, 0 skipped
+0 scenarios passed, 2 failed, 0 skipped
+4 steps passed, 2 failed, 0 skipped, 0 undefined
+Took 2m48.628s
+(venv) PS C:\Automation\automation_suite> 
+  
+  
+  
+  
+  2025-03-07 15:53:18,718 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:53:18,718 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:53:18,718 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:53:18,718 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:53:18,718 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:53:33,774 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:53:33,774 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:53:33,774 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:53:33,774 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:53:33,774 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:53:48,485 - automation - INFO - Found window: Mizuho Front Office
+2025-03-07 15:53:48,485 - automation - INFO - Found window: Mizuho Front Office
+2025-03-07 15:53:48,485 - automation - INFO - Found window: Mizuho Front Office
+2025-03-07 15:53:48,485 - automation - INFO - Found window: Mizuho Front Office
+2025-03-07 15:53:48,485 - automation - INFO - Found window: Mizuho Front Office
+2025-03-07 15:53:48,489 - automation - INFO - Filling in login credentials...
+2025-03-07 15:53:48,489 - automation - INFO - Filling in login credentials...
+2025-03-07 15:53:48,489 - automation - INFO - Filling in login credentials...
+2025-03-07 15:53:48,489 - automation - INFO - Filling in login credentials...
+2025-03-07 15:53:48,489 - automation - INFO - Filling in login credentials...
+2025-03-07 15:53:50,681 - automation - INFO - Login attempt made.
+2025-03-07 15:53:50,681 - automation - INFO - Login attempt made.
+2025-03-07 15:53:50,681 - automation - INFO - Login attempt made.
+2025-03-07 15:53:50,681 - automation - INFO - Login attempt made.
+2025-03-07 15:53:50,681 - automation - INFO - Login attempt made.
+2025-03-07 15:53:50,709 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:53:50,709 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:53:50,709 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:53:50,709 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:53:50,709 - automation - INFO - Launching OpenFin application...
+2025-03-07 15:54:05,757 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:54:05,757 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:54:05,757 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:54:05,757 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:54:05,757 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-07 15:55:07,006 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
+2025-03-07 15:55:07,006 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
+2025-03-07 15:55:07,006 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
+2025-03-07 15:55:07,006 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
+2025-03-07 15:55:07,006 - automation - ERROR - Window 'Mizuho Front Office' not found within 60 seconds.
+2025-03-07 15:55:07,007 - automation - ERROR - Login window not found!
+2025-03-07 15:55:07,007 - automation - ERROR - Login window not found!
+2025-03-07 15:55:07,007 - automation - ERROR - Login window not found!
+2025-03-07 15:55:07,007 - automation - ERROR - Login window not found!
+2025-03-07 15:55:07,007 - automation - ERROR - Login window not found!
