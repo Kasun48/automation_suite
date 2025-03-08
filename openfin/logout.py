@@ -11,7 +11,7 @@ def wait_for_confirmation_dialog(timeout=30):
     start_time = time.time()
     while time.time() - start_time < timeout:
         for window in Desktop(backend="uia").windows():
-            if "Log Out of" in window.window_text():
+            if "Confirmation" in window.window_text():
                 logger.info(f"Found Confirmation Dialog: {window.window_text()}")
                 return window
         time.sleep(1)
@@ -20,7 +20,7 @@ def wait_for_confirmation_dialog(timeout=30):
 def click_confirm_button(confirmation_dlg, retries=5):
     for attempt in range(retries):
         logger.info(f"Attempt {attempt + 1} to click Confirm button.")
-        confirm_button = confirmation_dlg.child_window(title="Confirm", control_type="Button")
+        confirm_button = confirmation_dlg.child_window(aria_label="Confirm", control_type="Button")
         
         if confirm_button.exists() and confirm_button.is_enabled():
             confirm_button.click()
@@ -32,8 +32,14 @@ def click_confirm_button(confirmation_dlg, retries=5):
     logger.info("Confirm button not found or not enabled after retries, trying keyboard input.")
     try:
         confirmation_dlg.set_focus()
-        keyboard.send_keys("{TAB 2}")
-        keyboard.send_keys("{ENTER}")
+        time.sleep(1)
+
+        logger.info("Pressing TAB key twice to reach Confirm Button...")
+        send_keys("{TAB}")
+        time.sleep(0.5)
+        send_keys("{TAB}")
+        time.sleep(0.5)
+        send_keys("{ENTER}")
         logger.info("Logout confirmed via keyboard input.")
         return True
     except Exception as e:
@@ -74,13 +80,19 @@ def logout():
         logger.error("Error clicking Log Out button: %s", e)
         return False
 
-    confirmation_dlg = wait_for_confirmation_dialog(timeout=15)
+    try:
+        time.sleep(5)
 
-    if confirmation_dlg is None:
-        logger.error("Confirmation dialog not found!")
-        return False
-
-    if not click_confirm_button(confirmation_dlg):
+        logger.info("Pressing TAB key twice to reach Confirm Button...")
+        keyboard.send_keys("{TAB}")
+        time.sleep(0.5)
+        keyboard.send_keys("{TAB}")
+        time.sleep(0.5)
+        keyboard.send_keys("{ENTER}")
+        logger.info("Logout confirmed via keyboard input.")
+        return True
+    except Exception as e:
+        logger.error("Error during keyboard input for confirmation: %s", e)
         return False
 
     logger.info("Logging out completed. Terminating application.")

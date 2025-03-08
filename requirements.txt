@@ -32,3 +32,4 @@ Pillow
 # behave --format=json --outfile=reports/results.json features/
 # python json_to_html.py
 # .\run_tests.bat
+# behave features/login.feature --format json --outfile reports/report.json

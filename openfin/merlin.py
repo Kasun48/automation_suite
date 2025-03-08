@@ -13,7 +13,7 @@ def open_merlin_screen(screen_id):
         logger.error("Dock window not found!")
         return False
 
-    app = Application(backend='uia').connect(handle=dock_window._hWnd)
+    app = Application(backend='uia').connect(handle=dock_window.handle)
     dock_window = app.window(title="Dock")
 
     try:

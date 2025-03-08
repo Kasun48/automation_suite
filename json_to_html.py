@@ -20,4 +20,4 @@ def generate_html_report(json_file, html_file):
         f.write('</body></html>')
 
 if __name__ == "__main__":
-    generate_html_report('report.json', 'reports/results.html')
+    generate_html_report('reports/report.json', 'reports/results.html')

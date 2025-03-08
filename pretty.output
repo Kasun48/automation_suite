@@ -1,14 +1,13 @@
-Feature: User Logout # features/logout.feature:1
+Feature: Historical Trader Blotter Screen # features/historical_trader_blotter_screen.feature:1
 
-  Background:   # features/logout.feature:2
+  Background:   # features/historical_trader_blotter_screen.feature:2
 
-  Scenario: Successful logout                 # features/logout.feature:7
-    Given the OpenFin application is launched # steps/login_steps.py:12
-    When I enter valid credentials            # steps/login_steps.py:18
-    Then I should be logged in successfully   # steps/login_steps.py:44
-    Given I am logged in to the application   # steps/logout_steps.py:8
-    When I log out                            # steps/logout_steps.py:12
-    Then I should be logged out successfully  # steps/logout_steps.py:16
+  Scenario: Open Historical Trader Blotter Screen                 # features/historical_trader_blotter_screen.feature:7
+    Given the OpenFin application is launched                     # steps/login_steps.py:12
+    When I enter valid credentials                                # steps/login_steps.py:18
+    Then I should be logged in successfully                       # steps/login_steps.py:44
+    Given I am logged in to the application                       # steps/logout_steps.py:8
+    When I open the Historical Trader Blotter screen              # steps/historical_trader_blotter_screen_steps.py:4
       Traceback (most recent call last):
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
           match.run(runner.context)
@@ -16,18 +15,10 @@ Feature: User Logout # features/logout.feature:1
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
           self.func(context, *args, **kwargs)
           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "steps\logout_steps.py", line 19, in step_impl
-          capture_screenshot("logout_failure.png")  # Updated to use capture_screenshot
-          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-        File "C:\Automation\automation_suite\utils\screenshot.py", line 7, in capture_screenshot
-          pyautogui.screenshot(filename)
-          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
-        File "C:\Automation\automation_suite\venv\Lib\site-packages\pyscreeze\__init__.py", line 544, in _screenshot_win32
-          im.save(imageFilename)
-          ~~~~~~~^^^^^^^^^^^^^^^
-        File "C:\Automation\automation_suite\venv\Lib\site-packages\PIL\Image.py", line 2591, in save
-          fp = builtins.open(filename, "w+b")
-      FileNotFoundError: [Errno 2] No such file or directory: 'screenshots/logout_failure.png_20250308-124913.png'
+        File "steps\historical_trader_blotter_screen_steps.py", line 6, in step_impl
+          assert open_merlin_screen("historical-trader-blotter")
+                 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      AssertionError
       
       Captured logging:
       INFO:builtins:Launching the OpenFin application...
@@ -41,11 +32,9 @@ Feature: User Logout # features/logout.feature:1
       INFO:builtins:Valid credentials entered.
       INFO:automation:Found window: Dock
       INFO:builtins:Dock window detected. Login successful.
-      INFO:automation:Logging out of the application...
+      INFO:automation:Opening Merlin screen: historical-trader-blotter
       INFO:automation:Found window: Dock
-      INFO:automation:Clicked on User Profile button.
-      INFO:automation:Found window: User Profile
-      INFO:automation:Clicked on Log Out button.
-      ERROR:automation:Confirmation dialog not found!
+      ERROR:automation:Error clicking Merlin button:
 
+    Then the Historical Trader Blotter screen should be displayed # None
 
