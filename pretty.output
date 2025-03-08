@@ -34,7 +34,11 @@ Feature: Historical Trader Blotter Screen # features/historical_trader_blotter_s
       INFO:builtins:Dock window detected. Login successful.
       INFO:automation:Opening Merlin screen: historical-trader-blotter
       INFO:automation:Found window: Dock
-      ERROR:automation:Error clicking Merlin button:
+      ERROR:automation:Merlin button not found with title and control_type, trying with class_name.
+      INFO:automation:Merlin button still not found! Attempting to navigate using keyboard.
+      INFO:automation:Pressed ENTER on selected element.
+      ERROR:automation:Window 'historical-trader-blotter' not found within 30 seconds.
+      ERROR:automation:Screen 'historical-trader-blotter' not found!
 
     Then the Historical Trader Blotter screen should be displayed # None
 

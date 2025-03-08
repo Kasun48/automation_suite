@@ -33,9 +33,16 @@ def open_merlin_screen(screen_id):
                 logger.info("Clicked on Merlin button using class_name.")
             else:
                 logger.info("Merlin button still not found! Attempting to navigate using keyboard.")
-                for _ in range(8):  # Adjust tab count if necessary
+                for _ in range(8):  
                     send_keys("{TAB}")
                     time.sleep(0.5)
+                send_keys("{ENTER}")
+
+                send_keys("{DOWN}")
+                time.sleep(0.5)
+                send_keys("{DOWN}")
+                time.sleep(0.5)
+
                 send_keys("{ENTER}")
                 logger.info("Pressed ENTER on selected element.")
 
