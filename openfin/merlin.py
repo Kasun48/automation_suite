@@ -1,5 +1,6 @@
 import time
 from pywinauto import Application
+from pywinauto.keyboard import send_keys
 from utils.logger import setup_logger
 from utils.window_utils import wait_for_window
 
@@ -19,19 +20,27 @@ def open_merlin_screen(screen_id):
     try:
         # Try identifying button by different attributes
         merlin_button = dock_window.child_window(title="Merlin", control_type="Button")
-        
-        # If it's still not found, try searching by class_name or other attributes
-        if not merlin_button.exists():
-            logger.error("Merlin button not found with title and control_type, trying with class_name.")
-            merlin_button = dock_window.child_window(class_name="sc-c468fb75-0")  # Or any other unique class
-            if not merlin_button.exists():
-                logger.error("Merlin button still not found!")
-                return False
 
-        merlin_button.click()
-        logger.info("Clicked on Merlin button.")
+        if merlin_button.exists():
+            merlin_button.click()
+            logger.info("Clicked on Merlin button.")
+        else:
+            logger.error("Merlin button not found with title and control_type, trying with class_name.")
+            merlin_button = dock_window.child_window(class_name="sc-c468fb75-0")  # Adjust class name if necessary
+            
+            if merlin_button.exists():
+                merlin_button.click()
+                logger.info("Clicked on Merlin button using class_name.")
+            else:
+                logger.info("Merlin button still not found! Attempting to navigate using keyboard.")
+                for _ in range(8):  # Adjust tab count if necessary
+                    send_keys("{TAB}")
+                    time.sleep(0.5)
+                send_keys("{ENTER}")
+                logger.info("Pressed ENTER on selected element.")
+
     except Exception as e:
-        logger.error("Error clicking Merlin button: %s", e)
+        logger.error(f"Error clicking Merlin button: {e}")
         return False
 
     screen_window = wait_for_window(screen_id, timeout=30)
