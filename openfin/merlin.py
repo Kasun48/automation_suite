@@ -33,7 +33,7 @@ def open_merlin_screen(screen_id):
                 logger.info("Clicked on Merlin button using class_name.")
             else:
                 logger.info("Merlin button still not found! Attempting to navigate using keyboard.")
-                
+                time.sleep(15)
                 # Press TAB key multiple times to reach the Merlin button
                 for _ in range(8):  # Adjust the number of TAB presses if needed
                     send_keys("{TAB}")
