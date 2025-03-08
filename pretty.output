@@ -1,16 +1,14 @@
-Feature: User Login # features/login.feature:1
+Feature: User Logout # features/logout.feature:1
 
-  @valid_login
-  Scenario: Successful login                  # features/login.feature:3
+  Background:   # features/logout.feature:2
+
+  Scenario: Successful logout                 # features/logout.feature:7
     Given the OpenFin application is launched # steps/login_steps.py:12
     When I enter valid credentials            # steps/login_steps.py:18
-    Then I should be logged in successfully   # steps/login_steps.py:42
-
-  @invalid_login
-  Scenario: Unsuccessful login with invalid credentials  # features/login.feature:9
-    Given the OpenFin application is launched            # steps/login_steps.py:12
-    When I enter invalid credentials                     # steps/login_steps.py:27
-    Then I should see an error message                   # steps/login_steps.py:69
+    Then I should be logged in successfully   # steps/login_steps.py:44
+    Given I am logged in to the application   # steps/logout_steps.py:8
+    When I log out                            # steps/logout_steps.py:12
+    Then I should be logged out successfully  # steps/logout_steps.py:16
       Traceback (most recent call last):
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\model.py", line 1329, in run
           match.run(runner.context)
@@ -18,12 +16,18 @@ Feature: User Login # features/login.feature:1
         File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\matchers.py", line 98, in run
           self.func(context, *args, **kwargs)
           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "steps\login_steps.py", line 71, in step_impl
-          if not context.login_window:
-                 ^^^^^^^^^^^^^^^^^^^^
-        File "C:\Automation\automation_suite\venv\Lib\site-packages\behave\runner.py", line 321, in __getattr__
-          raise AttributeError(msg)
-      AttributeError: 'Context' object has no attribute 'login_window'
+        File "steps\logout_steps.py", line 19, in step_impl
+          capture_screenshot("logout_failure.png")  # Updated to use capture_screenshot
+          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\utils\screenshot.py", line 7, in capture_screenshot
+          pyautogui.screenshot(filename)
+          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\pyscreeze\__init__.py", line 544, in _screenshot_win32
+          im.save(imageFilename)
+          ~~~~~~~^^^^^^^^^^^^^^^
+        File "C:\Automation\automation_suite\venv\Lib\site-packages\PIL\Image.py", line 2591, in save
+          fp = builtins.open(filename, "w+b")
+      FileNotFoundError: [Errno 2] No such file or directory: 'screenshots/logout_failure.png_20250308-124913.png'
       
       Captured logging:
       INFO:builtins:Launching the OpenFin application...
@@ -31,13 +35,17 @@ Feature: User Login # features/login.feature:1
       INFO:automation:Waiting for the Mizuho login window to appear...
       INFO:automation:Found window: Mizuho Front Office
       INFO:builtins:OpenFin application launched.
-      INFO:builtins:Entering invalid credentials...
-      INFO:automation:Found window: Mizuho Front Office
+      INFO:builtins:Entering valid credentials...
       INFO:automation:Filling in login credentials...
       INFO:automation:Login attempt made.
-      INFO:builtins:Invalid credentials entered.
-      INFO:automation:Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
-      INFO:automation:Error message validated successfully.
-      INFO:builtins:Error message validated successfully.
+      INFO:builtins:Valid credentials entered.
+      INFO:automation:Found window: Dock
+      INFO:builtins:Dock window detected. Login successful.
+      INFO:automation:Logging out of the application...
+      INFO:automation:Found window: Dock
+      INFO:automation:Clicked on User Profile button.
+      INFO:automation:Found window: User Profile
+      INFO:automation:Clicked on Log Out button.
+      ERROR:automation:Confirmation dialog not found!
 
 

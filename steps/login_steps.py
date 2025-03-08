@@ -28,7 +28,9 @@ def step_impl(context):
 def step_impl(context):
     logger.info("Entering invalid credentials...")
     login_window = wait_for_window("Mizuho Front Office", timeout=60)
+
     if login_window:
+        context.login_window = login_window
         context.dlg = Application(backend='uia').connect(handle=login_window.handle).window(title="Mizuho Front Office")
         login_with_credentials(context.dlg, INVALID_USERNAME, INVALID_PASSWORD)
         logger.info("Invalid credentials entered.")
@@ -73,7 +75,7 @@ def step_impl(context):
         assert False, "Login dialog reference missing in context."
 
     # Validate the error message using the method from Login.py
-    context.result = validate_error_message(context.login_dialog)
+    context.result = validate_error_message(context.dlg)
 
     # Assert that the error message was correctly displayed
     assert context.result, "Error message not displayed or incorrect."
