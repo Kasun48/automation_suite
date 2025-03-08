@@ -17,7 +17,17 @@ def open_merlin_screen(screen_id):
     dock_window = app.window(title="Dock")
 
     try:
+        # Try identifying button by different attributes
         merlin_button = dock_window.child_window(title="Merlin", control_type="Button")
+        
+        # If it's still not found, try searching by class_name or other attributes
+        if not merlin_button.exists():
+            logger.error("Merlin button not found with title and control_type, trying with class_name.")
+            merlin_button = dock_window.child_window(class_name="sc-c468fb75-0")  # Or any other unique class
+            if not merlin_button.exists():
+                logger.error("Merlin button still not found!")
+                return False
+
         merlin_button.click()
         logger.info("Clicked on Merlin button.")
     except Exception as e:
