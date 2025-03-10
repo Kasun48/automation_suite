@@ -1,29 +1,12 @@
-Feature: User Login # features/login.feature:1
+Feature: Trader Blotter Screen # features/trader_blotter_screen.feature:1
 
-  @invalid_login
-  Scenario: Unsuccessful login with invalid credentials  # features/login.feature:4
-    Given the OpenFin application is launched            # steps/login_steps.py:12
-    When I enter invalid credentials                     # steps/login_steps.py:27
-    Then I should see an error message                   # steps/login_steps.py:71
+  Background:   # features/trader_blotter_screen.feature:2
 
-  @valid_login
-  Scenario: Successful login                  # features/login.feature:10
-    Given the OpenFin application is launched # steps/login_steps.py:12
-    When I enter valid credentials            # steps/login_steps.py:18
-    Then I should be logged in successfully   # steps/login_steps.py:44
-      Assertion Failed: Error connecting to Dock window: Dock window not found after login!
-      Captured logging:
-      INFO:builtins:Launching the OpenFin application...
-      INFO:automation:Launching OpenFin application...
-      INFO:automation:Waiting for the Mizuho login window to appear...
-      INFO:automation:Found window: Mizuho Front Office
-      INFO:builtins:OpenFin application launched.
-      INFO:builtins:Entering valid credentials...
-      INFO:automation:Filling in login credentials...
-      INFO:automation:Login attempt made.
-      INFO:builtins:Valid credentials entered.
-      INFO:automation:Found window: [EHUB-6025] Navigation & Dock Window Interactions - Mizuho International - Google Chrome
-      ERROR:builtins:Dock window not found after login!
-      ERROR:builtins:Error connecting to Dock window: Dock window not found after login!
-
+  Scenario: Open Trader Blotter Screen                 # features/trader_blotter_screen.feature:7
+    Given the OpenFin application is launched          # steps/login_steps.py:12
+    When I enter valid credentials                     # steps/login_steps.py:18
+    Then I should be logged in successfully            # steps/login_steps.py:44
+    Given I am logged in to the application            # steps/logout_steps.py:8
+    When I open the Trader Blotter screen              # steps/trader_blotter_screen_steps.py:4
+    Then the Trader Blotter screen should be displayed # steps/trader_blotter_screen_steps.py:8
 

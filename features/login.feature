@@ -11,3 +11,5 @@ Feature: User Login
     Given the OpenFin application is launched
     When I enter valid credentials
     Then I should be logged in successfully
+    When I log out
+    Then I should be logged out successfully

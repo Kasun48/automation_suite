@@ -79,3 +79,11 @@ def step_impl(context):
 
     # Assert that the error message was correctly displayed
     assert context.result, "Error message not displayed or incorrect."
+
+    # If validation passed, close the login window
+    try:
+        logger.info("Closing the login window after error message validation")
+        context.dlg.close()
+    except Exception as e:
+        logger.error(f"Failed to close the login window: {e}")
+        assert False, f"Failed to close the login window: {e}"
