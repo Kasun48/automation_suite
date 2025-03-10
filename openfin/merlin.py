@@ -31,7 +31,7 @@ def open_merlin_screen(screen_id):
         # dock_window.set_focus()
         # Try identifying button by different attributes
         time.sleep(30)
-        merlin_button = wait_for_window("Merlin", timeout=60)
+        merlin_button = wait_for_window("Merlin", timeout=30)
         merlin_button = dock_window.child_window(title="Merlin", control_type="Button")
 
         if merlin_button.exists():

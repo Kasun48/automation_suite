@@ -47,7 +47,7 @@ def step_impl(context):
     if dock_window is None:
         logger.error("Dock window not found!")
         context.result = False
-        assert False, "Dock window not faound! Login was not successful."
+        assert False, "Dock window not found! Login was not successful."
 
     try:
         app = Application(backend='uia').connect(handle=dock_window.handle)
