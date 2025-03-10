@@ -27,6 +27,9 @@ Pillow
 # pip install -r requirements.txt
 # pip install behave-html-report 
 # behave features/login.feature
+# behave features/historical_trader_blotter_screen.feature
+# behave features/trader_blotter_screen.feature
+# behave features/position_manager_screen.feature
 # behave-html -i reports/results.json -o reports/results.html
 # behave --format=pretty --format=html --outfile=reports/results.html features/
 # behave --format=json --outfile=reports/results.json features/

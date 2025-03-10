@@ -1441,3 +1441,1428 @@ Took 0m55.374s
 2025-03-08 20:02:45,548 - automation - ERROR - Screen 'historical-trader-blotter' not found!
 2025-03-08 20:02:45,548 - automation - ERROR - Screen 'historical-trader-blotter' not found!
 2025-03-08 20:02:45,548 - automation - ERROR - Screen 'historical-trader-blotter' not found!
+2025-03-08 23:45:07,311 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:45:07,311 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:45:07,311 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:45:07,311 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:45:07,311 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:45:22,401 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:45:22,401 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:45:22,401 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:45:22,401 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:45:22,401 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:45:27,050 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:45:27,050 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:45:27,050 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:45:27,050 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:45:27,050 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:45:27,056 - automation - INFO - Filling in login credentials...
+2025-03-08 23:45:27,056 - automation - INFO - Filling in login credentials...
+2025-03-08 23:45:27,056 - automation - INFO - Filling in login credentials...
+2025-03-08 23:45:27,056 - automation - INFO - Filling in login credentials...
+2025-03-08 23:45:27,056 - automation - INFO - Filling in login credentials...
+2025-03-08 23:45:29,241 - automation - INFO - Login attempt made.
+2025-03-08 23:45:29,241 - automation - INFO - Login attempt made.
+2025-03-08 23:45:29,241 - automation - INFO - Login attempt made.
+2025-03-08 23:45:29,241 - automation - INFO - Login attempt made.
+2025-03-08 23:45:29,241 - automation - INFO - Login attempt made.
+2025-03-08 23:45:43,046 - automation - INFO - Found window: Dock
+2025-03-08 23:45:43,046 - automation - INFO - Found window: Dock
+2025-03-08 23:45:43,046 - automation - INFO - Found window: Dock
+2025-03-08 23:45:43,046 - automation - INFO - Found window: Dock
+2025-03-08 23:45:43,046 - automation - INFO - Found window: Dock
+2025-03-08 23:45:43,654 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-08 23:45:43,654 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-08 23:45:43,654 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-08 23:45:43,654 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-08 23:45:43,654 - automation - INFO - Opening Merlin screen: historical-trader-blotter
+2025-03-08 23:45:44,293 - automation - INFO - Found window: Dock
+2025-03-08 23:45:44,293 - automation - INFO - Found window: Dock
+2025-03-08 23:45:44,293 - automation - INFO - Found window: Dock
+2025-03-08 23:45:44,293 - automation - INFO - Found window: Dock
+2025-03-08 23:45:44,293 - automation - INFO - Found window: Dock
+2025-03-08 23:45:44,811 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:45:44,811 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:45:44,811 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:45:44,811 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:45:44,811 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:45:45,434 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:45:45,434 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:45:45,434 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:45:45,434 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:45:45,434 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:46:06,079 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:46:06,079 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:46:06,079 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:46:06,079 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:46:06,079 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:46:09,539 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-08 23:46:09,539 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-08 23:46:09,539 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-08 23:46:09,539 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-08 23:46:09,539 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-08 23:46:40,703 - automation - ERROR - Window 'historical-trader-blotter' not found within 30 seconds.
+2025-03-08 23:46:40,703 - automation - ERROR - Window 'historical-trader-blotter' not found within 30 seconds.
+2025-03-08 23:46:40,703 - automation - ERROR - Window 'historical-trader-blotter' not found within 30 seconds.
+2025-03-08 23:46:40,703 - automation - ERROR - Window 'historical-trader-blotter' not found within 30 seconds.
+2025-03-08 23:46:40,703 - automation - ERROR - Window 'historical-trader-blotter' not found within 30 seconds.
+2025-03-08 23:46:40,703 - automation - ERROR - Screen 'historical-trader-blotter' not found!
+2025-03-08 23:46:40,703 - automation - ERROR - Screen 'historical-trader-blotter' not found!
+2025-03-08 23:46:40,703 - automation - ERROR - Screen 'historical-trader-blotter' not found!
+2025-03-08 23:46:40,703 - automation - ERROR - Screen 'historical-trader-blotter' not found!
+2025-03-08 23:46:40,703 - automation - ERROR - Screen 'historical-trader-blotter' not found!
+2025-03-08 23:54:35,776 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:54:35,776 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:54:35,776 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:54:35,776 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:54:35,776 - automation - INFO - Launching OpenFin application...
+2025-03-08 23:54:50,825 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:54:50,825 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:54:50,825 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:54:50,825 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:54:50,825 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-08 23:54:54,544 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:54:54,544 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:54:54,544 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:54:54,544 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:54:54,544 - automation - INFO - Found window: Mizuho Front Office
+2025-03-08 23:54:54,547 - automation - INFO - Filling in login credentials...
+2025-03-08 23:54:54,547 - automation - INFO - Filling in login credentials...
+2025-03-08 23:54:54,547 - automation - INFO - Filling in login credentials...
+2025-03-08 23:54:54,547 - automation - INFO - Filling in login credentials...
+2025-03-08 23:54:54,547 - automation - INFO - Filling in login credentials...
+2025-03-08 23:54:56,410 - automation - INFO - Login attempt made.
+2025-03-08 23:54:56,410 - automation - INFO - Login attempt made.
+2025-03-08 23:54:56,410 - automation - INFO - Login attempt made.
+2025-03-08 23:54:56,410 - automation - INFO - Login attempt made.
+2025-03-08 23:54:56,410 - automation - INFO - Login attempt made.
+2025-03-08 23:55:09,541 - automation - INFO - Found window: Dock
+2025-03-08 23:55:09,541 - automation - INFO - Found window: Dock
+2025-03-08 23:55:09,541 - automation - INFO - Found window: Dock
+2025-03-08 23:55:09,541 - automation - INFO - Found window: Dock
+2025-03-08 23:55:09,541 - automation - INFO - Found window: Dock
+2025-03-08 23:55:10,039 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-08 23:55:10,039 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-08 23:55:10,039 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-08 23:55:10,039 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-08 23:55:10,039 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-08 23:55:10,543 - automation - INFO - Found window: Dock
+2025-03-08 23:55:10,543 - automation - INFO - Found window: Dock
+2025-03-08 23:55:10,543 - automation - INFO - Found window: Dock
+2025-03-08 23:55:10,543 - automation - INFO - Found window: Dock
+2025-03-08 23:55:10,543 - automation - INFO - Found window: Dock
+2025-03-08 23:55:11,054 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:55:11,054 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:55:11,054 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:55:11,054 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:55:11,054 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-08 23:55:11,958 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:55:11,958 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:55:11,958 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:55:11,958 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:55:11,958 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-08 23:55:32,571 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:55:32,571 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:55:32,571 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:55:32,571 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:55:32,571 - automation - INFO - Pressed ENTER on selected element.
+2025-03-08 23:55:36,628 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-08 23:55:36,628 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-08 23:55:36,628 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-08 23:55:36,628 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-08 23:55:36,628 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-08 23:55:36,629 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-08 23:55:36,629 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-08 23:55:36,629 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-08 23:55:36,629 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-08 23:55:36,629 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-09 00:20:37,376 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:20:37,376 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:20:37,376 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:20:37,376 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:20:37,376 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:20:52,440 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:20:52,440 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:20:52,440 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:20:52,440 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:20:52,440 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:20:57,254 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:20:57,254 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:20:57,254 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:20:57,254 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:20:57,254 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:20:57,257 - automation - INFO - Filling in login credentials...
+2025-03-09 00:20:57,257 - automation - INFO - Filling in login credentials...
+2025-03-09 00:20:57,257 - automation - INFO - Filling in login credentials...
+2025-03-09 00:20:57,257 - automation - INFO - Filling in login credentials...
+2025-03-09 00:20:57,257 - automation - INFO - Filling in login credentials...
+2025-03-09 00:20:59,322 - automation - INFO - Login attempt made.
+2025-03-09 00:20:59,322 - automation - INFO - Login attempt made.
+2025-03-09 00:20:59,322 - automation - INFO - Login attempt made.
+2025-03-09 00:20:59,322 - automation - INFO - Login attempt made.
+2025-03-09 00:20:59,322 - automation - INFO - Login attempt made.
+2025-03-09 00:21:12,529 - automation - INFO - Found window: Dock
+2025-03-09 00:21:12,529 - automation - INFO - Found window: Dock
+2025-03-09 00:21:12,529 - automation - INFO - Found window: Dock
+2025-03-09 00:21:12,529 - automation - INFO - Found window: Dock
+2025-03-09 00:21:12,529 - automation - INFO - Found window: Dock
+2025-03-09 00:21:13,021 - automation - INFO - Opening Merlin screen: trader-blotter
+2025-03-09 00:21:13,021 - automation - INFO - Opening Merlin screen: trader-blotter
+2025-03-09 00:21:13,021 - automation - INFO - Opening Merlin screen: trader-blotter
+2025-03-09 00:21:13,021 - automation - INFO - Opening Merlin screen: trader-blotter
+2025-03-09 00:21:13,021 - automation - INFO - Opening Merlin screen: trader-blotter
+2025-03-09 00:21:13,527 - automation - INFO - Found window: Dock
+2025-03-09 00:21:13,527 - automation - INFO - Found window: Dock
+2025-03-09 00:21:13,527 - automation - INFO - Found window: Dock
+2025-03-09 00:21:13,527 - automation - INFO - Found window: Dock
+2025-03-09 00:21:13,527 - automation - INFO - Found window: Dock
+2025-03-09 00:21:15,469 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:21:15,469 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:21:15,469 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:21:15,469 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:21:15,469 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:23:47,604 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:23:47,604 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:23:47,604 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:23:47,604 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:23:47,604 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:24:02,650 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:24:02,650 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:24:02,650 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:24:02,650 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:24:02,650 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:24:07,479 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:24:07,479 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:24:07,479 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:24:07,479 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:24:07,479 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:24:07,484 - automation - INFO - Filling in login credentials...
+2025-03-09 00:24:07,484 - automation - INFO - Filling in login credentials...
+2025-03-09 00:24:07,484 - automation - INFO - Filling in login credentials...
+2025-03-09 00:24:07,484 - automation - INFO - Filling in login credentials...
+2025-03-09 00:24:07,484 - automation - INFO - Filling in login credentials...
+2025-03-09 00:24:09,540 - automation - INFO - Login attempt made.
+2025-03-09 00:24:09,540 - automation - INFO - Login attempt made.
+2025-03-09 00:24:09,540 - automation - INFO - Login attempt made.
+2025-03-09 00:24:09,540 - automation - INFO - Login attempt made.
+2025-03-09 00:24:09,540 - automation - INFO - Login attempt made.
+2025-03-09 00:24:22,988 - automation - INFO - Found window: Dock
+2025-03-09 00:24:22,988 - automation - INFO - Found window: Dock
+2025-03-09 00:24:22,988 - automation - INFO - Found window: Dock
+2025-03-09 00:24:22,988 - automation - INFO - Found window: Dock
+2025-03-09 00:24:22,988 - automation - INFO - Found window: Dock
+2025-03-09 00:24:23,489 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:24:23,489 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:24:23,489 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:24:23,489 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:24:23,489 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:24:23,996 - automation - INFO - Found window: Dock
+2025-03-09 00:24:23,996 - automation - INFO - Found window: Dock
+2025-03-09 00:24:23,996 - automation - INFO - Found window: Dock
+2025-03-09 00:24:23,996 - automation - INFO - Found window: Dock
+2025-03-09 00:24:23,996 - automation - INFO - Found window: Dock
+2025-03-09 00:24:25,927 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:24:25,927 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:24:25,927 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:24:25,927 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:24:25,927 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:24:59,086 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:24:59,086 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:24:59,086 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:24:59,086 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:24:59,086 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:25:14,147 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:25:14,147 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:25:14,147 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:25:14,147 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:25:14,147 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:25:18,817 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:25:18,817 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:25:18,817 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:25:18,817 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:25:18,817 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:25:18,820 - automation - INFO - Filling in login credentials...
+2025-03-09 00:25:18,820 - automation - INFO - Filling in login credentials...
+2025-03-09 00:25:18,820 - automation - INFO - Filling in login credentials...
+2025-03-09 00:25:18,820 - automation - INFO - Filling in login credentials...
+2025-03-09 00:25:18,820 - automation - INFO - Filling in login credentials...
+2025-03-09 00:25:20,885 - automation - INFO - Login attempt made.
+2025-03-09 00:25:20,885 - automation - INFO - Login attempt made.
+2025-03-09 00:25:20,885 - automation - INFO - Login attempt made.
+2025-03-09 00:25:20,885 - automation - INFO - Login attempt made.
+2025-03-09 00:25:20,885 - automation - INFO - Login attempt made.
+2025-03-09 00:25:33,708 - automation - INFO - Found window: Dock
+2025-03-09 00:25:33,708 - automation - INFO - Found window: Dock
+2025-03-09 00:25:33,708 - automation - INFO - Found window: Dock
+2025-03-09 00:25:33,708 - automation - INFO - Found window: Dock
+2025-03-09 00:25:33,708 - automation - INFO - Found window: Dock
+2025-03-09 00:25:34,206 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:25:34,206 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:25:34,206 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:25:34,206 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:25:34,206 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:25:34,710 - automation - INFO - Found window: Dock
+2025-03-09 00:25:34,710 - automation - INFO - Found window: Dock
+2025-03-09 00:25:34,710 - automation - INFO - Found window: Dock
+2025-03-09 00:25:34,710 - automation - INFO - Found window: Dock
+2025-03-09 00:25:34,710 - automation - INFO - Found window: Dock
+2025-03-09 00:25:36,639 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:25:36,639 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:25:36,639 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:25:36,639 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:25:36,639 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:28:08,940 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:28:08,940 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:28:08,940 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:28:08,940 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:28:08,940 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:28:23,977 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:28:23,977 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:28:23,977 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:28:23,977 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:28:23,977 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:28:32,418 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:28:32,418 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:28:32,418 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:28:32,418 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:28:32,418 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:28:32,423 - automation - INFO - Filling in login credentials...
+2025-03-09 00:28:32,423 - automation - INFO - Filling in login credentials...
+2025-03-09 00:28:32,423 - automation - INFO - Filling in login credentials...
+2025-03-09 00:28:32,423 - automation - INFO - Filling in login credentials...
+2025-03-09 00:28:32,423 - automation - INFO - Filling in login credentials...
+2025-03-09 00:28:34,277 - automation - INFO - Login attempt made.
+2025-03-09 00:28:34,277 - automation - INFO - Login attempt made.
+2025-03-09 00:28:34,277 - automation - INFO - Login attempt made.
+2025-03-09 00:28:34,277 - automation - INFO - Login attempt made.
+2025-03-09 00:28:34,277 - automation - INFO - Login attempt made.
+2025-03-09 00:28:47,344 - automation - INFO - Found window: Dock
+2025-03-09 00:28:47,344 - automation - INFO - Found window: Dock
+2025-03-09 00:28:47,344 - automation - INFO - Found window: Dock
+2025-03-09 00:28:47,344 - automation - INFO - Found window: Dock
+2025-03-09 00:28:47,344 - automation - INFO - Found window: Dock
+2025-03-09 00:28:47,845 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:28:47,845 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:28:47,845 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:28:47,845 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:28:47,845 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-09 00:28:48,350 - automation - INFO - Found window: Dock
+2025-03-09 00:28:48,350 - automation - INFO - Found window: Dock
+2025-03-09 00:28:48,350 - automation - INFO - Found window: Dock
+2025-03-09 00:28:48,350 - automation - INFO - Found window: Dock
+2025-03-09 00:28:48,350 - automation - INFO - Found window: Dock
+2025-03-09 00:28:49,367 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-09 00:28:49,367 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-09 00:28:49,367 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-09 00:28:49,367 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-09 00:28:49,367 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-09 00:28:49,963 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-09 00:28:49,963 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-09 00:28:49,963 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-09 00:28:49,963 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-09 00:28:49,963 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-09 00:29:15,579 - automation - INFO - Pressed ENTER on selected element.
+2025-03-09 00:29:15,579 - automation - INFO - Pressed ENTER on selected element.
+2025-03-09 00:29:15,579 - automation - INFO - Pressed ENTER on selected element.
+2025-03-09 00:29:15,579 - automation - INFO - Pressed ENTER on selected element.
+2025-03-09 00:29:15,579 - automation - INFO - Pressed ENTER on selected element.
+2025-03-09 00:29:19,102 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-09 00:29:19,102 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-09 00:29:19,102 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-09 00:29:19,102 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-09 00:29:19,102 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Inbox - Kasun.Ranasinghe@uk.mizuho-sc.com - Outlook', 'Program Manager']
+2025-03-09 00:29:19,599 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-09 00:29:19,599 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-09 00:29:19,599 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-09 00:29:19,599 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-09 00:29:19,599 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-09 00:29:19,600 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-09 00:29:19,600 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-09 00:29:19,600 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-09 00:29:19,600 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-09 00:29:19,600 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-09 00:29:38,143 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:29:38,143 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:29:38,143 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:29:38,143 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:29:38,143 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:30:05,245 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:30:05,245 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:30:05,245 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:30:05,245 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:30:05,245 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:30:20,279 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:30:20,279 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:30:20,279 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:30:20,279 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:30:20,279 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:30:24,486 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:30:24,486 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:30:24,486 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:30:24,486 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:30:24,486 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:30:24,489 - automation - INFO - Filling in login credentials...
+2025-03-09 00:30:24,489 - automation - INFO - Filling in login credentials...
+2025-03-09 00:30:24,489 - automation - INFO - Filling in login credentials...
+2025-03-09 00:30:24,489 - automation - INFO - Filling in login credentials...
+2025-03-09 00:30:24,489 - automation - INFO - Filling in login credentials...
+2025-03-09 00:30:26,454 - automation - INFO - Login attempt made.
+2025-03-09 00:30:26,454 - automation - INFO - Login attempt made.
+2025-03-09 00:30:26,454 - automation - INFO - Login attempt made.
+2025-03-09 00:30:26,454 - automation - INFO - Login attempt made.
+2025-03-09 00:30:26,454 - automation - INFO - Login attempt made.
+2025-03-09 00:30:39,423 - automation - INFO - Found window: Dock
+2025-03-09 00:30:39,423 - automation - INFO - Found window: Dock
+2025-03-09 00:30:39,423 - automation - INFO - Found window: Dock
+2025-03-09 00:30:39,423 - automation - INFO - Found window: Dock
+2025-03-09 00:30:39,423 - automation - INFO - Found window: Dock
+2025-03-09 00:30:39,923 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:30:39,923 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:30:39,923 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:30:39,923 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:30:39,923 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:30:40,433 - automation - INFO - Found window: Dock
+2025-03-09 00:30:40,433 - automation - INFO - Found window: Dock
+2025-03-09 00:30:40,433 - automation - INFO - Found window: Dock
+2025-03-09 00:30:40,433 - automation - INFO - Found window: Dock
+2025-03-09 00:30:40,433 - automation - INFO - Found window: Dock
+2025-03-09 00:30:42,456 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:30:42,456 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:30:42,456 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:30:42,456 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:30:42,456 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:31:55,895 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:31:55,895 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:31:55,895 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:31:55,895 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:31:55,895 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:32:10,963 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:32:10,963 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:32:10,963 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:32:10,963 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:32:10,963 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:32:15,759 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:32:15,759 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:32:15,759 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:32:15,759 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:32:15,759 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:32:15,762 - automation - INFO - Filling in login credentials...
+2025-03-09 00:32:15,762 - automation - INFO - Filling in login credentials...
+2025-03-09 00:32:15,762 - automation - INFO - Filling in login credentials...
+2025-03-09 00:32:15,762 - automation - INFO - Filling in login credentials...
+2025-03-09 00:32:15,762 - automation - INFO - Filling in login credentials...
+2025-03-09 00:32:17,713 - automation - INFO - Login attempt made.
+2025-03-09 00:32:17,713 - automation - INFO - Login attempt made.
+2025-03-09 00:32:17,713 - automation - INFO - Login attempt made.
+2025-03-09 00:32:17,713 - automation - INFO - Login attempt made.
+2025-03-09 00:32:17,713 - automation - INFO - Login attempt made.
+2025-03-09 00:32:30,842 - automation - INFO - Found window: Dock
+2025-03-09 00:32:30,842 - automation - INFO - Found window: Dock
+2025-03-09 00:32:30,842 - automation - INFO - Found window: Dock
+2025-03-09 00:32:30,842 - automation - INFO - Found window: Dock
+2025-03-09 00:32:30,842 - automation - INFO - Found window: Dock
+2025-03-09 00:32:31,244 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:32:31,244 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:32:31,244 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:32:31,244 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:32:31,244 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 00:32:31,748 - automation - INFO - Found window: Dock
+2025-03-09 00:32:31,748 - automation - INFO - Found window: Dock
+2025-03-09 00:32:31,748 - automation - INFO - Found window: Dock
+2025-03-09 00:32:31,748 - automation - INFO - Found window: Dock
+2025-03-09 00:32:31,748 - automation - INFO - Found window: Dock
+2025-03-09 00:32:33,678 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:32:33,678 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:32:33,678 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:32:33,678 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:32:33,678 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 00:33:40,752 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:33:40,752 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:33:40,752 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:33:40,752 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:33:40,752 - automation - INFO - Launching OpenFin application...
+2025-03-09 00:33:55,814 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:33:55,814 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:33:55,814 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:33:55,814 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:33:55,814 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 00:33:59,076 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:33:59,076 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:33:59,076 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:33:59,076 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:33:59,076 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 00:33:59,079 - automation - INFO - Filling in login credentials...
+2025-03-09 00:33:59,079 - automation - INFO - Filling in login credentials...
+2025-03-09 00:33:59,079 - automation - INFO - Filling in login credentials...
+2025-03-09 00:33:59,079 - automation - INFO - Filling in login credentials...
+2025-03-09 00:33:59,079 - automation - INFO - Filling in login credentials...
+2025-03-09 00:34:00,976 - automation - INFO - Login attempt made.
+2025-03-09 00:34:00,976 - automation - INFO - Login attempt made.
+2025-03-09 00:34:00,976 - automation - INFO - Login attempt made.
+2025-03-09 00:34:00,976 - automation - INFO - Login attempt made.
+2025-03-09 00:34:00,976 - automation - INFO - Login attempt made.
+2025-03-09 23:56:36,493 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:56:36,493 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:56:36,493 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:56:36,493 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:56:36,493 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:56:51,565 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:56:51,565 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:56:51,565 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:56:51,565 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:56:51,565 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:57:04,222 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:57:04,222 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:57:04,222 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:57:04,222 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:57:04,222 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:57:04,226 - automation - INFO - Filling in login credentials...
+2025-03-09 23:57:04,226 - automation - INFO - Filling in login credentials...
+2025-03-09 23:57:04,226 - automation - INFO - Filling in login credentials...
+2025-03-09 23:57:04,226 - automation - INFO - Filling in login credentials...
+2025-03-09 23:57:04,226 - automation - INFO - Filling in login credentials...
+2025-03-09 23:57:06,210 - automation - INFO - Login attempt made.
+2025-03-09 23:57:06,210 - automation - INFO - Login attempt made.
+2025-03-09 23:57:06,210 - automation - INFO - Login attempt made.
+2025-03-09 23:57:06,210 - automation - INFO - Login attempt made.
+2025-03-09 23:57:06,210 - automation - INFO - Login attempt made.
+2025-03-09 23:57:36,131 - automation - INFO - Found window: Dock
+2025-03-09 23:57:36,131 - automation - INFO - Found window: Dock
+2025-03-09 23:57:36,131 - automation - INFO - Found window: Dock
+2025-03-09 23:57:36,131 - automation - INFO - Found window: Dock
+2025-03-09 23:57:36,131 - automation - INFO - Found window: Dock
+2025-03-09 23:57:36,530 - automation - INFO - Logging out of the application...
+2025-03-09 23:57:36,530 - automation - INFO - Logging out of the application...
+2025-03-09 23:57:36,530 - automation - INFO - Logging out of the application...
+2025-03-09 23:57:36,530 - automation - INFO - Logging out of the application...
+2025-03-09 23:57:36,530 - automation - INFO - Logging out of the application...
+2025-03-09 23:57:36,937 - automation - INFO - Found window: Dock
+2025-03-09 23:57:36,937 - automation - INFO - Found window: Dock
+2025-03-09 23:57:36,937 - automation - INFO - Found window: Dock
+2025-03-09 23:57:36,937 - automation - INFO - Found window: Dock
+2025-03-09 23:57:36,937 - automation - INFO - Found window: Dock
+2025-03-09 23:57:37,977 - automation - INFO - Clicked on User Profile button.
+2025-03-09 23:57:37,977 - automation - INFO - Clicked on User Profile button.
+2025-03-09 23:57:37,977 - automation - INFO - Clicked on User Profile button.
+2025-03-09 23:57:37,977 - automation - INFO - Clicked on User Profile button.
+2025-03-09 23:57:37,977 - automation - INFO - Clicked on User Profile button.
+2025-03-09 23:57:41,650 - automation - INFO - Found window: User Profile
+2025-03-09 23:57:41,650 - automation - INFO - Found window: User Profile
+2025-03-09 23:57:41,650 - automation - INFO - Found window: User Profile
+2025-03-09 23:57:41,650 - automation - INFO - Found window: User Profile
+2025-03-09 23:57:41,650 - automation - INFO - Found window: User Profile
+2025-03-09 23:57:42,164 - automation - INFO - Clicked on Log Out button.
+2025-03-09 23:57:42,164 - automation - INFO - Clicked on Log Out button.
+2025-03-09 23:57:42,164 - automation - INFO - Clicked on Log Out button.
+2025-03-09 23:57:42,164 - automation - INFO - Clicked on Log Out button.
+2025-03-09 23:57:42,164 - automation - INFO - Clicked on Log Out button.
+2025-03-09 23:57:47,184 - automation - INFO - Pressing TAB key twice to reach Confirm Button...
+2025-03-09 23:57:47,184 - automation - INFO - Pressing TAB key twice to reach Confirm Button...
+2025-03-09 23:57:47,184 - automation - INFO - Pressing TAB key twice to reach Confirm Button...
+2025-03-09 23:57:47,184 - automation - INFO - Pressing TAB key twice to reach Confirm Button...
+2025-03-09 23:57:47,184 - automation - INFO - Pressing TAB key twice to reach Confirm Button...
+2025-03-09 23:57:48,585 - automation - INFO - Logout confirmed via keyboard input.
+2025-03-09 23:57:48,585 - automation - INFO - Logout confirmed via keyboard input.
+2025-03-09 23:57:48,585 - automation - INFO - Logout confirmed via keyboard input.
+2025-03-09 23:57:48,585 - automation - INFO - Logout confirmed via keyboard input.
+2025-03-09 23:57:48,585 - automation - INFO - Logout confirmed via keyboard input.
+2025-03-09 23:59:16,254 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:59:16,254 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:59:16,254 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:59:16,254 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:59:16,254 - automation - INFO - Launching OpenFin application...
+2025-03-09 23:59:31,318 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:59:31,318 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:59:31,318 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:59:31,318 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:59:31,318 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-09 23:59:37,847 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:59:37,847 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:59:37,847 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:59:37,847 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:59:37,847 - automation - INFO - Found window: Mizuho Front Office
+2025-03-09 23:59:37,851 - automation - INFO - Filling in login credentials...
+2025-03-09 23:59:37,851 - automation - INFO - Filling in login credentials...
+2025-03-09 23:59:37,851 - automation - INFO - Filling in login credentials...
+2025-03-09 23:59:37,851 - automation - INFO - Filling in login credentials...
+2025-03-09 23:59:37,851 - automation - INFO - Filling in login credentials...
+2025-03-09 23:59:39,686 - automation - INFO - Login attempt made.
+2025-03-09 23:59:39,686 - automation - INFO - Login attempt made.
+2025-03-09 23:59:39,686 - automation - INFO - Login attempt made.
+2025-03-09 23:59:39,686 - automation - INFO - Login attempt made.
+2025-03-09 23:59:39,686 - automation - INFO - Login attempt made.
+2025-03-09 23:59:54,650 - automation - INFO - Found window: Dock
+2025-03-09 23:59:54,650 - automation - INFO - Found window: Dock
+2025-03-09 23:59:54,650 - automation - INFO - Found window: Dock
+2025-03-09 23:59:54,650 - automation - INFO - Found window: Dock
+2025-03-09 23:59:54,650 - automation - INFO - Found window: Dock
+2025-03-09 23:59:55,050 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 23:59:55,050 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 23:59:55,050 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 23:59:55,050 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 23:59:55,050 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-09 23:59:55,561 - automation - INFO - Found window: Dock
+2025-03-09 23:59:55,561 - automation - INFO - Found window: Dock
+2025-03-09 23:59:55,561 - automation - INFO - Found window: Dock
+2025-03-09 23:59:55,561 - automation - INFO - Found window: Dock
+2025-03-09 23:59:55,561 - automation - INFO - Found window: Dock
+2025-03-09 23:59:57,383 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 23:59:57,383 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 23:59:57,383 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 23:59:57,383 - automation - ERROR - Error clicking Merlin button: 
+2025-03-09 23:59:57,383 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:01:40,817 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:01:40,817 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:01:40,817 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:01:40,817 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:01:40,817 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:01:55,863 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:01:55,863 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:01:55,863 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:01:55,863 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:01:55,863 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:02:01,974 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:02:01,974 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:02:01,974 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:02:01,974 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:02:01,974 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:02:01,978 - automation - INFO - Filling in login credentials...
+2025-03-10 00:02:01,978 - automation - INFO - Filling in login credentials...
+2025-03-10 00:02:01,978 - automation - INFO - Filling in login credentials...
+2025-03-10 00:02:01,978 - automation - INFO - Filling in login credentials...
+2025-03-10 00:02:01,978 - automation - INFO - Filling in login credentials...
+2025-03-10 00:02:03,916 - automation - INFO - Login attempt made.
+2025-03-10 00:02:03,916 - automation - INFO - Login attempt made.
+2025-03-10 00:02:03,916 - automation - INFO - Login attempt made.
+2025-03-10 00:02:03,916 - automation - INFO - Login attempt made.
+2025-03-10 00:02:03,916 - automation - INFO - Login attempt made.
+2025-03-10 00:02:17,042 - automation - INFO - Found window: Dock
+2025-03-10 00:02:17,042 - automation - INFO - Found window: Dock
+2025-03-10 00:02:17,042 - automation - INFO - Found window: Dock
+2025-03-10 00:02:17,042 - automation - INFO - Found window: Dock
+2025-03-10 00:02:17,042 - automation - INFO - Found window: Dock
+2025-03-10 00:02:17,469 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:02:17,469 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:02:17,469 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:02:17,469 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:02:17,469 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:02:17,975 - automation - INFO - Found window: Dock
+2025-03-10 00:02:17,975 - automation - INFO - Found window: Dock
+2025-03-10 00:02:17,975 - automation - INFO - Found window: Dock
+2025-03-10 00:02:17,975 - automation - INFO - Found window: Dock
+2025-03-10 00:02:17,975 - automation - INFO - Found window: Dock
+2025-03-10 00:02:19,391 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:02:19,391 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:02:19,391 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:02:19,391 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:02:19,391 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:11:19,108 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:11:19,108 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:11:19,108 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:11:19,108 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:11:19,108 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:11:34,171 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:11:34,171 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:11:34,171 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:11:34,171 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:11:34,171 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:11:42,597 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:11:42,597 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:11:42,597 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:11:42,597 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:11:42,597 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:11:42,601 - automation - INFO - Filling in login credentials...
+2025-03-10 00:11:42,601 - automation - INFO - Filling in login credentials...
+2025-03-10 00:11:42,601 - automation - INFO - Filling in login credentials...
+2025-03-10 00:11:42,601 - automation - INFO - Filling in login credentials...
+2025-03-10 00:11:42,601 - automation - INFO - Filling in login credentials...
+2025-03-10 00:11:44,559 - automation - INFO - Login attempt made.
+2025-03-10 00:11:44,559 - automation - INFO - Login attempt made.
+2025-03-10 00:11:44,559 - automation - INFO - Login attempt made.
+2025-03-10 00:11:44,559 - automation - INFO - Login attempt made.
+2025-03-10 00:11:44,559 - automation - INFO - Login attempt made.
+2025-03-10 00:11:59,847 - automation - INFO - Found window: Dock
+2025-03-10 00:11:59,847 - automation - INFO - Found window: Dock
+2025-03-10 00:11:59,847 - automation - INFO - Found window: Dock
+2025-03-10 00:11:59,847 - automation - INFO - Found window: Dock
+2025-03-10 00:11:59,847 - automation - INFO - Found window: Dock
+2025-03-10 00:12:00,348 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:12:00,348 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:12:00,348 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:12:00,348 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:12:00,348 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:12:00,852 - automation - INFO - Found window: Dock
+2025-03-10 00:12:00,852 - automation - INFO - Found window: Dock
+2025-03-10 00:12:00,852 - automation - INFO - Found window: Dock
+2025-03-10 00:12:00,852 - automation - INFO - Found window: Dock
+2025-03-10 00:12:00,852 - automation - INFO - Found window: Dock
+2025-03-10 00:12:01,360 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:12:01,360 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:12:01,360 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:12:01,360 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:12:01,360 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:12:01,896 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:12:01,896 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:12:01,896 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:12:01,896 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:12:01,896 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:12:37,514 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:12:37,514 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:12:37,514 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:12:37,514 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:12:37,514 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:12:40,962 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:12:40,962 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:12:40,962 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:12:40,962 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:12:40,962 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:12:41,454 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:12:41,454 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:12:41,454 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:12:41,454 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:12:41,454 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:12:41,455 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:12:41,455 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:12:41,455 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:12:41,455 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:12:41,455 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:26:47,905 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:26:47,905 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:26:47,905 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:26:47,905 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:26:47,905 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:27:02,967 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:27:02,967 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:27:02,967 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:27:02,967 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:27:02,967 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:27:09,362 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:27:09,362 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:27:09,362 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:27:09,362 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:27:09,362 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:27:09,365 - automation - INFO - Filling in login credentials...
+2025-03-10 00:27:09,365 - automation - INFO - Filling in login credentials...
+2025-03-10 00:27:09,365 - automation - INFO - Filling in login credentials...
+2025-03-10 00:27:09,365 - automation - INFO - Filling in login credentials...
+2025-03-10 00:27:09,365 - automation - INFO - Filling in login credentials...
+2025-03-10 00:27:11,210 - automation - INFO - Login attempt made.
+2025-03-10 00:27:11,210 - automation - INFO - Login attempt made.
+2025-03-10 00:27:11,210 - automation - INFO - Login attempt made.
+2025-03-10 00:27:11,210 - automation - INFO - Login attempt made.
+2025-03-10 00:27:11,210 - automation - INFO - Login attempt made.
+2025-03-10 00:27:24,147 - automation - INFO - Found window: Dock
+2025-03-10 00:27:24,147 - automation - INFO - Found window: Dock
+2025-03-10 00:27:24,147 - automation - INFO - Found window: Dock
+2025-03-10 00:27:24,147 - automation - INFO - Found window: Dock
+2025-03-10 00:27:24,147 - automation - INFO - Found window: Dock
+2025-03-10 00:27:24,548 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:27:24,548 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:27:24,548 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:27:24,548 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:27:24,548 - automation - INFO - Opening Merlin screen: Trader Blotter
+2025-03-10 00:27:25,054 - automation - INFO - Found window: Dock
+2025-03-10 00:27:25,054 - automation - INFO - Found window: Dock
+2025-03-10 00:27:25,054 - automation - INFO - Found window: Dock
+2025-03-10 00:27:25,054 - automation - INFO - Found window: Dock
+2025-03-10 00:27:25,054 - automation - INFO - Found window: Dock
+2025-03-10 00:27:25,564 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:27:25,564 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:27:25,564 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:27:25,564 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:27:25,564 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:27:26,104 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:27:26,104 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:27:26,104 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:27:26,104 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:27:26,104 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:28:02,273 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:28:02,273 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:28:02,273 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:28:02,273 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:28:02,273 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:28:09,513 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Trader Blotter', 'historical_trader_blotter_screen_steps.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:28:09,513 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Trader Blotter', 'historical_trader_blotter_screen_steps.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:28:09,513 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Trader Blotter', 'historical_trader_blotter_screen_steps.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:28:09,513 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Trader Blotter', 'historical_trader_blotter_screen_steps.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:28:09,513 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Trader Blotter', 'historical_trader_blotter_screen_steps.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:28:09,998 - automation - INFO - Found window: Trader Blotter
+2025-03-10 00:28:09,998 - automation - INFO - Found window: Trader Blotter
+2025-03-10 00:28:09,998 - automation - INFO - Found window: Trader Blotter
+2025-03-10 00:28:09,998 - automation - INFO - Found window: Trader Blotter
+2025-03-10 00:28:09,998 - automation - INFO - Found window: Trader Blotter
+2025-03-10 00:28:09,999 - automation - INFO - Trader Blotter screen opened successfully.
+2025-03-10 00:28:09,999 - automation - INFO - Trader Blotter screen opened successfully.
+2025-03-10 00:28:09,999 - automation - INFO - Trader Blotter screen opened successfully.
+2025-03-10 00:28:09,999 - automation - INFO - Trader Blotter screen opened successfully.
+2025-03-10 00:28:09,999 - automation - INFO - Trader Blotter screen opened successfully.
+2025-03-10 00:30:20,385 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:30:20,385 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:30:20,385 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:30:20,385 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:30:20,385 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:30:35,447 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:30:35,447 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:30:35,447 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:30:35,447 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:30:35,447 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:30:42,886 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:30:42,886 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:30:42,886 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:30:42,886 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:30:42,886 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:30:42,890 - automation - INFO - Filling in login credentials...
+2025-03-10 00:30:42,890 - automation - INFO - Filling in login credentials...
+2025-03-10 00:30:42,890 - automation - INFO - Filling in login credentials...
+2025-03-10 00:30:42,890 - automation - INFO - Filling in login credentials...
+2025-03-10 00:30:42,890 - automation - INFO - Filling in login credentials...
+2025-03-10 00:30:44,728 - automation - INFO - Login attempt made.
+2025-03-10 00:30:44,728 - automation - INFO - Login attempt made.
+2025-03-10 00:30:44,728 - automation - INFO - Login attempt made.
+2025-03-10 00:30:44,728 - automation - INFO - Login attempt made.
+2025-03-10 00:30:44,728 - automation - INFO - Login attempt made.
+2025-03-10 00:30:57,932 - automation - INFO - Found window: Dock
+2025-03-10 00:30:57,932 - automation - INFO - Found window: Dock
+2025-03-10 00:30:57,932 - automation - INFO - Found window: Dock
+2025-03-10 00:30:57,932 - automation - INFO - Found window: Dock
+2025-03-10 00:30:57,932 - automation - INFO - Found window: Dock
+2025-03-10 00:30:58,332 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:30:58,332 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:30:58,332 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:30:58,332 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:30:58,332 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:30:58,858 - automation - INFO - Found window: Dock
+2025-03-10 00:30:58,858 - automation - INFO - Found window: Dock
+2025-03-10 00:30:58,858 - automation - INFO - Found window: Dock
+2025-03-10 00:30:58,858 - automation - INFO - Found window: Dock
+2025-03-10 00:30:58,858 - automation - INFO - Found window: Dock
+2025-03-10 00:31:00,279 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:31:00,279 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:31:00,279 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:31:00,279 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:31:00,279 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:35:33,259 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:35:33,259 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:35:33,259 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:35:33,259 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:35:33,259 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:35:48,309 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:35:48,309 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:35:48,309 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:35:48,309 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:35:48,309 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:35:54,355 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:35:54,355 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:35:54,355 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:35:54,355 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:35:54,355 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:35:54,359 - automation - INFO - Filling in login credentials...
+2025-03-10 00:35:54,359 - automation - INFO - Filling in login credentials...
+2025-03-10 00:35:54,359 - automation - INFO - Filling in login credentials...
+2025-03-10 00:35:54,359 - automation - INFO - Filling in login credentials...
+2025-03-10 00:35:54,359 - automation - INFO - Filling in login credentials...
+2025-03-10 00:35:56,217 - automation - INFO - Login attempt made.
+2025-03-10 00:35:56,217 - automation - INFO - Login attempt made.
+2025-03-10 00:35:56,217 - automation - INFO - Login attempt made.
+2025-03-10 00:35:56,217 - automation - INFO - Login attempt made.
+2025-03-10 00:35:56,217 - automation - INFO - Login attempt made.
+2025-03-10 00:36:09,012 - automation - INFO - Found window: Dock
+2025-03-10 00:36:09,012 - automation - INFO - Found window: Dock
+2025-03-10 00:36:09,012 - automation - INFO - Found window: Dock
+2025-03-10 00:36:09,012 - automation - INFO - Found window: Dock
+2025-03-10 00:36:09,012 - automation - INFO - Found window: Dock
+2025-03-10 00:36:09,511 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:36:09,511 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:36:09,511 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:36:09,511 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:36:09,511 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:36:09,913 - automation - INFO - Found window: Dock
+2025-03-10 00:36:09,913 - automation - INFO - Found window: Dock
+2025-03-10 00:36:09,913 - automation - INFO - Found window: Dock
+2025-03-10 00:36:09,913 - automation - INFO - Found window: Dock
+2025-03-10 00:36:09,913 - automation - INFO - Found window: Dock
+2025-03-10 00:36:11,228 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:36:11,228 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:36:11,228 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:36:11,228 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:36:11,228 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:41:20,853 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:41:20,853 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:41:20,853 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:41:20,853 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:41:20,853 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:41:35,896 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:41:35,896 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:41:35,896 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:41:35,896 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:41:35,896 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:41:42,366 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:41:42,366 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:41:42,366 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:41:42,366 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:41:42,366 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:41:42,370 - automation - INFO - Filling in login credentials...
+2025-03-10 00:41:42,370 - automation - INFO - Filling in login credentials...
+2025-03-10 00:41:42,370 - automation - INFO - Filling in login credentials...
+2025-03-10 00:41:42,370 - automation - INFO - Filling in login credentials...
+2025-03-10 00:41:42,370 - automation - INFO - Filling in login credentials...
+2025-03-10 00:41:44,216 - automation - INFO - Login attempt made.
+2025-03-10 00:41:44,216 - automation - INFO - Login attempt made.
+2025-03-10 00:41:44,216 - automation - INFO - Login attempt made.
+2025-03-10 00:41:44,216 - automation - INFO - Login attempt made.
+2025-03-10 00:41:44,216 - automation - INFO - Login attempt made.
+2025-03-10 00:41:56,933 - automation - INFO - Found window: Dock
+2025-03-10 00:41:56,933 - automation - INFO - Found window: Dock
+2025-03-10 00:41:56,933 - automation - INFO - Found window: Dock
+2025-03-10 00:41:56,933 - automation - INFO - Found window: Dock
+2025-03-10 00:41:56,933 - automation - INFO - Found window: Dock
+2025-03-10 00:41:57,431 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:41:57,431 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:41:57,431 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:41:57,431 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:41:57,431 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:41:57,936 - automation - INFO - Found window: Dock
+2025-03-10 00:41:57,936 - automation - INFO - Found window: Dock
+2025-03-10 00:41:57,936 - automation - INFO - Found window: Dock
+2025-03-10 00:41:57,936 - automation - INFO - Found window: Dock
+2025-03-10 00:41:57,936 - automation - INFO - Found window: Dock
+2025-03-10 00:41:59,364 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:41:59,364 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:41:59,364 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:41:59,364 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:41:59,364 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:45:03,262 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:45:03,262 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:45:03,262 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:45:03,262 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:45:03,262 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:45:18,305 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:45:18,305 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:45:18,305 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:45:18,305 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:45:18,305 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:45:25,587 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:45:25,587 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:45:25,587 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:45:25,587 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:45:25,587 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:45:25,591 - automation - INFO - Filling in login credentials...
+2025-03-10 00:45:25,591 - automation - INFO - Filling in login credentials...
+2025-03-10 00:45:25,591 - automation - INFO - Filling in login credentials...
+2025-03-10 00:45:25,591 - automation - INFO - Filling in login credentials...
+2025-03-10 00:45:25,591 - automation - INFO - Filling in login credentials...
+2025-03-10 00:45:27,533 - automation - INFO - Login attempt made.
+2025-03-10 00:45:27,533 - automation - INFO - Login attempt made.
+2025-03-10 00:45:27,533 - automation - INFO - Login attempt made.
+2025-03-10 00:45:27,533 - automation - INFO - Login attempt made.
+2025-03-10 00:45:27,533 - automation - INFO - Login attempt made.
+2025-03-10 00:45:40,577 - automation - INFO - Found window: Dock
+2025-03-10 00:45:40,577 - automation - INFO - Found window: Dock
+2025-03-10 00:45:40,577 - automation - INFO - Found window: Dock
+2025-03-10 00:45:40,577 - automation - INFO - Found window: Dock
+2025-03-10 00:45:40,577 - automation - INFO - Found window: Dock
+2025-03-10 00:45:40,976 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:45:40,976 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:45:40,976 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:45:40,976 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:45:40,976 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:45:41,479 - automation - INFO - Found window: Dock
+2025-03-10 00:45:41,479 - automation - INFO - Found window: Dock
+2025-03-10 00:45:41,479 - automation - INFO - Found window: Dock
+2025-03-10 00:45:41,479 - automation - INFO - Found window: Dock
+2025-03-10 00:45:41,479 - automation - INFO - Found window: Dock
+2025-03-10 00:46:12,868 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:46:12,868 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:46:12,868 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:46:12,868 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:46:12,868 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:50:28,472 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:50:28,472 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:50:28,472 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:50:28,472 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:50:28,472 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:50:43,534 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:50:43,534 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:50:43,534 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:50:43,534 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:50:43,534 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:50:49,797 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:50:49,797 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:50:49,797 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:50:49,797 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:50:49,797 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:50:49,801 - automation - INFO - Filling in login credentials...
+2025-03-10 00:50:49,801 - automation - INFO - Filling in login credentials...
+2025-03-10 00:50:49,801 - automation - INFO - Filling in login credentials...
+2025-03-10 00:50:49,801 - automation - INFO - Filling in login credentials...
+2025-03-10 00:50:49,801 - automation - INFO - Filling in login credentials...
+2025-03-10 00:50:51,733 - automation - INFO - Login attempt made.
+2025-03-10 00:50:51,733 - automation - INFO - Login attempt made.
+2025-03-10 00:50:51,733 - automation - INFO - Login attempt made.
+2025-03-10 00:50:51,733 - automation - INFO - Login attempt made.
+2025-03-10 00:50:51,733 - automation - INFO - Login attempt made.
+2025-03-10 00:51:05,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:05,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:05,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:05,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:05,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:05,595 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:51:05,595 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:51:05,595 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:51:05,595 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:51:05,595 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:51:06,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:06,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:06,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:06,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:06,117 - automation - INFO - Found window: Dock
+2025-03-10 00:51:36,526 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:51:36,526 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:51:36,526 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:51:36,526 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:51:36,526 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:51:37,029 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:51:37,029 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:51:37,029 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:51:37,029 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:51:37,029 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:51:37,569 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:51:37,569 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:51:37,569 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:51:37,569 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:51:37,569 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:51:43,187 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:51:43,187 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:51:43,187 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:51:43,187 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:51:43,187 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:51:46,646 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:51:46,646 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:51:46,646 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:51:46,646 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:51:46,646 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:51:47,145 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:51:47,145 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:51:47,145 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:51:47,145 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:51:47,145 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:51:47,145 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:51:47,145 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:51:47,145 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:51:47,145 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:51:47,145 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:54:41,519 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:54:41,519 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:54:41,519 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:54:41,519 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:54:41,519 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:54:56,562 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:54:56,562 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:54:56,562 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:54:56,562 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:54:56,562 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:55:03,005 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:55:03,005 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:55:03,005 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:55:03,005 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:55:03,005 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:55:03,009 - automation - INFO - Filling in login credentials...
+2025-03-10 00:55:03,009 - automation - INFO - Filling in login credentials...
+2025-03-10 00:55:03,009 - automation - INFO - Filling in login credentials...
+2025-03-10 00:55:03,009 - automation - INFO - Filling in login credentials...
+2025-03-10 00:55:03,009 - automation - INFO - Filling in login credentials...
+2025-03-10 00:55:04,855 - automation - INFO - Login attempt made.
+2025-03-10 00:55:04,855 - automation - INFO - Login attempt made.
+2025-03-10 00:55:04,855 - automation - INFO - Login attempt made.
+2025-03-10 00:55:04,855 - automation - INFO - Login attempt made.
+2025-03-10 00:55:04,855 - automation - INFO - Login attempt made.
+2025-03-10 00:55:17,660 - automation - INFO - Found window: Dock
+2025-03-10 00:55:17,660 - automation - INFO - Found window: Dock
+2025-03-10 00:55:17,660 - automation - INFO - Found window: Dock
+2025-03-10 00:55:17,660 - automation - INFO - Found window: Dock
+2025-03-10 00:55:17,660 - automation - INFO - Found window: Dock
+2025-03-10 00:55:18,060 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:55:18,060 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:55:18,060 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:55:18,060 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:55:18,060 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:55:18,466 - automation - INFO - Found window: Dock
+2025-03-10 00:55:18,466 - automation - INFO - Found window: Dock
+2025-03-10 00:55:18,466 - automation - INFO - Found window: Dock
+2025-03-10 00:55:18,466 - automation - INFO - Found window: Dock
+2025-03-10 00:55:18,466 - automation - INFO - Found window: Dock
+2025-03-10 00:55:48,946 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:55:48,946 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:55:48,946 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:55:48,946 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:55:48,946 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:55:50,261 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:55:50,261 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:55:50,261 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:55:50,261 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:55:50,261 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 00:56:11,376 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:56:11,376 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:56:11,376 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:56:11,376 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:56:11,376 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:56:26,525 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:56:26,525 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:56:26,525 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:56:26,525 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:56:26,525 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:56:33,106 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:56:33,106 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:56:33,106 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:56:33,106 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:56:33,106 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:56:33,109 - automation - INFO - Filling in login credentials...
+2025-03-10 00:56:33,109 - automation - INFO - Filling in login credentials...
+2025-03-10 00:56:33,109 - automation - INFO - Filling in login credentials...
+2025-03-10 00:56:33,109 - automation - INFO - Filling in login credentials...
+2025-03-10 00:56:33,109 - automation - INFO - Filling in login credentials...
+2025-03-10 00:56:34,946 - automation - INFO - Login attempt made.
+2025-03-10 00:56:34,946 - automation - INFO - Login attempt made.
+2025-03-10 00:56:34,946 - automation - INFO - Login attempt made.
+2025-03-10 00:56:34,946 - automation - INFO - Login attempt made.
+2025-03-10 00:56:34,946 - automation - INFO - Login attempt made.
+2025-03-10 00:56:51,486 - automation - INFO - Found window: Dock
+2025-03-10 00:56:51,486 - automation - INFO - Found window: Dock
+2025-03-10 00:56:51,486 - automation - INFO - Found window: Dock
+2025-03-10 00:56:51,486 - automation - INFO - Found window: Dock
+2025-03-10 00:56:51,486 - automation - INFO - Found window: Dock
+2025-03-10 00:56:51,985 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:56:51,985 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:56:51,985 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:56:51,985 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:56:51,985 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 00:56:52,488 - automation - INFO - Found window: Dock
+2025-03-10 00:56:52,488 - automation - INFO - Found window: Dock
+2025-03-10 00:56:52,488 - automation - INFO - Found window: Dock
+2025-03-10 00:56:52,488 - automation - INFO - Found window: Dock
+2025-03-10 00:56:52,488 - automation - INFO - Found window: Dock
+2025-03-10 00:57:22,976 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:57:22,976 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:57:22,976 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:57:22,976 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:57:22,976 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:57:23,490 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:57:23,490 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:57:23,490 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:57:23,490 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:57:23,490 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:57:24,392 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:57:24,392 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:57:24,392 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:57:24,392 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:57:24,392 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:57:30,007 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:57:30,007 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:57:30,007 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:57:30,007 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:57:30,007 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:57:33,407 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:57:33,407 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:57:33,407 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:57:33,407 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:57:33,407 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:57:33,905 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:57:33,905 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:57:33,905 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:57:33,905 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:57:33,905 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 00:57:33,905 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:57:33,905 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:57:33,905 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:57:33,905 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:57:33,905 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 00:57:55,293 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:57:55,293 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:57:55,293 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:57:55,293 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:57:55,293 - automation - INFO - Launching OpenFin application...
+2025-03-10 00:58:10,336 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:58:10,336 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:58:10,336 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:58:10,336 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:58:10,336 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 00:58:19,068 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:58:19,068 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:58:19,068 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:58:19,068 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:58:19,068 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 00:58:19,072 - automation - INFO - Filling in login credentials...
+2025-03-10 00:58:19,072 - automation - INFO - Filling in login credentials...
+2025-03-10 00:58:19,072 - automation - INFO - Filling in login credentials...
+2025-03-10 00:58:19,072 - automation - INFO - Filling in login credentials...
+2025-03-10 00:58:19,072 - automation - INFO - Filling in login credentials...
+2025-03-10 00:58:20,924 - automation - INFO - Login attempt made.
+2025-03-10 00:58:20,924 - automation - INFO - Login attempt made.
+2025-03-10 00:58:20,924 - automation - INFO - Login attempt made.
+2025-03-10 00:58:20,924 - automation - INFO - Login attempt made.
+2025-03-10 00:58:20,924 - automation - INFO - Login attempt made.
+2025-03-10 00:58:34,051 - automation - INFO - Found window: Dock
+2025-03-10 00:58:34,051 - automation - INFO - Found window: Dock
+2025-03-10 00:58:34,051 - automation - INFO - Found window: Dock
+2025-03-10 00:58:34,051 - automation - INFO - Found window: Dock
+2025-03-10 00:58:34,051 - automation - INFO - Found window: Dock
+2025-03-10 00:58:34,447 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:58:34,447 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:58:34,447 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:58:34,447 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:58:34,447 - automation - INFO - Opening Merlin screen: Position Manager
+2025-03-10 00:58:34,951 - automation - INFO - Found window: Dock
+2025-03-10 00:58:34,951 - automation - INFO - Found window: Dock
+2025-03-10 00:58:34,951 - automation - INFO - Found window: Dock
+2025-03-10 00:58:34,951 - automation - INFO - Found window: Dock
+2025-03-10 00:58:34,951 - automation - INFO - Found window: Dock
+2025-03-10 00:59:05,415 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:59:05,415 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:59:05,415 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:59:05,415 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:59:05,415 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 00:59:05,937 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:59:05,937 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:59:05,937 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:59:05,937 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:59:05,937 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 00:59:06,839 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:59:06,839 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:59:06,839 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:59:06,839 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:59:06,839 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 00:59:14,661 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:59:14,661 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:59:14,661 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:59:14,661 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:59:14,661 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 00:59:18,153 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Position Manager', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:59:18,153 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Position Manager', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:59:18,153 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Position Manager', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:59:18,153 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Position Manager', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:59:18,153 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Position Manager', 'merlin.py - automation_suite - Visual Studio Code', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Program Manager']
+2025-03-10 00:59:18,647 - automation - INFO - Found window: Position Manager
+2025-03-10 00:59:18,647 - automation - INFO - Found window: Position Manager
+2025-03-10 00:59:18,647 - automation - INFO - Found window: Position Manager
+2025-03-10 00:59:18,647 - automation - INFO - Found window: Position Manager
+2025-03-10 00:59:18,647 - automation - INFO - Found window: Position Manager
+2025-03-10 00:59:18,647 - automation - INFO - Position Manager screen opened successfully.
+2025-03-10 00:59:18,647 - automation - INFO - Position Manager screen opened successfully.
+2025-03-10 00:59:18,647 - automation - INFO - Position Manager screen opened successfully.
+2025-03-10 00:59:18,647 - automation - INFO - Position Manager screen opened successfully.
+2025-03-10 00:59:18,647 - automation - INFO - Position Manager screen opened successfully.
+2025-03-10 01:03:13,984 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:03:13,984 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:03:13,984 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:03:13,984 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:03:13,984 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:03:29,056 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:03:29,056 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:03:29,056 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:03:29,056 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:03:29,056 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:03:36,993 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:03:36,993 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:03:36,993 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:03:36,993 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:03:36,993 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:03:36,997 - automation - INFO - Filling in login credentials...
+2025-03-10 01:03:36,997 - automation - INFO - Filling in login credentials...
+2025-03-10 01:03:36,997 - automation - INFO - Filling in login credentials...
+2025-03-10 01:03:36,997 - automation - INFO - Filling in login credentials...
+2025-03-10 01:03:36,997 - automation - INFO - Filling in login credentials...
+2025-03-10 01:03:38,907 - automation - INFO - Login attempt made.
+2025-03-10 01:03:38,907 - automation - INFO - Login attempt made.
+2025-03-10 01:03:38,907 - automation - INFO - Login attempt made.
+2025-03-10 01:03:38,907 - automation - INFO - Login attempt made.
+2025-03-10 01:03:38,907 - automation - INFO - Login attempt made.
+2025-03-10 01:03:54,020 - automation - INFO - Found window: Dock
+2025-03-10 01:03:54,020 - automation - INFO - Found window: Dock
+2025-03-10 01:03:54,020 - automation - INFO - Found window: Dock
+2025-03-10 01:03:54,020 - automation - INFO - Found window: Dock
+2025-03-10 01:03:54,020 - automation - INFO - Found window: Dock
+2025-03-10 01:03:54,420 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-10 01:03:54,420 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-10 01:03:54,420 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-10 01:03:54,420 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-10 01:03:54,420 - automation - INFO - Opening Merlin screen: comments-main
+2025-03-10 01:03:54,925 - automation - INFO - Found window: Dock
+2025-03-10 01:03:54,925 - automation - INFO - Found window: Dock
+2025-03-10 01:03:54,925 - automation - INFO - Found window: Dock
+2025-03-10 01:03:54,925 - automation - INFO - Found window: Dock
+2025-03-10 01:03:54,925 - automation - INFO - Found window: Dock
+2025-03-10 01:04:25,388 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:04:25,388 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:04:25,388 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:04:25,388 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:04:25,388 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:04:26,924 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 01:04:26,924 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 01:04:26,924 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 01:04:26,924 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 01:04:26,924 - automation - ERROR - Error clicking Merlin button: 
+2025-03-10 01:04:26,962 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:04:26,962 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:04:26,962 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:04:26,962 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:04:26,962 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:04:41,987 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:04:41,987 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:04:41,987 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:04:41,987 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:04:41,987 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:05:34,983 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:05:34,983 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:05:34,983 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:05:34,983 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:05:34,983 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:05:50,016 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:05:50,016 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:05:50,016 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:05:50,016 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:05:50,016 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:05:56,116 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,116 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,116 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,116 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,116 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,518 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,518 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,518 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,518 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,518 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:05:56,520 - automation - INFO - Filling in login credentials...
+2025-03-10 01:05:56,520 - automation - INFO - Filling in login credentials...
+2025-03-10 01:05:56,520 - automation - INFO - Filling in login credentials...
+2025-03-10 01:05:56,520 - automation - INFO - Filling in login credentials...
+2025-03-10 01:05:56,520 - automation - INFO - Filling in login credentials...
+2025-03-10 01:05:58,379 - automation - INFO - Login attempt made.
+2025-03-10 01:05:58,379 - automation - INFO - Login attempt made.
+2025-03-10 01:05:58,379 - automation - INFO - Login attempt made.
+2025-03-10 01:05:58,379 - automation - INFO - Login attempt made.
+2025-03-10 01:05:58,379 - automation - INFO - Login attempt made.
+2025-03-10 01:05:58,875 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:58,875 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:58,875 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:58,875 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:58,875 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:58,876 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:58,876 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:58,876 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:58,876 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:58,876 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:59,390 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:59,390 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:59,390 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:59,390 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:59,390 - automation - INFO - Actual error message: Login failed. Incorrect username and/or password OR Invalid/missing access token
+2025-03-10 01:05:59,391 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:59,391 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:59,391 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:59,391 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:59,391 - automation - INFO - Error message validated successfully.
+2025-03-10 01:05:59,396 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:05:59,396 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:05:59,396 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:05:59,396 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:05:59,396 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:06:14,432 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:06:14,432 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:06:14,432 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:06:14,432 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:06:14,432 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:06:20,495 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:06:20,495 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:06:20,495 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:06:20,495 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:06:20,495 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:06:20,498 - automation - INFO - Filling in login credentials...
+2025-03-10 01:06:20,498 - automation - INFO - Filling in login credentials...
+2025-03-10 01:06:20,498 - automation - INFO - Filling in login credentials...
+2025-03-10 01:06:20,498 - automation - INFO - Filling in login credentials...
+2025-03-10 01:06:20,498 - automation - INFO - Filling in login credentials...
+2025-03-10 01:06:22,343 - automation - INFO - Login attempt made.
+2025-03-10 01:06:22,343 - automation - INFO - Login attempt made.
+2025-03-10 01:06:22,343 - automation - INFO - Login attempt made.
+2025-03-10 01:06:22,343 - automation - INFO - Login attempt made.
+2025-03-10 01:06:22,343 - automation - INFO - Login attempt made.
+2025-03-10 01:06:35,358 - automation - INFO - Found window: Dock
+2025-03-10 01:06:35,358 - automation - INFO - Found window: Dock
+2025-03-10 01:06:35,358 - automation - INFO - Found window: Dock
+2025-03-10 01:06:35,358 - automation - INFO - Found window: Dock
+2025-03-10 01:06:35,358 - automation - INFO - Found window: Dock
+2025-03-10 01:07:12,611 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:07:12,611 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:07:12,611 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:07:12,611 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:07:12,611 - automation - INFO - Launching OpenFin application...
+2025-03-10 01:07:27,675 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:07:27,675 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:07:27,675 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:07:27,675 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:07:27,675 - automation - INFO - Waiting for the Mizuho login window to appear...
+2025-03-10 01:07:34,554 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:07:34,554 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:07:34,554 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:07:34,554 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:07:34,554 - automation - INFO - Found window: Mizuho Front Office
+2025-03-10 01:07:34,558 - automation - INFO - Filling in login credentials...
+2025-03-10 01:07:34,558 - automation - INFO - Filling in login credentials...
+2025-03-10 01:07:34,558 - automation - INFO - Filling in login credentials...
+2025-03-10 01:07:34,558 - automation - INFO - Filling in login credentials...
+2025-03-10 01:07:34,558 - automation - INFO - Filling in login credentials...
+2025-03-10 01:07:36,396 - automation - INFO - Login attempt made.
+2025-03-10 01:07:36,396 - automation - INFO - Login attempt made.
+2025-03-10 01:07:36,396 - automation - INFO - Login attempt made.
+2025-03-10 01:07:36,396 - automation - INFO - Login attempt made.
+2025-03-10 01:07:36,396 - automation - INFO - Login attempt made.
+2025-03-10 01:07:49,161 - automation - INFO - Found window: Dock
+2025-03-10 01:07:49,161 - automation - INFO - Found window: Dock
+2025-03-10 01:07:49,161 - automation - INFO - Found window: Dock
+2025-03-10 01:07:49,161 - automation - INFO - Found window: Dock
+2025-03-10 01:07:49,161 - automation - INFO - Found window: Dock
+2025-03-10 01:07:49,670 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 01:07:49,670 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 01:07:49,670 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 01:07:49,670 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 01:07:49,670 - automation - INFO - Opening Merlin screen: Historical Trader Blotter
+2025-03-10 01:07:50,174 - automation - INFO - Found window: Dock
+2025-03-10 01:07:50,174 - automation - INFO - Found window: Dock
+2025-03-10 01:07:50,174 - automation - INFO - Found window: Dock
+2025-03-10 01:07:50,174 - automation - INFO - Found window: Dock
+2025-03-10 01:07:50,174 - automation - INFO - Found window: Dock
+2025-03-10 01:08:20,643 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:08:20,643 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:08:20,643 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:08:20,643 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:08:20,643 - automation - INFO - Found window: Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams
+2025-03-10 01:08:21,146 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 01:08:21,146 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 01:08:21,146 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 01:08:21,146 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 01:08:21,146 - automation - ERROR - Merlin button not found with title and control_type, trying with class_name.
+2025-03-10 01:08:22,049 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 01:08:22,049 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 01:08:22,049 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 01:08:22,049 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 01:08:22,049 - automation - INFO - Merlin button still not found! Attempting to navigate using keyboard.
+2025-03-10 01:08:27,674 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 01:08:27,674 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 01:08:27,674 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 01:08:27,674 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 01:08:27,674 - automation - INFO - Pressed ENTER on selected element.
+2025-03-10 01:08:31,129 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Program Manager']
+2025-03-10 01:08:31,129 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Program Manager']
+2025-03-10 01:08:31,129 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Program Manager']
+2025-03-10 01:08:31,129 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Program Manager']
+2025-03-10 01:08:31,129 - automation - INFO - All opened screens after pressing ENTER: ['Dock', 'Taskbar', 'Historical Trader Blotter', 'requirements.txt - automation_suite - Visual Studio Code', 'MERLIN_STOP_MONGODB - Grid - MHI FO Airflow for scheduled workflows: UAT Environment - Google Chrome', 'Chat | Merlin FE UAT Starting and shutting down on weekends | Microsoft Teams', 'Program Manager']
+2025-03-10 01:08:31,621 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 01:08:31,621 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 01:08:31,621 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 01:08:31,621 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 01:08:31,621 - automation - INFO - Found window: Historical Trader Blotter
+2025-03-10 01:08:31,622 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 01:08:31,622 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 01:08:31,622 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 01:08:31,622 - automation - INFO - Historical Trader Blotter screen opened successfully.
+2025-03-10 01:08:31,622 - automation - INFO - Historical Trader Blotter screen opened successfully.

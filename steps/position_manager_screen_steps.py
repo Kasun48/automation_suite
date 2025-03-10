@@ -3,7 +3,7 @@ from openfin.merlin import open_merlin_screen
 
 @when('I open the Position Manager screen')
 def step_impl(context):
-    assert open_merlin_screen("position-manager")
+    assert open_merlin_screen("Position Manager")
 
 @then('the Position Manager screen should be displayed')
 def step_impl(context):

@@ -3,7 +3,7 @@ from openfin.merlin import open_merlin_screen
 
 @when('I open the Trader Blotter screen')
 def step_impl(context):
-    assert open_merlin_screen("trader-blotter")
+    assert open_merlin_screen("Trader Blotter")
 
 @then('the Trader Blotter screen should be displayed')
 def step_impl(context):
