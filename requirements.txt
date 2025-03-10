@@ -5,6 +5,7 @@
 # 3. Activate the Virtual Environment:
 # venv\Scripts\activate
 
+# ------------- Optional ---------------------------------------------------- 
 # pip install selenium
 # python.exe -m pip install --upgrade pip
 # pip install pytest
@@ -15,6 +16,7 @@
 # Poweshell command to remove VM when there are python errors
 # Remove-Item -Recurse -Force .\venv 
 # Get-ChildItem
+# ---------------------------------------------------------------------------
 
 selenium
 pytest
@@ -23,10 +25,11 @@ pyautogui
 pygetwindow
 behave
 Pillow
-# behave-html-report
-# pip install -r requirements.txt
+# behave-html-report 
+# pip install -r requirements.txt -- MUST RUN THIS IF YOU ARE RUNNING ON A NEW INSTANCE 
 # pip install behave-html-report 
-# behave features/login.feature
+# --------------- INDIVIDUALLY RUN FEATURE FILES --------------------------------------
+# behave features/login.feature 
 # behave features/historical_trader_blotter_screen.feature
 # behave features/trader_blotter_screen.feature
 # behave features/position_manager_screen.feature
