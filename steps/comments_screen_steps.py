@@ -10,5 +10,5 @@ def step_impl(context):
 
 @then('the Comments screen should be displayed')
 def step_impl(context):
-    # Logic to verify if the Comments screen is displayed can be added here
+    # Logic to verify if the Comments screen is displayed 
     pass

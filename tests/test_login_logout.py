@@ -1,4 +1,3 @@
-# tests/test_login_logout.py
 from openfin.login import automate_login
 from openfin.logout import logout
 from utils.logger import setup_logger

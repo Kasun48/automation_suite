@@ -1,4 +1,3 @@
-# utils/config.py
 USERNAME = "ranaka"
 PASSWORD = "NewLoginPass123" 
 INVALID_USERNAME = "invalid_user"  # Optional: could also be a constant
